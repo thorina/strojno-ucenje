@@ -1,0 +1,4 @@
+--index-url https://pypi.python.org/simple/
+
+gutenberg==0.4.2
+nltk==3.2.1
