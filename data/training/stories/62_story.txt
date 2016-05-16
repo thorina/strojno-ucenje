@@ -93,7 +93,8 @@ a kind of charm, which seemed to have reference to the child which
 had been born the night before; and as she finished, Mannering
 heard her murmur something about the thread of life being three
 times broken and three times mended, and distinctly heard her
-say: "He'll be a lucky lad an he win through wi't." 
+say: "He'll be a lucky lad an he win through wi't." [: "He
+will be a lucky lad if he lives through it."]
 
 He was about to speak to the gipsy, when he heard a hoarse voice
 calling to her in angry tones from outside, and in a moment after,
@@ -476,7 +477,7 @@ On hearing his answer she dropped his hand with a sigh, and said:
 "It cannot be, then--it cannot be; but be what ye will, ye have a
 face and a tongue that puts me in mind of old times." As Brown
 took his departure on foot, the gipsy looked after him and
-muttered to herself: "I maun  see that lad
+muttered to herself: "I maun [: I must.] see that lad
 again."
 
 The traveller had gone a considerable distance across the lonely
@@ -1332,3 +1333,8 @@ continued to call him--now Laird of Ellangowan, and himself
 librarian in the house to which he had been so long a stranger.
 
 
+
+
+
+
+###

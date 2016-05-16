@@ -1,3 +1,5 @@
 --index-url https://pypi.python.org/simple/
 
 nltk==3.2.1
+pattern==2.6
+python-crfsuite==0.8.4

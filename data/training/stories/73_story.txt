@@ -3,7 +3,8 @@ Old Rane, the helmsman, whose fierce mustaches and shaggy shoulder-mantle
 made him look like some grim old Northern wolf, held high in air
 the great bison-horn filled with foaming mead.
 
-"Skoal to the Viking! Hael was-hael!" rose his exultant shout. From a hundred sturdy
+"Skoal to the Viking! Hael was-hael!"[: "Hail and health
+to the Viking!"] rose his exultant shout. From a hundred sturdy
 throats the cry re-echoed till the vaulted hall of the Swedemen's
 conquered castle rang again.
 
@@ -114,7 +115,10 @@ tight place in his years of sea-roving, but none so close as this.
 "Why, king, they be a hundred to one!"
 
 "And if they be, what then?" said impetuous Olaf "Better fall as
-a viking breaking Swedish spears than die a straw-death  as Olaf of Sweden's bonder-man. May
+a viking breaking Swedish spears than die a straw-death [:
+So contemptuously did those fierce old sea-kings regard a peaceful
+life that they said of one who died quietly on his bed at home:
+"His was but a straw-death."] as Olaf of Sweden's bonder-man. May
 we not cut through these chains?"
 
 "As soon think of cutting the solid earth, king," said the helmsman.
@@ -592,3 +596,8 @@ old Bordeaux, came so many years before to the daring and sturdy
 young Olaf of Norway, the boy viking.
 
 
+
+
+
+
+###

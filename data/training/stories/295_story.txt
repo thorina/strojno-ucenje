@@ -1156,7 +1156,13 @@ There were the gentry in their coaches, dressed like Parisians fresh
 from the Boulevards; Amsterdam children in charity uniforms; girls
 from the Roman-Catholic Orphan-House, in sable gowns and white
 headbands; boys from the Burgher Asylum, with their black tights and
-short-skirted, harlequin coats.  There were old-fashioned gentlemen
+short-skirted, harlequin coats. [: This is not said in
+derision. Both the boys and girls of this institution wear garments
+quartered in red and black alternately. By making the dress thus
+conspicuous, the children are, in a measure, deterred from wrong-doing
+while going about the city. The Burgher Orphan-Asylum affords a
+comfortable home to several hundred boys and girls. Holland is famous
+for its charitable institutions.] There were old-fashioned gentlemen
 in cocked hats and velvet knee-breeches; old-fashioned ladies, too, in
 stiff, quilted skirts, and bodices of dazzling brocade. These were
 accompanied by servants bearing foot-stoves and cloaks. There were the
@@ -1675,3 +1681,8 @@ and bouquet in her apron, hugs them to her bosom, and darts off to
 search for her father and mother in the scattering crowd.
 
 
+
+
+
+
+###

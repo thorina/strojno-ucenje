@@ -1466,7 +1466,7 @@ quicksands spread for many a mile, between rich Cyrene and the
 Lotus-eaters' shore. But all these are but dreams and fables, and dim
 hints of unknown lands.
 
-
+[ A: The Danube.]
 
 But all say that they came to a place where they had to drag their ship
 across the land nine days with ropes and rollers, till they came into an
@@ -1495,13 +1495,13 @@ deep in the glens of the snow mountains; and to the fair land of
 Hermione, where dwelt the most righteous of all nations; and to the
 gates of the world below, and to the dwelling place of dreams.
 
+[ A: Between the Crimæa and Circassia.]
 
+[ B: The Sea of Azov.]
 
+[ C: The Ural Mountains.]
 
-
-
-
-
+[ D: The Baltic.]
 
 And at last Ancaios shouted: "Endure a little while, brave friends, the
 worst is surely past; for I can see the pure west wind ruffle the water,
@@ -1530,7 +1530,7 @@ But Lynceus the long sighted called gayly from the bows: "Take heart
 again, brave sailors; for I see a pine-clad isle, and the halls of the
 kind Earth mother, with a crown of clouds around them."
 
-
+[ A: Britain.]
 
 But Orpheus said: "Turn from them, for no living man can land there:
 there is no harbour on the coast, but steep-walled cliffs all round."
@@ -2237,3 +2237,8 @@ son, and Euphorbus the noble swineherd, and the old dog who licked his
 hand and died.
 
 
+
+
+
+
+###

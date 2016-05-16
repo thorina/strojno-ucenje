@@ -5437,7 +5437,9 @@ then she took to dancing again. Out over the lake she skipped and
 deep into the wood, where she threw her long, damp arms round the
 trunks of the trees.
 
-"Who are you, my friend?" asked the Night-Violet ,
+"Who are you, my friend?" asked the Night-Violet [: An
+inconspicuous flower which in Denmark is very fragrant in the
+evening, the "night-smelling rocket" (_Hesperis triatto_).],
 who stood there giving forth fragrance just to please herself.
 
 The Mist did not answer, but went on dancing.
@@ -11139,7 +11141,7 @@ was Submit's and Sarah's trysting-place. They met there every day and
 exchanged confidences. They loved each other like sisters--neither of
 them had an own sister--but to-day a spirit of rivalry had arisen.
 
-
+[ 1: From _Harper's Young People_, November 25, 1890.]
 
 The tough dry blackberry vines on the wall twisted around Submit; she
 looked, with her circle of red petticoat, like some strange late
@@ -11581,3 +11583,8 @@ vanished from the two little windows, and Submit and Sarah went down
 to their Thanksgiving dinners.
 
 
+
+
+
+
+###
