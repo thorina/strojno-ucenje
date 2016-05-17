@@ -5,7 +5,7 @@ from collections import Counter
 
 import nltk.tag.crf
 from nltk.tag import StanfordNERTagger
-from pattern.text import parsetree
+from pattern.text import parsetree, tokenize
 
 # current working directory = source
 NLTK_DATA_PATH = '../lib/nltk_data'
@@ -104,38 +104,35 @@ def purify_content(file_output):
     content = regex_illustration.sub('', content)
     return content
 
-#
-# def extract_characters():
-#
-#     for filename in os.listdir(SEPARATED_STORIES_PATH):
-#         file_path = SEPARATED_STORIES_PATH + '/' + filename
-#         with open(file_path, 'a+') as file_output:
-#             file_output.seek(0)
-#             content = file_output.read()
-            # parsed_content = parsetree(content, tokenize=True, tags=True, chunks=True, lemmata=True, relations=True)
-            #
-            # nouns = []
-            # for sentence in parsed_content:
-            #     for chunk in sentence.subjects:
-            #         for word in chunk:
-            #             if word.type == 'NN':
-            #                 nouns.append(word.string)
-            #
-            # counter = Counter(nouns)
-            # print counter.most_common(10)
-            # tokenized_text = word_tokenize(content)
-            # tagged_text = st.tag(tokenized_text)
-            #
-            # characters = []
-            # for entity in tagged_text:
-            #     if entity[1] == 'PERSON':
-            #         if entity[0] not in characters:
-            #             characters.append(entity[0])
-            #     print(entity[0] + ' ' + entity[1])
-            #
-            # character_string = '\n###\n'
-            # character_string += '\n'.join(characters)
-            # file.write(character_string)
 
-read_gutenberg_stripped_files()
-#extract_characters()
+def extract_characters():
+    characters = []
+    for filename in os.listdir(SEPARATED_STORIES_PATH):
+        file_path = SEPARATED_STORIES_PATH + '/' + filename
+        with open(file_path, 'a+') as file_output:
+            print filename
+            file_output.seek(0)
+            tokenized_content = tokenize(file_output.read(), punctuation=".,;:!?()[]{}`''\"@#$^&*+-|=~_", replace={})
+            parsed_content = parsetree(tokenized_content, tokenize=False, tags=True, chunks=True, lemmata=True, relations=True)
+
+            for sentence in parsed_content:
+                for word in sentence.words:
+                    if word.type == 'NN':
+                        characters.append(word.string)
+
+            tagged_text = st.tag(tokenized_content)
+            for entity in tagged_text:
+                if entity[1] == 'PERSON':
+                    if entity[0] not in characters:
+                        characters.append(entity[0])
+
+    counter = Counter(characters)
+    file_path = '../data/training/characters.txt'
+    with open(file_path, 'a+') as file_output:
+        for word, count in counter.most_common(1000):
+            file_output.write(word + '\tCHARACTER\n')
+        for word in characters:
+            file_output.write(word + '\tCHARACTER\n')
+
+# read_gutenberg_stripped_files()
+extract_characters()
