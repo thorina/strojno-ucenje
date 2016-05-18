@@ -1,8 +1,9 @@
 import os
 import re
-import tempfile
-from collections import Counter
 
+import regex
+import tempfile
+import csv
 import nltk.tag.crf
 from nltk.tag import StanfordNERTagger
 from pattern.text import parsetree, tokenize
@@ -20,10 +21,9 @@ GUTENBERG_FILES_PATH = '../data/gutenberg_stripped_files'
 
 # location for separated stories and characters files
 SEPARATED_STORIES_PATH = '../data/training/stories'
-STORY_SUFFIX = '_story.txt'
-
-CHARACTERS_PATH = "data/training/characters"
-CHARACTERS_SUFFIX = '_characters.txt'
+NER_LABELED_DATA_PATH = '../data/training/stanford-ner-training-data/'
+STORY_SUFFIX = '.txt'
+NER_SUFFIX = '.tsv'
 
 
 def read_gutenberg_stripped_files():
@@ -35,8 +35,8 @@ def read_gutenberg_stripped_files():
 def write_all_stories_to_tmp_file(temp):
     for filename in os.listdir(GUTENBERG_FILES_PATH):
         file_path = GUTENBERG_FILES_PATH + '/' + filename
-        with open(file_path, 'r') as file:
-            content = purify_content(file)
+        with open(file_path, 'r') as file_input:
+            content = purify_content(file_input)
             temp.write(content)
 
 
@@ -92,47 +92,39 @@ def check_if_current_lines_are_separator(i, lines):
 
 
 def purify_content(file_output):
-    regex_extra_whitespaces = re.compile('( ){2,}')
-    regex_footnote = re.compile('\[(footnote)[\w\s:_$&%"\',\-\.\?!\(\)\\\/]+\]', flags=re.IGNORECASE)
-    regex_footnotes = re.compile('(footnote)s?', flags=re.IGNORECASE)
-    regex_illustration = re.compile('\n*\[(illustration)[\w\s:_$&%"\',\-\.\?!\(\)\\\/]*\]', flags=re.IGNORECASE)
+    regex_extra_whitespaces = regex.compile('( ){2,}')
+    regex_footnote = regex.compile('\[(footnote)[\w\s:_$&%"\',\-\.\?!\(\)\\\/]+\]', flags=regex.IGNORECASE)
+    regex_footnotes = regex.compile('(footnote)s?', flags=regex.IGNORECASE)
+    regex_illustration = regex.compile('\n*\[(illustration)[\w\s:_$&%"\',\-\.\?!\(\)\\\/]*\]', flags=regex.IGNORECASE)
 
     content = file_output.read()
     content = regex_extra_whitespaces.sub(' ', content)
     content = regex_footnotes.sub('', content)
     content = regex_footnote.sub('', content)
     content = regex_illustration.sub('', content)
+    content = re.sub('(?<! )(?=[.,!?()])|(?<=[.,!?()])(?! )', r' ', content)
+
     return content
 
 
 def extract_characters():
-    characters = []
+    i = 1
+    n = len(os.listdir(SEPARATED_STORIES_PATH))
     for filename in os.listdir(SEPARATED_STORIES_PATH):
         file_path = SEPARATED_STORIES_PATH + '/' + filename
-        with open(file_path, 'a+') as file_output:
-            print filename
-            file_output.seek(0)
-            tokenized_content = tokenize(file_output.read(), punctuation=".,;:!?()[]{}`''\"@#$^&*+-|=~_", replace={})
+        file_name_tsv = filename.replace('txt', 'tsv')
+        with open(file_path, 'r') as file_output:
+            print str(i) + '/' + str(n) + ' ' + filename
+            i += 1
+            tokenized_content = tokenize(file_output.read(), punctuation='', replace={})
             parsed_content = parsetree(tokenized_content, tokenize=False, tags=True, chunks=True, lemmata=True, relations=True)
 
-            for sentence in parsed_content:
-                for word in sentence.words:
-                    if word.type == 'NN':
-                        characters.append(word.string)
+            with open(NER_LABELED_DATA_PATH + file_name_tsv, 'wb') as csv_file:
+                csv_writer = csv.writer(csv_file, delimiter='\t')
+                for sentence in parsed_content:
+                    for word in sentence.words:
+                        csv_writer.writerow(['O'] + [word.string.encode('utf-8')])
 
-            tagged_text = st.tag(tokenized_content)
-            for entity in tagged_text:
-                if entity[1] == 'PERSON':
-                    if entity[0] not in characters:
-                        characters.append(entity[0])
 
-    counter = Counter(characters)
-    file_path = '../data/training/characters.txt'
-    with open(file_path, 'a+') as file_output:
-        for word, count in counter.most_common(1000):
-            file_output.write(word + '\tCHARACTER\n')
-        for word in characters:
-            file_output.write(word + '\tCHARACTER\n')
-
-# read_gutenberg_stripped_files()
+read_gutenberg_stripped_files()
 extract_characters()
