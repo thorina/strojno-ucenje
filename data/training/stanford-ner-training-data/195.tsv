@@ -498,7 +498,8 @@ O	,
 O	he
 O	growled
 O	out:
-O	"""SOMEBODY"
+O	""""
+O	SOMEBODY
 O	HAS
 O	BEEN
 O	TASTING
@@ -517,7 +518,8 @@ O	bowl
 O	,
 O	and
 O	said:
-O	"""Somebody"
+O	""""
+O	Somebody
 O	Has
 O	Been
 O	Tasting
@@ -530,7 +532,8 @@ O	the
 O	Little
 O	Bear
 O	piped:
-O	"""_Somebody"
+O	""""
+O	_Somebody
 O	has
 O	tasted
 O	my
@@ -541,7 +544,8 @@ O	it
 O	all
 O	up
 O	!
-O	"_"""
+O	_
+O	""""
 O	Then
 O	they
 O	went
@@ -554,7 +558,8 @@ O	the
 O	Big
 O	Bear
 O	growled:
-O	"""SOMEBODY"
+O	""""
+O	SOMEBODY
 O	HAS
 O	BEEN
 O	SITTING
@@ -568,7 +573,8 @@ O	the
 O	Middle-sized
 O	Bear
 O	said:
-O	"""Somebody"
+O	""""
+O	Somebody
 O	Has
 O	Been
 O	Sitting
@@ -582,7 +588,8 @@ O	the
 O	Little
 O	Bear
 O	piped:
-O	"""_Somebody"
+O	""""
+O	_Somebody
 O	has
 O	been
 O	sitting
@@ -598,7 +605,8 @@ O	all
 O	to
 O	pieces
 O	!
-O	"_"""
+O	_
+O	""""
 O	So
 O	they
 O	went
@@ -612,7 +620,8 @@ O	the
 O	Big
 O	Bear
 O	growled:
-O	"""SOMEBODY"
+O	""""
+O	SOMEBODY
 O	HAS
 O	BEEN
 O	TUMBLING
@@ -625,7 +634,8 @@ O	the
 O	Middle-sized
 O	Bear
 O	said:
-O	"""Somebody"
+O	""""
+O	Somebody
 O	Has
 O	Been
 O	Tumbling
@@ -638,7 +648,8 @@ O	the
 O	little
 O	Bear
 O	piped:
-O	"""_Somebody"
+O	""""
+O	_Somebody
 O	has
 O	been
 O	tumbling
@@ -650,7 +661,8 @@ O	here
 O	she
 O	is
 O	!
-O	"_"""
+O	_
+O	""""
 O	At
 O	that
 O	,
@@ -684,7 +696,8 @@ O	went
 O	near
 O	the
 O	Three
-O	Bears'
+O	Bears
+O	'
 O	snug
 O	little
 O	house

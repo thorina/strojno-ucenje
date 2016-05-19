@@ -57,7 +57,8 @@ O	those
 O	evenings
 O	when
 O	the
-O	dragon-flies'
+O	dragon-flies
+O	'
 O	iridescent
 O	wings
 O	are
@@ -104,7 +105,8 @@ O	the
 O	quiet
 O	water
 O	.
-O	"""Krroak"
+O	""""
+O	Krroak
 O	!
 O	krroak
 O	!
@@ -112,7 +114,9 @@ O	krroak
 O	!
 O	""""
 O	they
-O	"go--""krroak"
+O	go--
+O	""""
+O	krroak
 O	!
 O	krroak
 O	!
@@ -539,7 +543,8 @@ O	pressed
 O	very
 O	hard
 O	.
-O	"""Surely"
+O	""""
+O	Surely
 O	,
 O	good
 O	people
@@ -556,7 +561,8 @@ O	sad
 O	and
 O	low
 O	,
-O	"""water"
+O	""""
+O	water
 O	is
 O	free
 O	to
@@ -826,7 +832,8 @@ O	sea
 O	at
 O	even
 O	.
-O	"""Shameless"
+O	""""
+O	Shameless
 O	ones
 O	!
 O	""""
@@ -850,7 +857,8 @@ O	forest
 O	and
 O	mountain
 O	.
-O	"""Ah"
+O	""""
+O	Ah
 O	!
 O	shameless
 O	ones
@@ -982,13 +990,15 @@ O	would
 O	come
 O	only
 O	the
-O	"""_Krroak"
+O	""""
+O	_Krroak
 O	!
 O	krroak
 O	!
 O	krroak
 O	!
-O	"_"""
+O	_
+O	""""
 O	that
 O	we
 O	know
@@ -1212,7 +1222,9 @@ O	to
 O	frogs
 O	Railed
 O	at
-O	Latona's
+O	Latona
+O	'
+O	s
 O	twin-born
 O	progeny
 O	,
@@ -1302,7 +1314,8 @@ O	decrees
 O	of
 O	destiny
 O	.
-O	"""We"
+O	""""
+O	We
 O	did
 O	not
 O	know
@@ -1326,4 +1339,5 @@ O	krroak
 O	!
 O	krroak
 O	!
-O	"_"""
+O	_
+O	""""

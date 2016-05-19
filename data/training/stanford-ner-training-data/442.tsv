@@ -53,7 +53,9 @@ O	our
 O	Galloway
 O	as
 O	an
-O	emperor's
+O	emperor
+O	'
+O	s
 O	robe
 O	,
 O	had
@@ -195,7 +197,8 @@ O	should
 O	forthwith
 O	and
 O	immediately
-O	"""tell"
+O	""""
+O	tell
 O	them
 O	something
 O	.
@@ -215,7 +218,8 @@ O	a
 O	general
 O	demand
 O	for
-O	"""another"
+O	""""
+O	another
 O	,
 O	""""
 O	and
@@ -250,9 +254,11 @@ O	no
 O	fewer
 O	than
 O	twenty-four
-O	"""all"
+O	""""
+O	all
 O	the
-O	"same"""
+O	same
+O	""""
 O	upon
 O	the
 O	shelf

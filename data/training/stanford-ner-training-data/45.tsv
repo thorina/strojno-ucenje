@@ -899,7 +899,9 @@ O	a
 O	journal
 O	of
 O	every
-O	day's
+O	day
+O	'
+O	s
 O	employment;
 O	for
 O	,
@@ -1264,7 +1266,9 @@ O	and
 O	look
 O	at
 O	our
-O	ship's
+O	ship
+O	'
+O	s
 O	boat
 O	,
 O	which
@@ -2043,7 +2047,9 @@ O	answer
 O	which
 O	I
 O	gave
-O	"myself--""Let"
+O	myself--
+O	""""
+O	Let
 O	me
 O	first
 O	make

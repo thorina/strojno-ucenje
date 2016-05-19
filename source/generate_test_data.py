@@ -102,7 +102,7 @@ def purify_content(file_output):
     content = regex_footnotes.sub('', content)
     content = regex_footnote.sub('', content)
     content = regex_illustration.sub('', content)
-    content = re.sub('(?<! )(?=[.,!?()])|(?<=[.,!?()])(?! )', r' ', content)
+    content = re.sub('(?<! \"\')(?=[.,!?()\"\'])|(?<=[.,!?()\"\'])(?! )', r' ', content)
 
     return content
 
@@ -111,6 +111,8 @@ def extract_characters():
     i = 1
     n = len(os.listdir(SEPARATED_STORIES_PATH))
     for filename in os.listdir(SEPARATED_STORIES_PATH):
+        if filename == '1.txt' or filename == '2.txt':
+            continue
         file_path = SEPARATED_STORIES_PATH + '/' + filename
         file_name_tsv = filename.replace('txt', 'tsv')
         with open(file_path, 'r') as file_output:
@@ -122,7 +124,7 @@ def extract_characters():
             with open(NER_LABELED_DATA_PATH + file_name_tsv, 'wb') as csv_file:
                 csv_writer = csv.writer(csv_file, delimiter='\t')
                 for sentence in parsed_content:
-                    for word in sentence.words:
+                    for word in sentence:
                         csv_writer.writerow(['O'] + [word.string.encode('utf-8')])
 
 

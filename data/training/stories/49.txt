@@ -42,7 +42,7 @@ The last of these voyages not proving very fortunate , I grew weary
 of the sea , and intended to stay at home with my wife and family . 
 I removed from the Old Jewry to Fetter Lane , and from thence to
 Wapping , hoping to get business among the sailors; but it would
-not turn to account . After three years' expectation that things
+not turn to account . After three years ' expectation that things
 would mend , I accepted an advantageous offer from Captain William
 Prichard , master of the _Antelope_ , who was making a voyage
 to the South Sea . We set sail from Bristol , May 4 , 1699 , and our
@@ -52,12 +52,12 @@ It would not be proper , for some reasons , to trouble the reader
 with the particulars of our adventures in those seas; let it
 suffice to inform him , that , in our passage from thence to the
 East Indies , we were driven by a violent storm to the northwest of
-Van Diemen's Land . By an observation we found ourselves in the
+Van Diemen ' s Land . By an observation we found ourselves in the
 latitude of 30 degrees 2 minutes south . Twelve of our crew were
 dead by immoderate labor , and ill food , the rest were in a very
 weak condition . On the fifth of November , which was the beginning
 of summer in those parts , the weather being very hazy , the seamen
-spied a rock , within half a cable's length of the ship; but the
+spied a rock , within half a cable ' s length of the ship; but the
 wind was so strong that we were driven directly upon it , and
 immediately split . Six of the crew , of whom I was one , having let
 down the boat into the sea , made a shift to get clear of the ship
@@ -74,7 +74,7 @@ could feel no bottom; but when I was almost gone , and able to
 struggle no longer , I found myself within my depth; and by this
 time the storm was much abated . The declivity was so small , that I
 walked near a mile before I got to the shore , which I conjectured
-was about eight o'clock in the evening . I then advanced forward
+was about eight o ' clock in the evening . I then advanced forward
 near half a mile , but could not discover any sign of houses or
 inhabitants; at least I was in so weak a condition that I did not
 observe them . I was extremely tired , and with that , and the heat
@@ -96,7 +96,7 @@ gently forward , over my breast , came almost up to my chin; when
 bending my eyes downward as much as I could , I perceived it to be
 a human creature not six inches high , with a bow and arrow in his
 hands , and a quiver at his back . In the meantime , I felt at least
-forty more of the same kind ( as I conjectured ) following the
+forty more of the same kind  ( as I conjectured ) following the
 first . I was in the utmost astonishment , and roared so loud , that
 they all ran back in a fright; and some of them , as I was
 afterwards told , were hurt with the falls they got by leaping from
@@ -119,7 +119,7 @@ and after it ceased , I heard one of them cry-aloud , Tolgo phonac;
 when in an instant I felt above an hundred arrows discharged on my
 left hand , which pricked me like so many needles; and besides , 
 they shot another flight into the air , as we do bombs in Europe , 
-whereof many I suppose fell on my body ( though I felt them not ) , 
+whereof many I suppose fell on my body  ( though I felt them not ) , 
 and some on my face , which I immediately covered with my left
 hand . When this shower of arrows was over , I fell a-groaning with
 grief and pain , and then striving again to get loose , they
@@ -143,7 +143,7 @@ mount it; from whence one of them , who seemed to be a person of
 quality , made me a long speech , whereof I understood not one
 syllable . But I should have mentioned , that before the principal
 person began his oration , he cried out three times , _Langro
-dehul san_ ( these words and the former were afterwards repeated
+dehul san_  ( these words and the former were afterwards repeated
 and explained to me ) . Whereupon immediately about fifty of the
 inhabitants came and cut the strings that fastened the left side
 of my head , which gave me the liberty of turning it to the right , 
@@ -159,15 +159,15 @@ lifting up my left hand and both my eyes to the sun , as calling
 him for a witness; and , being almost famished with hunger , having
 not eaten a morsel for some hours before I left the ship , I found
 the demands of nature so strong upon me , that I could not forbear
-showing my impatience ( perhaps against the strict rules of
+showing my impatience  ( perhaps against the strict rules of
 decency ) by putting my finger frequently to my mouth , to signify
-that I wanted food . The _Hurgo_ ( for so they call a great
+that I wanted food . The _Hurgo_  ( for so they call a great
 lord , as I afterwards learnt ) understood me very well . He
 descended from the stage , and commanded that several ladders
 should be applied to my sides , on which above an hundred of the
 inhabitants mounted , and walked towards my mouth , laden with
 baskets full of meat , which had been provided and sent thither by
-the king's orders , upon the first intelligence he received of me . 
+the king ' s orders , upon the first intelligence he received of me . 
 I observed there was the flesh of several animals , but could not
 distinguish them by the taste . There were shoulders , legs , and
 loins , shaped like those of mutton , and very well dressed , but
@@ -214,8 +214,8 @@ resolution; often pointing forwards , which , as I afterwards found ,
 was towards the capital city , about half a mile distant , whither , 
 it was agreed by his Majesty in council , that I must be conveyed . 
 I answered in few words , but to no purpose , and made a sign with
-my hand that was loose , putting it to the other ( but over his
-Excellency's head , for fear of hurting him or his train ) and then
+my hand that was loose , putting it to the other  ( but over his
+Excellency ' s head , for fear of hurting him or his train ) and then
 to my own head and body , to signify that I desired my liberty . It
 appeared that he understood me well enough , for he shook his head
 by way of disapprobation , and held his hand in a posture , to show
@@ -238,13 +238,13 @@ removed all the smart of their arrows . These circumstances , added
 to the refreshment I had received by their victuals and drink , 
 which were very nourishing , disposed me to sleep . I slept about
 eight hours , as I was afterwards assured; and it was no wonder , 
-for the physicians , by the emperor's order had mingled a sleepy
+for the physicians , by the emperor ' s order had mingled a sleepy
 potion in the hogsheads of wine . 
 
 It seems that , upon the first moment I was discovered sleeping on
 the ground after my landing , the emperor had early notice of it by
 an express; and determined in council that I should be tied in the
-manner I have related ( which was done in the night while I slept ) , 
+manner I have related  ( which was done in the night while I slept ) , 
 that plenty of meat and drink should be sent to me , and a machine
 prepared to carry me to the capital city . 
 
@@ -284,7 +284,7 @@ fastened on the poles , and thus , in less than three hours , I was
 raised , and flung into the engine , and there tied fast . All this I
 was told , for , while the whole operation was performing , I lay in
 a profound sleep , by the force of that soporiferous medicine
-infused into my liquor . Fifteen hundred of the emperor's largest
+infused into my liquor . Fifteen hundred of the emperor ' s largest
 horses , each about four inches and an half high , were employed to
 draw me towards the metropolis , which , as I said , was half a mile
 distant . 
@@ -318,8 +318,8 @@ determined I should lodge . The great gate fronting to the north ,
 was about four feet high , and almost two feet wide , through which
 I could easily creep . On each side of the gate was a small window , 
 not above six inches from the ground; into that on the left side , 
-the king's smith conveyed fourscore and eleven chains , like those
-that hang to a lady's watch in Europe , and almost as large , which
+the king ' s smith conveyed fourscore and eleven chains , like those
+that hang to a lady ' s watch in Europe , and almost as large , which
 were locked to my left leg , with six and thirty padlocks . Over
 against this temple , on the other side of the great highway , at
 twenty feet distance , there was a turret at least five feet high . 

@@ -203,7 +203,8 @@ O	he
 O	cried
 O	aloud
 O	,
-O	"""Some"
+O	""""
+O	Some
 O	one
 O	will
 O	come
@@ -266,7 +267,8 @@ O	voice
 O	he
 O	cried
 O	,
-O	"""Some"
+O	""""
+O	Some
 O	one
 O	will
 O	come
@@ -341,7 +343,8 @@ O	to
 O	the
 O	man
 O	,
-O	"""I"
+O	""""
+O	I
 O	was
 O	near;
 O	I
@@ -609,7 +612,8 @@ O	to
 O	the
 O	man
 O	,
-O	"""I"
+O	""""
+O	I
 O	will
 O	go
 O	now
@@ -855,7 +859,8 @@ O	,
 O	then
 O	said
 O	,
-O	"""I"
+O	""""
+O	I
 O	must
 O	leave
 O	you
@@ -915,7 +920,9 @@ O	nest
 O	close
 O	to
 O	the
-O	hunter's
+O	hunter
+O	'
+O	s
 O	home
 O	lodge
 O	.

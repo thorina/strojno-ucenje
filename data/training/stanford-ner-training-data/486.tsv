@@ -142,7 +142,8 @@ O	stir
 O	a
 O	limb
 O	.
-O	"""Get"
+O	""""
+O	Get
 O	out
 O	of
 O	my
@@ -153,7 +154,8 @@ O	cried
 O	the
 O	Maple
 O	.
-O	"""I"
+O	""""
+O	I
 O	am
 O	greater
 O	than
@@ -177,7 +179,8 @@ O	to
 O	drink
 O	.
 O	""""
-O	"""Indeed"
+O	""""
+O	Indeed
 O	,
 O	I
 O	will
@@ -188,7 +191,8 @@ O	said
 O	the
 O	Ash
 O	.
-O	"""I"
+O	""""
+O	I
 O	am
 O	greater
 O	than
@@ -274,7 +278,8 @@ O	quarrel
 O	was
 O	about
 O	.
-O	"""I"
+O	""""
+O	I
 O	am
 O	greater
 O	than
@@ -310,7 +315,8 @@ O	against
 O	the
 O	Ash
 O	.
-O	"""No"
+O	""""
+O	No
 O	,
 O	you
 O	are
@@ -336,7 +342,8 @@ O	his
 O	strong
 O	elbow
 O	.
-O	"""I"
+O	""""
+O	I
 O	am
 O	greater
 O	than
@@ -384,7 +391,8 @@ O	said
 O	,
 O	softly
 O	,
-O	"""You"
+O	""""
+O	You
 O	,
 O	O
 O	Maple
@@ -419,7 +427,8 @@ O	his
 O	bow
 O	.
 O	""""
-O	"""Who"
+O	""""
+O	Who
 O	does
 O	,
 O	then
@@ -429,7 +438,8 @@ O	they
 O	asked
 O	defiantly
 O	.
-O	"""Listen"
+O	""""
+O	Listen
 O	,
 O	""""
 O	said
@@ -437,7 +447,8 @@ O	the
 O	South
 O	Wind
 O	,
-O	"""and"
+O	""""
+O	and
 O	you
 O	shall
 O	hear
@@ -514,7 +525,8 @@ O	heard
 O	,
 O	singing
 O	,
-O	"""_San"
+O	""""
+O	_San
 O	noh-eh
 O	!
 O	San
@@ -523,11 +535,13 @@ O	!
 O	San
 O	noh-eh
 O	!
-O	"_"""
+O	_
+O	""""
 O	which
 O	means
 O	,
-O	"""The"
+O	""""
+O	The
 O	Mother
 O	of
 O	all
@@ -667,7 +681,8 @@ O	heard
 O	,
 O	singing
 O	,
-O	"""_San"
+O	""""
+O	_San
 O	noh-eh
 O	!
 O	San
@@ -676,4 +691,5 @@ O	!
 O	San
 O	noh-eh
 O	!
-O	"_"""
+O	_
+O	""""

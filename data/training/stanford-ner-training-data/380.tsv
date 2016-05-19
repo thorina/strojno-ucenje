@@ -101,7 +101,9 @@ O	one
 O	in
 O	all
 O	the
-O	king's
+O	king
+O	'
+O	s
 O	host
 O	but
 O	lifted
@@ -128,7 +130,9 @@ O	on
 O	his
 O	face
 O	on
-O	Roland's
+O	Roland
+O	'
+O	s
 O	body
 O	,
 O	with
@@ -173,7 +177,9 @@ O	babe
 O	Roland
 O	from
 O	his
-O	mother's
+O	mother
+O	'
+O	s
 O	arms
 O	.
 O	He
@@ -219,7 +225,8 @@ O	of
 O	all
 O	the
 O	seven
-O	years'
+O	years
+O	'
 O	war
 O	to
 O	have
@@ -578,7 +585,8 @@ O	.
 O	He
 O	said
 O	,
-O	"""O"
+O	""""
+O	O
 O	Roland
 O	,
 O	my
@@ -782,7 +790,8 @@ O	For
 O	she
 O	said
 O	,
-O	"""I"
+O	""""
+O	I
 O	would
 O	be
 O	pleasing
@@ -821,7 +830,9 @@ O	the
 O	palace
 O	.
 O	The
-O	king's
+O	king
+O	'
+O	s
 O	guards
 O	all
 O	drew
@@ -858,7 +869,9 @@ O	king
 O	,
 O	saying
 O	,
-O	"--""Roland"
+O	--
+O	""""
+O	Roland
 O	,
 O	the
 O	captain
@@ -885,7 +898,8 @@ O	.
 O	He
 O	said
 O	,
-O	"""Dear"
+O	""""
+O	Dear
 O	sister
 O	,
 O	sweet
@@ -979,6 +993,8 @@ O	fell
 O	dead
 O	at
 O	the
-O	king's
+O	king
+O	'
+O	s
 O	feet
 O	.

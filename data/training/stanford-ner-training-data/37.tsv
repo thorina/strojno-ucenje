@@ -1448,7 +1448,8 @@ O	stole
 O	his
 O	goods
 O	.
-O	"""You"
+O	""""
+O	You
 O	will
 O	treat
 O	me
@@ -1457,7 +1458,8 @@ O	""""
 O	replied
 O	I
 O	,
-O	"""with"
+O	""""
+O	with
 O	more
 O	civility
 O	,
@@ -1654,13 +1656,15 @@ O	me
 O	any
 O	injury
 O	,
-O	"""No"
+O	""""
+O	No
 O	,
 O	""""
 O	said
 O	he
 O	,
-O	"""I"
+O	""""
+O	I
 O	am
 O	very
 O	well

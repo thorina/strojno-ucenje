@@ -3213,7 +3213,9 @@ O	manner
 O	drank
 O	to
 O	her
-O	ladyship's
+O	ladyship
+O	'
+O	s
 O	health
 O	,
 O	expressing
@@ -3579,7 +3581,9 @@ O	of
 O	dinner
 O	,
 O	my
-O	mistress's
+O	mistress
+O	'
+O	s
 O	favorite
 O	cat
 O	leaped
@@ -3658,7 +3662,9 @@ O	The
 O	fierceness
 O	of
 O	this
-O	creature's
+O	creature
+O	'
+O	s
 O	countenance
 O	altogether
 O	discomposed
@@ -4035,7 +4041,9 @@ O	a
 O	cable
 O	to
 O	the
-O	child's
+O	child
+O	'
+O	s
 O	waist
 O	.
 O	I
@@ -4134,7 +4142,8 @@ O	sight
 O	.
 O	He
 O	said
-O	"""he"
+O	""""
+O	he
 O	could
 O	discover
 O	great
@@ -4169,7 +4178,9 @@ O	several
 O	colors
 O	,
 O	altogether
-O	"disagreeable"";"
+O	disagreeable
+O	""""
+O	;
 O	although
 O	I
 O	must
@@ -4213,7 +4224,9 @@ O	the
 O	ladies
 O	in
 O	that
-O	emperor's
+O	emperor
+O	'
+O	s
 O	court
 O	,
 O	he
@@ -4222,7 +4235,8 @@ O	to
 O	tell
 O	me
 O	,
-O	"""one"
+O	""""
+O	one
 O	had
 O	freckles
 O	,
@@ -4237,7 +4251,9 @@ O	third
 O	too
 O	large
 O	a
-O	"nose"";"
+O	nose
+O	""""
+O	;
 O	nothing
 O	of
 O	which
@@ -4297,7 +4313,9 @@ O	the
 O	features
 O	of
 O	my
-O	master's
+O	master
+O	'
+O	s
 O	countenance
 O	,
 O	although

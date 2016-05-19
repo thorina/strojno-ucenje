@@ -253,7 +253,9 @@ O	coon
 O	laughed
 O	at
 O	the
-O	fox's
+O	fox
+O	'
+O	s
 O	plight
 O	,
 O	then
@@ -479,7 +481,8 @@ O	little
 O	birds
 O	said
 O	,
-O	"""We"
+O	""""
+O	We
 O	do
 O	not
 O	like

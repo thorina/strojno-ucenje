@@ -81,7 +81,8 @@ O	was
 O	baking
 O	cakes
 O	.
-O	"""I"
+O	""""
+O	I
 O	am
 O	very
 O	hungry
@@ -91,7 +92,8 @@ O	the
 O	man
 O	said
 O	.
-O	"""Will"
+O	""""
+O	Will
 O	you
 O	please
 O	give
@@ -127,7 +129,8 @@ O	.
 O	She
 O	said
 O	,
-O	"""I"
+O	""""
+O	I
 O	will
 O	not
 O	give
@@ -153,7 +156,8 @@ O	hungry
 O	man
 O	said
 O	,
-O	"""I"
+O	""""
+O	I
 O	will
 O	wait
 O	.
@@ -217,7 +221,8 @@ O	Again
 O	she
 O	said
 O	,
-O	"""I"
+O	""""
+O	I
 O	will
 O	not
 O	give
@@ -243,7 +248,8 @@ O	the
 O	man
 O	said
 O	,
-O	"""I"
+O	""""
+O	I
 O	will
 O	wait
 O	.
@@ -270,7 +276,8 @@ O	into
 O	a
 O	cake
 O	.
-O	"""Surely"
+O	""""
+O	Surely
 O	,
 O	this
 O	will
@@ -314,7 +321,8 @@ O	to
 O	give
 O	away
 O	.
-O	"""I"
+O	""""
+O	I
 O	will
 O	not
 O	give
@@ -331,7 +339,8 @@ O	to
 O	the
 O	man
 O	.
-O	"""Go"
+O	""""
+O	Go
 O	to
 O	the
 O	woods
@@ -397,7 +406,8 @@ O	for
 O	the
 O	light
 O	.
-O	"""I"
+O	""""
+O	I
 O	am
 O	the
 O	Great
@@ -407,7 +417,8 @@ O	""""
 O	said
 O	he
 O	,
-O	"""and"
+O	""""
+O	and
 O	you
 O	are
 O	a
@@ -518,7 +529,8 @@ O	it
 O	became
 O	red
 O	.
-O	"""Always"
+O	""""
+O	Always
 O	shall
 O	you
 O	wear
@@ -530,7 +542,8 @@ O	""""
 O	he
 O	said
 O	,
-O	"""as"
+O	""""
+O	as
 O	a
 O	mark
 O	of
@@ -609,7 +622,9 @@ O	see
 O	now
 O	on
 O	the
-O	woodpecker's
+O	woodpecker
+O	'
+O	s
 O	back
 O	.
 O	Ever

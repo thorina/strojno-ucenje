@@ -37,7 +37,8 @@ O	not
 O	like
 O	it
 O	.
-O	"""The"
+O	""""
+O	The
 O	fox
 O	is
 O	getting
@@ -50,7 +51,8 @@ O	said
 O	the
 O	coon
 O	.
-O	"""This"
+O	""""
+O	This
 O	must
 O	not
 O	be
@@ -103,7 +105,9 @@ O	one
 O	must
 O	play
 O	a
-O	'fox'
+O	'
+O	fox
+O	'
 O	trick
 O	on
 O	him
@@ -187,7 +191,8 @@ O	bear
 O	had
 O	stopped
 O	.
-O	"""What"
+O	""""
+O	What
 O	tastes
 O	so
 O	good
@@ -232,7 +237,8 @@ O	and
 O	ate
 O	it
 O	.
-O	"""Fine"
+O	""""
+O	Fine
 O	!
 O	Fine
 O	!
@@ -249,7 +255,8 @@ O	the
 O	last
 O	mouthful
 O	.
-O	"""Where"
+O	""""
+O	Where
 O	did
 O	you
 O	get
@@ -325,7 +332,8 @@ O	juicy
 O	yellow
 O	apples
 O	.
-O	"""But"
+O	""""
+O	But
 O	you
 O	can
 O	climb
@@ -351,9 +359,12 @@ O	whined
 O	the
 O	fox
 O	.
-O	"""Oh"
+O	""""
+O	Oh
 O	,
-O	that's
+O	that
+O	'
+O	s
 O	easy
 O	,
 O	""""
@@ -361,7 +372,8 @@ O	said
 O	the
 O	coon
 O	.
-O	"""Just"
+O	""""
+O	Just
 O	back
 O	off
 O	two
@@ -455,7 +467,8 @@ O	coon
 O	had
 O	said
 O	.
-O	"""What"
+O	""""
+O	What
 O	a
 O	fine
 O	open
@@ -469,7 +482,8 @@ O	thought
 O	the
 O	fox
 O	.
-O	"""I"
+O	""""
+O	I
 O	will
 O	get
 O	such
