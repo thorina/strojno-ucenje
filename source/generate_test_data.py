@@ -17,16 +17,16 @@ st = StanfordNERTagger('../lib/stanford-ner/classifiers/english.all.3class.dists
                        encoding='utf-8')
 
 # location for gutenberg files from which headers, table of contents, intro etc. have been removed
-GUTENBERG_FILES_PATH = '../data/gutenberg_stripped_files'
+GUTENBERG_FILES_PATH = '../data/gutenberg-files'
 
 # location for separated stories and characters files
-SEPARATED_STORIES_PATH = '../data/training/stories'
-NER_LABELED_DATA_PATH = '../data/training/stanford-ner-training-data/'
+SEPARATED_STORIES_PATH = '../data/stories'
+NER_LABELED_DATA_PATH = '../data/generated-tsv-files'
 STORY_SUFFIX = '.txt'
 NER_SUFFIX = '.tsv'
 
 
-def read_gutenberg_stripped_files():
+def generate_stories_files():
     with tempfile.NamedTemporaryFile(mode='w+t') as temp:
         write_all_stories_to_tmp_file(temp)
         separate_stories(temp)
@@ -102,7 +102,7 @@ def purify_content(file_output):
     content = regex_footnotes.sub('', content)
     content = regex_footnote.sub('', content)
     content = regex_illustration.sub('', content)
-    content = re.sub('(?<! \"\'(\-\-))(?=[.,!?()\"\'])|(?<=[.,!?()\"\'])(?! )', r' ', content)
+    content = re.sub('(?<! \"\':\-{2})(?=[.,!?()\"\':])|(?<=[.,!?()\"\':])(?! )', r' ', content)
 
     return content
 
@@ -119,12 +119,12 @@ def generate_stanford_ner_training_data():
             tokenized_content = tokenize(file_output.read(), punctuation='', replace={})
             parsed_content = parsetree(tokenized_content, tokenize=False, tags=True, chunks=True, lemmata=True, relations=True)
 
-            with open(NER_LABELED_DATA_PATH + file_name_tsv, 'wb') as csv_file:
+            with open(NER_LABELED_DATA_PATH + '/' + file_name_tsv, 'wb') as csv_file:
                 csv_writer = csv.writer(csv_file, delimiter='\t')
                 for sentence in parsed_content:
                     for word in sentence:
                         csv_writer.writerow(['O'] + [word.string.encode('utf-8')])
 
 
-read_gutenberg_stripped_files()
+generate_stories_files()
 generate_stanford_ner_training_data()
