@@ -102,17 +102,15 @@ def purify_content(file_output):
     content = regex_footnotes.sub('', content)
     content = regex_footnote.sub('', content)
     content = regex_illustration.sub('', content)
-    content = re.sub('(?<! \"\')(?=[.,!?()\"\'])|(?<=[.,!?()\"\'])(?! )', r' ', content)
+    content = re.sub('(?<! \"\'(\-\-))(?=[.,!?()\"\'])|(?<=[.,!?()\"\'])(?! )', r' ', content)
 
     return content
 
 
-def extract_characters():
+def generate_stanford_ner_training_data():
     i = 1
     n = len(os.listdir(SEPARATED_STORIES_PATH))
     for filename in os.listdir(SEPARATED_STORIES_PATH):
-        if filename == '1.txt' or filename == '2.txt':
-            continue
         file_path = SEPARATED_STORIES_PATH + '/' + filename
         file_name_tsv = filename.replace('txt', 'tsv')
         with open(file_path, 'r') as file_output:
@@ -129,4 +127,4 @@ def extract_characters():
 
 
 read_gutenberg_stripped_files()
-extract_characters()
+generate_stanford_ner_training_data()
