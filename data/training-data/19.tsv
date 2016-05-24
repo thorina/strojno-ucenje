@@ -207,7 +207,8 @@ C	sister
 O	,
 O	I
 O	am
-O	thirsty;
+O	thirsty
+O	;
 O	I
 O	would
 O	go
@@ -315,7 +316,8 @@ C	brother
 O	stooped
 O	down
 O	to
-O	drink;
+O	drink
+O	;
 O	but
 O	his
 C	sister
@@ -417,7 +419,8 @@ O	me
 O	will
 O	become
 O	a
-O	wolf;
+O	wolf
+O	;
 O	who
 O	drinks
 O	of
@@ -572,7 +575,8 @@ O	and
 O	drank
 O	of
 O	the
-O	water;
+O	water
+O	;
 O	and
 O	as
 O	soon
@@ -586,7 +590,9 @@ O	lips
 O	,
 O	there
 O	he
-O	lay--a
+O	lay
+O	--
+O	a
 O	white
 C	roe
 O	.
@@ -705,7 +711,8 @@ O	into
 O	which
 O	the
 O	maiden
-O	peeped;
+O	peeped
+O	;
 O	and
 O	as
 O	it
@@ -736,7 +743,8 @@ O	and
 O	moss
 O	for
 O	the
-C	roe;
+C	roe
+O	;
 O	and
 O	every
 O	morning
@@ -752,7 +760,8 @@ O	,
 O	and
 O	nuts
 O	for
-O	herself;
+O	herself
+O	;
 O	and
 O	for
 O	the
@@ -811,7 +820,8 @@ O	and
 O	went
 O	sweetly
 O	to
-O	sleep;
+O	sleep
+O	;
 O	and
 O	if
 O	her
@@ -922,7 +932,8 @@ O	I
 O	can
 O	no
 O	longer
-O	refrain;
+O	refrain
+O	;
 O	""""
 O	and
 O	he
@@ -976,7 +987,8 @@ C	sister
 O	,
 O	let
 O	me
-O	in;
+O	in
+O	;
 O	'
 O	but
 O	if
@@ -1032,7 +1044,8 @@ O	they
 O	could
 O	not
 O	catch
-O	him;
+O	him
+O	;
 O	for
 O	when
 O	they
@@ -1141,7 +1154,8 @@ C	sister
 O	,
 O	open
 O	the
-O	door;
+O	door
+O	;
 O	I
 O	must
 O	go
@@ -1217,7 +1231,8 @@ O	chase
 O	lasted
 O	the
 O	whole
-O	day;
+O	day
+O	;
 O	at
 O	last
 O	,
@@ -1288,7 +1303,8 @@ O	and
 O	immediately
 O	shut
 O	to
-O	again;
+O	again
+O	;
 O	so
 O	he
 O	went
@@ -1333,7 +1349,8 @@ O	her
 O	white
 C	roe
 O	was
-O	wounded;
+O	wounded
+O	;
 O	she
 O	washed
 O	off
@@ -1399,7 +1416,8 @@ O	""""
 O	I
 O	cannot
 O	keep
-O	away;
+O	away
+O	;
 O	I
 O	must
 O	go
@@ -1439,7 +1457,8 @@ O	forsaken
 O	by
 O	all
 O	the
-O	world;
+O	world
+O	;
 O	I
 O	will
 O	not
@@ -1803,7 +1822,8 @@ O	long
 O	time
 O	very
 O	happily
-O	together;
+O	together
+O	;
 O	while
 O	the
 C	roe
@@ -1973,7 +1993,8 @@ O	old
 C	witch
 O	to
 O	console
-O	her;
+O	her
+O	;
 O	""""
 O	when
 O	the
@@ -1996,7 +2017,8 @@ O	to
 O	a
 O	beautiful
 O	little
-O	boy;
+O	boy
+O	;
 O	and
 O	the
 C	king
@@ -2048,7 +2070,8 @@ O	and
 O	give
 O	you
 O	new
-O	strength;
+O	strength
+O	;
 O	make
 O	haste
 O	before
@@ -2240,7 +2263,8 @@ O	how
 O	she
 O	was
 O	getting
-O	on;
+O	on
+O	;
 O	on
 O	which
 O	the
@@ -2265,7 +2289,8 @@ O	'
 O	t
 O	touch
 O	the
-O	curtain;
+O	curtain
+O	;
 O	the
 C	queen
 O	must
@@ -2415,7 +2440,8 @@ O	silently
 O	,
 O	through
 O	the
-O	door;
+O	door
+O	;
 O	and
 O	the
 O	nurse
@@ -2443,7 +2469,9 @@ O	they
 O	answered
 O	,
 O	""""
-O	No--we
+O	No
+O	--
+O	we
 O	have
 O	seen
 O	nobody
@@ -2526,7 +2554,8 @@ O	nurse
 O	could
 O	not
 O	answer
-O	her;
+O	her
+O	;
 O	but
 O	when
 O	she
@@ -2608,7 +2637,8 @@ O	then
 O	for
 O	ever
 O	must
-O	go;
+O	go
+O	;
 O	""""
 O	and
 O	nursed
@@ -2707,7 +2737,8 @@ O	I
 O	am
 O	thy
 O	dear
-O	wife;
+O	wife
+O	;
 O	""""
 O	and
 O	as
@@ -2819,7 +2850,8 @@ O	and
 O	resumed
 O	his
 O	human
-O	form;
+O	form
+O	;
 O	so
 O	they
 O	all

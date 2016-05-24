@@ -2,6 +2,5 @@
 
 nltk==3.2.1
 gutenberg==0.4.2
-pattern==2.6
-regex==2016.5.15
+numpy==1.11
 python-crfsuite==0.8.4

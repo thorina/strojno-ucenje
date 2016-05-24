@@ -445,7 +445,8 @@ O	and
 O	led
 O	the
 O	child
-O	away;
+O	away
+O	;
 O	but
 O	when
 O	he
@@ -540,7 +541,8 @@ O	thee
 O	,
 O	""""
 O	he
-O	thought;
+O	thought
+O	;
 O	but
 O	it
 O	seemed
@@ -561,7 +563,8 @@ O	had
 O	avoided
 O	taking
 O	her
-O	life;
+O	life
+O	;
 O	and
 O	as
 O	a
@@ -669,7 +672,8 @@ O	,
 O	and
 O	through
 O	the
-O	thorns;
+O	thorns
+O	;
 O	and
 O	the
 O	wild
@@ -764,7 +768,8 @@ O	own
 O	little
 O	spoon
 O	)
-O	--also
+O	--
+O	also
 O	seven
 O	little
 O	knives
@@ -873,7 +878,8 @@ O	luckily
 O	,
 O	was
 O	just
-O	right;
+O	right
+O	;
 O	so
 O	there
 O	she
@@ -1423,7 +1429,8 @@ O	out
 O	that
 O	thou
 O	art
-O	here;
+O	here
+O	;
 O	take
 O	care
 O	that
@@ -1467,7 +1474,8 @@ O	fairest
 O	woman
 O	in
 O	the
-O	world;
+O	world
+O	;
 O	so
 O	she
 O	walked
@@ -1544,7 +1552,8 @@ C	mirror
 O	never
 O	told
 O	a
-O	falsehood;
+O	falsehood
+O	;
 O	she
 O	felt
 O	sure
@@ -1579,7 +1588,8 @@ O	how
 O	best
 O	to
 O	kill
-C	Snowdrop;
+C	Snowdrop
+O	;
 O	for
 O	envy
 O	gave
@@ -1712,7 +1722,8 @@ O	bodice
 O	laces
 O	of
 O	all
-O	colours;
+O	colours
+O	;
 O	""""
 O	and
 O	drew
@@ -1737,7 +1748,8 @@ O	in
 O	!
 O	""""
 O	thought
-C	Snowdrop;
+C	Snowdrop
+O	;
 O	so
 O	she
 O	unfastened
@@ -1896,7 +1908,8 @@ O	the
 O	lace
 O	of
 O	her
-O	bodice;
+O	bodice
+O	;
 O	she
 O	began
 O	to
@@ -2007,7 +2020,8 @@ O	are
 O	fairest
 O	of
 O	them
-O	all;
+O	all
+O	;
 O	But
 O	over
 O	the
@@ -2074,7 +2088,8 @@ O	that
 O	shall
 O	destroy
 O	her
-O	utterly;
+O	utterly
+O	;
 O	""""
 O	and
 O	with
@@ -2147,7 +2162,9 @@ O	said
 O	,
 O	""""
 O	Go
-O	away--I
+O	away
+O	--
+O	I
 O	dare
 O	let
 O	no
@@ -2234,7 +2251,8 @@ O	let
 O	the
 O	old
 O	woman
-O	begin;
+O	begin
+O	;
 O	but
 O	the
 O	comb
@@ -2316,7 +2334,8 @@ O	and
 O	found
 O	the
 O	poisoned
-O	comb;
+O	comb
+O	;
 O	and
 O	as
 O	soon
@@ -2402,7 +2421,8 @@ O	are
 O	fairest
 O	of
 O	them
-O	all;
+O	all
+O	;
 O	But
 O	over
 O	the
@@ -2498,7 +2518,8 @@ O	saw
 O	it
 O	longed
 O	for
-O	it;
+O	it
+O	;
 O	but
 O	it
 O	brought
@@ -2587,7 +2608,8 @@ O	,
 O	""""
 O	replied
 O	the
-O	peasant-woman;
+O	peasant-woman
+O	;
 O	""""
 O	I
 O	only
@@ -2641,7 +2663,8 @@ O	woman
 O	.
 O	""""
 O	Look
-O	here;
+O	here
+O	;
 O	I
 O	will
 O	cut
@@ -2685,7 +2708,8 @@ O	longed
 O	for
 O	the
 O	pretty
-O	apple;
+O	apple
+O	;
 O	and
 O	when
 O	she
@@ -2881,7 +2905,8 @@ O	with
 O	water
 O	and
 O	with
-O	wine;
+O	wine
+O	;
 O	but
 O	all
 O	was
@@ -2958,7 +2983,8 @@ O	earth
 O	,
 O	""""
 O	said
-O	they;
+O	they
+O	;
 O	and
 O	caused
 O	a
@@ -3050,7 +3076,9 @@ C	Snowdrop
 O	:
 O	the
 O	birds
-O	likewise--first
+O	likewise
+O	--
+O	first
 O	an
 O	owl
 O	,
@@ -3212,7 +3240,8 @@ O	""""
 O	Yet
 O	give
 O	it
-O	me;
+O	me
+O	;
 O	for
 O	I
 O	cannot
@@ -3448,7 +3477,8 @@ O	are
 O	fairest
 O	among
 O	them
-O	all;
+O	all
+O	;
 O	But
 O	the
 O	young
@@ -3587,7 +3617,9 @@ O	at
 C	Snowdrop
 O	'
 O	s
-O	wedding--dancing
+O	wedding
+O	--
+O	dancing
 O	,
 O	dancing
 O	on

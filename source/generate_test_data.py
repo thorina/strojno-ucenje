@@ -106,7 +106,7 @@ def purify_content(file_output):
 
     return content
 
-
+# LEMMATA - zamijeniti npr 'ate' s 'eat' i sl. u svemu?
 def generate_stanford_ner_training_data():
     i = 1
     n = len(os.listdir(SEPARATED_STORIES_PATH))

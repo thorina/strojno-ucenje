@@ -61,7 +61,8 @@ O	was
 O	a
 O	large
 O	dark
-O	forest;
+O	forest
+O	;
 O	and
 O	in
 O	the
@@ -104,7 +105,8 @@ O	edge
 O	of
 O	the
 O	cool
-O	well;
+O	well
+O	;
 O	and
 O	when
 O	she
@@ -338,7 +340,8 @@ O	give
 O	you
 O	some
 O	good
-O	advice;
+O	advice
+O	;
 O	but
 O	what
 O	will
@@ -406,7 +409,8 @@ O	I
 O	do
 O	not
 O	care
-O	for;
+O	for
+O	;
 O	but
 O	if
 O	you
@@ -421,7 +425,8 @@ O	be
 O	your
 O	companion
 O	and
-O	playfellow;
+O	playfellow
+O	;
 O	sit
 O	near
 O	you
@@ -448,7 +453,10 @@ O	sleep
 O	in
 O	your
 O	little
-O	bed;--if
+O	bed
+O	;
+O	--
+O	if
 O	you
 O	will
 O	promise
@@ -479,7 +487,8 @@ O	yes
 O	!
 O	""""
 O	said
-O	she;
+O	she
+O	;
 O	""""
 O	I
 O	promise
@@ -614,7 +623,8 @@ O	!
 O	""""
 O	cried
 O	the
-C	frog;
+C	frog
+O	;
 O	""""
 O	take
 O	me
@@ -714,9 +724,12 @@ O	creeping
 O	up
 O	the
 O	marble
-O	staircase--splish
+O	staircase
+O	--
+O	splish
 O	,
-O	splash;
+O	splash
+O	;
 O	and
 O	when
 O	it
@@ -753,7 +766,8 @@ O	to
 O	see
 O	who
 O	was
-O	outside;
+O	outside
+O	;
 O	but
 O	when
 O	she
@@ -927,7 +941,8 @@ C	daughter
 O	,
 O	Open
 O	to
-O	me;
+O	me
+O	;
 O	Know
 O	you
 O	what
@@ -976,7 +991,8 @@ O	went
 O	and
 O	opened
 O	the
-O	door;
+O	door
+O	;
 O	the
 C	frog
 O	hopped
@@ -1113,7 +1129,8 @@ O	enough
 O	,
 O	and
 O	am
-O	tired;
+O	tired
+O	;
 O	carry
 O	me
 O	to
@@ -1149,7 +1166,8 @@ O	the
 C	king
 O	began
 O	to
-O	weep;
+O	weep
+O	;
 O	for
 O	she
 O	was
@@ -1208,7 +1226,8 @@ O	she
 O	liked
 O	it
 O	or
-O	not;
+O	not
+O	;
 O	she
 O	was
 O	obliged
@@ -1594,7 +1613,8 @@ O	thought
 O	the
 O	carriage
 O	was
-O	breaking;
+O	breaking
+O	;
 O	but
 O	it
 O	was

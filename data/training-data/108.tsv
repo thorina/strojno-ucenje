@@ -86,8 +86,8 @@ O	,
 O	he
 O	walked
 O	free
-O   --
-O   he
+O	--
+O	he
 O	had
 O	given
 O	no
@@ -495,8 +495,8 @@ O	were
 O	ready
 O	to
 O	speak
-O   --
-O   to
+O	--
+O	to
 O	smile
 O	.
 O	Her
@@ -525,8 +525,8 @@ O	,
 O	loved
 O	a
 O	woman
-O   --
-O   a
+O	--
+O	a
 O	woman
 O	of
 O	chilly
@@ -679,7 +679,9 @@ O	knew
 O	that
 O	young
 O	girls
-O	loved--bright
+O	loved
+O	--
+O	bright
 O	shells
 O	and
 O	exquisite
@@ -741,7 +743,8 @@ O	upon
 O	her
 O	cold
 O	white
-O	breast;
+O	breast
+O	;
 O	and
 O	the
 O	merchants
@@ -1042,7 +1045,8 @@ O	""""
 O	he
 O	dared
 O	not
-O	say;
+O	say
+O	;
 O	but
 O	Aphrodite
 O	knew
@@ -1152,7 +1156,8 @@ O	his
 O	eyes
 O	with
 O	her
-O	own;
+O	own
+O	;
 O	almost
 O	it
 O	seemed
