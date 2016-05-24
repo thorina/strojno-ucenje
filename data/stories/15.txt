@@ -1,7 +1,7 @@
 Once upon a time there lived a king and queen , who had an only
 daughter . Her incomparable beauty , sweetness , and intelligence caused
 her to be named Graciosa . She was all her mother ' s joy . Every day she
-had given her a different dress , of gold brocade , velvet , or satin;
+had given her a different dress , of gold brocade , velvet , or satin ; 
 yet she was neither conceited nor boastful . She used to pass her
 mornings in study , and in the afternoon she sat sewing by the queen ' s
 side . She had , however , plenty of play-time , and sweetmeats without
@@ -11,7 +11,7 @@ At the same court was an elderly young lady named Duchess Grognon , who
 was the very opposite of Graciosa . Her hair was fiery red , her face
 fat and spotty , and she had but one eye . Her mouth was so big that you
 might have thought she could eat you up , only she had no teeth to do
-it with; she was also humpbacked and lame . Of course she could not
+it with ; she was also humpbacked and lame . Of course she could not
 help her ugliness , and nobody would have disliked her for that , if she
 had not been of such an unpleasant temper that she hated everything
 sweet and beautiful , and especially Graciosa . She had also a very good
@@ -54,7 +54,7 @@ madam , I ' ll marry you to-morrow if you will . "
 
 Grognon , highly delighted , made but one other condition--that she
 should have the Princess Graciosa entirely in her own rule and power , 
-just as if she had been her real mother; to which the foolish king
+just as if she had been her real mother ; to which the foolish king
 consented , for he thought much more of riches than he did of his
 child . So he and Grognon departed hand in hand out of the cave , very
 well pleased . 
@@ -67,10 +67,10 @@ father , and asked him if he had had good sport in his hunting .
  " Oh , give it me , and I will nourish and cherish it , " cried the
 princess . 
 
- " That is impossible; for it is the Duchess Grognon , whom I have
+ " That is impossible ; for it is the Duchess Grognon , whom I have
 promised to marry . " 
 
- " She a dove ! --she is rather a hawk , " sighed the princess in despair;
+ " She a dove ! --she is rather a hawk , " sighed the princess in despair ; 
 but her father bade her hold her tongue , and promise to love her
 stepmother , who would have over her all the authority of a mother , and
 to whom he wished to present her that very day . 
@@ -85,13 +85,13 @@ chosen for you . She may not be so bad after , all . "
 
 And the nurse gave so much good advice , that Graciosa began to smile , 
 and dressed herself in her best attire , a green robe embroidered with
-gold; while her fair , loose-falling hair was adorned , according to the
+gold ; while her fair , loose-falling hair was adorned , according to the
 fashion of the day , with a coronet of jasmine , of which the leaves
 were made of large emeralds . 
 
 Grognon , on her part , made the best of herself that was possible . She
 put on a high-heeled shoe to appear less lame , she padded her
-shoulders , dyed her red hair black , and put in a false eye; then
+shoulders , dyed her red hair black , and put in a false eye ; then
 dressed herself in a hooped petticoat of violet satin trimmed with
 blue , and an upper gown of yellow with green ribands . In this costume , 
 she wished to enter the city on horseback , as she understood the
@@ -102,7 +102,7 @@ pass the time away , she went all alone into a little wood , where she
 sobbed and wept in secret , until suddenly there appeared before her a
 young page , whom she had never seen before . 
 
- " Who are you ? " she inquired;  " and when did his majesty take you into
+ " Who are you ? " she inquired ;  " and when did his majesty take you into
 his service ? " 
 
  " Princess , " said the page , bowing ,  " I am in no one ' s service but your
@@ -117,25 +117,25 @@ At these words , at once tender and respectful , the princess , who had
 long heard of the fairy-prince Percinet , felt so happy that she feared
 Grognon no more . They talked a little while together , and then
 returned to the palace , where the page assisted her to mount her
-horse; on which she looked so beautiful , that all the new queen ' s
+horse ; on which she looked so beautiful , that all the new queen ' s
 splendours faded into nothing in comparison , and not one of the
 courtiers had eyes for any except Graciosa . 
 
 As soon as Grognon saw it ,  " What ! " cried she ,  " has this creature the
 impudence to be better mounted than myself ! Descend , Miss , and let me
-try your horse;--and your page , whom everybody thinks so much of , bid
+try your horse ; --and your page , whom everybody thinks so much of , bid
 him come and hold my bridle . " 
 
 Prince Percinet , who was the page , cast one look at his fair Graciosa
-and obeyed; but no sooner had the duchess mounted , than the horse ran
+and obeyed ; but no sooner had the duchess mounted , than the horse ran
 away with her and dragged her over briers , stones , and mud , and
 finally threw her into a deep ditch . Her head was cut in several
 places , and her arm fractured . They picked her up in little pieces , 
-like a broken wineglass; never was there a poor bride in worse plight . 
+like a broken wineglass ; never was there a poor bride in worse plight . 
 But in spite of her sufferings her malice remained . She sent for the
 king : 
 
- " This is all Graciosa ' s fault; she wished to kill me . I desire that
+ " This is all Graciosa ' s fault ; she wished to kill me . I desire that
 your majesty will punish her , or leave me to do it--else I will
 certainly be revenged upon you both . " 
 
@@ -154,7 +154,7 @@ and her nurse . And then she saw the prince standing before her , in his
 green dress and his white plume , the most charming of pages . 
 
 Percinet advised her to pretend illness on account of the cruel
-treatment she was supposed to have received; which so delighted
+treatment she was supposed to have received ; which so delighted
 Grognon , that she got well all the sooner , and the marriage was
 celebrated with great splendour . 
 
@@ -168,16 +168,16 @@ most beautiful was she whose portrait was in the box . He opened it ,
 and behold the image of the Princess Graciosa ! 
 
 The princess , who sat behind her stepmother , felt sure that the
-unknown knight was Percinet; but she dared say nothing . The contest
-was fixed for next day; but in the meantime , Grognon , wild with anger , 
+unknown knight was Percinet ; but she dared say nothing . The contest
+was fixed for next day ; but in the meantime , Grognon , wild with anger , 
 commanded Graciosa to be taken in the middle of the night to a forest
 a hundred leagues distant , full of wolves , lions , tigers , and bears . 
 In vain the poor maiden implored that the attendants would kill her at
 once , rather than leave her in that dreadful place : the queen ' s orders
-must be obeyed; no answer was made to her , but the servants remounted
+must be obeyed ; no answer was made to her , but the servants remounted
 and rode away . Graciosa , in solitude and darkness , groped through the
 forest , sometimes falling against the trunks of trees , sometimes
-tearing herself with bushes and briers; at last , overcome with fear
+tearing herself with bushes and briers ; at last , overcome with fear
 and grief , she sank on the ground , sobbing out ,  " Percinet , Percinet , 
 have you forsaken me ? " 
 
@@ -203,12 +203,12 @@ life , even down to this adventure in the forest , painted on the walls .
 
  " How is this ? " she said .  " Prince , you know everything about me . " 
 
- " Yes; and I wish to preserve everything concerning you , " said he
-tenderly; whereupon Graciosa cast down her eyes . She was only too
+ " Yes ; and I wish to preserve everything concerning you , " said he
+tenderly ; whereupon Graciosa cast down her eyes . She was only too
 happy , and afraid that she should learn to love the fairy-prince too
 much . 
 
-She spent eight days in his palace--days full of every enjoyment; and
+She spent eight days in his palace--days full of every enjoyment ; and
 Percinet tried all the arguments he could think of to induce her to
 marry him , and remain there for ever . But the good and gentle Graciosa
 remembered her father who was once so kind to her , and she preferred
@@ -225,12 +225,12 @@ bade her look , and she saw as hi a picture , or as in a play upon the
 stage , the King and Grognon sitting together on their throne . The
 latter was telling how Graciosa had hanged herself in a cave . 
 
- " She will not be much loss , sire; and as , when dead , she was far too
+ " She will not be much loss , sire ; and as , when dead , she was far too
 frightful for you to look at , I have given orders to bury her at
 once . " 
 
 She might well say that , for she had had a large faggot put into a
-coffin , and sealed up; the king and all the nation mourned over it;
+coffin , and sealed up ; the king and all the nation mourned over it ; 
 and now , that she was no more , they declared there never was such a
 sweet creature as the lost princess . 
 
@@ -249,7 +249,7 @@ pieces with a great crash .
  " Princess , my palace , which you forsake , is among the things which are
 dead and gone . You will enter it no more till after your burial . " 
 
- " Prince , you are angry with me , " said Graciosa sorrowfully; only she
+ " Prince , you are angry with me , " said Graciosa sorrowfully ; only she
 knew well that she suffered quite as much as he did in thus departing
 and quitting him . 
 
@@ -264,12 +264,12 @@ daughter to her stepmother ' s will .
 Grognon , transported with joy , dragged her to a dark prison , took away
 her clothes , made her dress in rags , feed on bread and water , and
 sleep upon straw . Forlorn and hopeless , Graciosa dared not now call
-upon Percinet; she doubted if he still loved her enough to come to her
+upon Percinet ; she doubted if he still loved her enough to come to her
 aid . 
 
 Meantime , Grognon had sent for a fairy , who was scarcely less
 malicious than herself .  " I have here , " said she ,  " a little wretch of a
-girl for whom I wish to find all sorts of difficult tasks; pray assist
+girl for whom I wish to find all sorts of difficult tasks ; pray assist
 me in giving her a new one every day . " 
 
 The fairy promised to think of it , and soon brought a skein as thick
@@ -292,7 +292,7 @@ ready to serve you , even though you forsook me . " He touched the skein
 with his wand , and it untangled itself , and wound itself up in perfect
 order .  " Do you wish anything more , madam ? " asked he coldly . 
 
- " Percinet , Percinet , do not reproach me; I am only too unhappy . " 
+ " Percinet , Percinet , do not reproach me ; I am only too unhappy . " 
 
  " It is your own fault . Come with me , and make us both happy . " But she
 said nothing , and the fairy-prince disappeared . 
@@ -310,24 +310,24 @@ do . "
 The fairy brought a great basket full of feathers , plucked from every
 kind of bird--nightingales , canaries , linnets , larks , doves , thrushes , 
 peacocks , ostriches , pheasants , partridges , magpies , eagles--in fact , 
-if I told them all over , I should never come to an end; and all these
+if I told them all over , I should never come to an end ; and all these
 feathers were so mixed up together , that they could not be
 distinguished . 
 
  " See , " said the fairy ,  " even one of ourselves would find it difficult
 to separate these , and arrange them as belonging to each sort of bird . 
-Command your prisoner to do it; she is sure to fail . " 
+Command your prisoner to do it ; she is sure to fail . " 
 
 Grognon jumped for joy , sent for the princess , and ordered her to take
 her task , and finish it , as before , by set of sun . 
 
 Graciosa tried patiently , but she could see no difference in the
-feathers; she threw them all back again into the basket , and began to
+feathers ; she threw them all back again into the basket , and began to
 weep bitterly .  " Let me die , " said she ,  " for death only will end my
-sorrows . Percinet loves me no longer; if he did , he would already have
+sorrows . Percinet loves me no longer ; if he did , he would already have
 been here . " 
 
- " Here I am , my princess , " cried a voice from under the basket; and the
+ " Here I am , my princess , " cried a voice from under the basket ; and the
 fairy-prince appeared . He gave three taps with his wand--the feathers
 flew by millions out of the basket , and arranged themselves in little
 heaps , each belonging to a different bird . 
@@ -338,7 +338,7 @@ heaps , each belonging to a different bird .
 
 When Grognon arrived , she found the task done . She was furious at the
 fairy , who was as much astonished as herself at the result of their
-malicious contrivances . But she promised to try once more; and for
+malicious contrivances . But she promised to try once more ; and for
 several days employed all her industry in inventing a box , which , she
 said , the prisoner must be forbidden on any account to open .  " Then , " 
 added the cunning fairy ,  " of course , being such a disobedient and
@@ -350,7 +350,7 @@ castle , and set it on a certain table , in an apartment she named , but
 not upon any account , to open it or examine its contents . 
 
 Graciosa departed . She was dressed like any poor peasant , in a cotton
-gown , a woollen hood and wooden shoes; yet , as she walked along , 
+gown , a woollen hood and wooden shoes ; yet , as she walked along , 
 people took her for a queen in disguise , so lovely were her looks and
 ways . But being weak with imprisonment , she soon grew weary , and , 
 sitting down upon the edge of a little wood , took the box upon her
@@ -371,7 +371,7 @@ again , they all scampered away , played at hide-and-seek in the wood ,
 and by no means could she catch a single one . 
 
 Again , in her distress , she called upon Percinet , and again he
-appeared; and , with a single touch of his wand , sent all the little
+appeared ; and , with a single touch of his wand , sent all the little
 people back into the box . Then , in his chariot , drawn by stags , he
 took her to the castle , where she did all that she had been commanded , 
 and returned in safety , to her stepmother , who was more furious than
@@ -382,10 +382,10 @@ her own wicked will upon Graciosa .
 She caused to be dug a large hole in the garden , and taking the
 princess there , showed her the stone which covered it . 
 
- " Underneath this stone lies a great treasure; lift it up , and you will
+ " Underneath this stone lies a great treasure ; lift it up , and you will
 see . " 
 
-Graciosa obeyed; and while she was standing at the edge of the pit , 
+Graciosa obeyed ; and while she was standing at the edge of the pit , 
 Grognon pushed her in , and let the stone fall down again upon her , 
 burying her alive . After this , there seemed no more hope for the poor
 princess . 
@@ -395,7 +395,7 @@ love , and marry you ! Still , death will be less bitter , if only you
 regret me a little . " 
 
 While she spoke , she saw through the blank darkness a glimmer of
-light; it came through a little door . She remembered what Percinet had
+light ; it came through a little door . She remembered what Percinet had
 said : that she would never return to the fairy palace , until after she
 was buried . Perhaps this final cruelty of Grognon would be the end of
 her sorrows . So she took courage , crept through the little door , and
@@ -403,12 +403,12 @@ lo ! she came out into a beautiful garden , with long alleys ,
 fruit-trees , and flower-beds . Well she knew it , and well she knew the
 glitter of the rock-crystal walls . And there , at the palace-gate , 
 stood Percinet , and the queen , his mother , and the princesses , his
-sisters .  " Welcome , Graciosa ! " cried they all; and Graciosa , after all
+sisters .  " Welcome , Graciosa ! " cried they all ; and Graciosa , after all
 her sufferings , wept for joy . 
 
-The marriage was celebrated with great splendour; and all the fairies , 
+The marriage was celebrated with great splendour ; and all the fairies , 
 for a thousand leagues round , attended it . Some came in chariots drawn
-by dragons , or swans , or peacocks; some were mounted upon floating
+by dragons , or swans , or peacocks ; some were mounted upon floating
 clouds , or globes of fire . Among the rest , appeared the very fairy who
 had assisted Grognon to torment Graciosa . When she discovered that
 Grognon ' s poor prisoner was now Prince Percinet ' s bride , she was
@@ -417,7 +417,7 @@ passed , because she really was ignorant who she had been so cruelly
 afflicting . 
 
  " But I will make amends for all the evil that I have done , " said the
-fairy; and , refusing to stay for the wedding-dinner , she remounted her
+fairy ; and , refusing to stay for the wedding-dinner , she remounted her
 chariot , drawn by two terrible serpents , and flew to the palace of
 Graciosa ' s father . There , before either king , or courtiers , or
 ladies-in-waiting could stop her--even had they wished to do it , which
