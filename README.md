@@ -8,7 +8,7 @@ Gorana Levačić
 
 ### Zahtjevi
 ```
-Python 3.5
+Python ≥ 3.4
 gcc
 gcc-c++
 ```
