@@ -82,10 +82,10 @@ def train_crf_model(labeled_names, punctuation):
     training_data = [labeled_names]
     if punctuation:
         print("Training CRF with punctuation...")
-        path = TRAINED_CRF_MODEL
+        path = TRAINED_CRF_MODEL_PUNCT
     else:
         print("Training CRF without punctuation...")
-        path = TRAINED_CRF_MODEL_PUNCT
+        path = TRAINED_CRF_MODEL
 
     crf.train(training_data, path)
     print("CRF trained!")
@@ -120,7 +120,7 @@ def test_models(file_name, hmm, hmm_punct, crf, crf_punct):
             if tag == 'C':
                 characters.add(word)
         print(characters)
-
+        characters = set()
         print("\nTagging content with CRF with punctuation...")
         tokenized_content_with_punct = word_tokenize(content)
         tagged_content = crf_punct.tag(tokenized_content_with_punct)
@@ -141,10 +141,77 @@ def test_models(file_name, hmm, hmm_punct, crf, crf_punct):
         print(characters)
 
 
+def load_existing_models():
+    if os.path.exists(LABELED_NAMES):
+        with open(LABELED_NAMES, 'r') as file_input:
+            labeled_names = eval(file_input.read())
+        print('Read existing file /data/labeled_data.txt.')
+    else:
+        print('File /data/labeled_data.txt does not exist!')
+        print('Generating new training data and new file.')
+        labeled_names = populate_labeled_names(False)
+
+    if os.path.exists(LABELED_NAMES_PUNCT):
+        with open(LABELED_NAMES_PUNCT, 'r') as file_input:
+            labeled_names_punct = eval(file_input.read())
+        print('Read existing file /data/labeled_data_punct.txt.')
+    else:
+        print('File /data/labeled_data_punct.txt does not exist!')
+        print('Generating new training data and new file.')
+        labeled_names_punct = populate_labeled_names(True)
+
+    if os.path.exists(TRAINED_HMM_MODEL):
+        with open(TRAINED_HMM_MODEL, 'rb') as file_output:
+            hmm = dill.load(file_output)
+        print('Loaded existing file /data/trained_hmm.dill.')
+    else:
+        print('File /data/trained_hmm.dill does not exist!')
+        print('Training new model and creating new file.')
+        hmm = train_hmm_model(labeled_names, False)
+
+    if os.path.exists(TRAINED_HMM_MODEL_PUNCT):
+        with open(TRAINED_HMM_MODEL_PUNCT, 'rb') as file_output:
+            hmm_punct = dill.load(file_output)
+        print('Loaded existing file /data/trained_hmm_punct.dill.')
+    else:
+        print('File /data/trained_hmm_punct.dill does not exist!')
+        print('Training new model and creating new file.')
+        hmm_punct = train_hmm_model(labeled_names_punct, True)
+
+    if os.path.exists(TRAINED_CRF_MODEL):
+        crf = nltk.CRFTagger()
+        crf.set_model_file(TRAINED_CRF_MODEL)
+        print('Loaded existing file /data/trained_crf.model.')
+    else:
+        print('File /data/trained_crf.model does not exist!')
+        print('Training new model and creating new file.')
+        crf = train_crf_model(labeled_names, False)
+
+    if os.path.exists(TRAINED_CRF_MODEL_PUNCT):
+        crf_punct = nltk.CRFTagger()
+        crf.set_model_file(TRAINED_CRF_MODEL_PUNCT)
+        print('Loaded existing file /data/trained_crf_punct.model.')
+    else:
+        print('File /data/trained_crf_punct.model does not exist!')
+        print('Training new model and creating new file.')
+        crf_punct = train_crf_model(labeled_names_punct, True)
+
+    return crf, crf_punct, hmm, hmm_punct
+
+
+def retrain_models():
+    labeled_names = populate_labeled_names(True)
+    labeled_names_punct = populate_labeled_names(False)
+    hmm = train_hmm_model(labeled_names, False)
+    hmm_punct = train_hmm_model(labeled_names_punct, True)
+    crf = train_crf_model(labeled_names, False)
+    crf_punct = train_crf_model(labeled_names_punct, True)
+    return crf, crf_punct, hmm, hmm_punct
+
+
 def main():
-
-    print('Do you want to generate new training data from tagged tsv files? y/n')
-    print('(do this if those files have changed or new files have been added)')
+    print('Do you want to retrain the models? y/n')
+    print('(do this if you are running this for the first time or if training set has changed)')
     print('If you want to exit, enter q.')
     while True:
         input_string = input('--> ')
@@ -152,105 +219,11 @@ def main():
             quit()
 
         if input_string == 'y':
-            labeled_names = populate_labeled_names(True)
-            labeled_names_punct = populate_labeled_names(False)
+            crf, crf_punct, hmm, hmm_punct = retrain_models()
             break
 
         elif input_string == 'n':
-            if os.path.exists(LABELED_NAMES):
-                with open(LABELED_NAMES, 'r') as file_input:
-                    labeled_names = eval(file_input.read())
-                print('Read existing file /data/labeled_data.txt.')
-            else:
-                print('File /data/labeled_data.txt does not exist!')
-                print('Generating new training data and new file.')
-                labeled_names = populate_labeled_names(False)
-
-            if os.path.exists(LABELED_NAMES_PUNCT):
-                with open(LABELED_NAMES_PUNCT, 'r') as file_input:
-                    labeled_names_punct = eval(file_input.read())
-                print('Read existing file /data/labeled_data_punct.txt.')
-            else:
-                print('File /data/labeled_data_punct.txt does not exist!')
-                print('Generating new training data and new file.')
-                labeled_names_punct = populate_labeled_names(True)
-            break
-        else:
-            print('Incorrect input - please enter y, n or q.')
-            continue
-
-    print('\n')
-    print('Do you want to train new HMM taggers? y/n')
-    print('(do this if the training data has changed)')
-    print('If you want to exit, enter q.')
-    while True:
-        input_string = input('--> ')
-        if input_string == 'q':
-            quit()
-
-        if input_string == 'y':
-            hmm = train_hmm_model(labeled_names, False)
-            hmm_punct = train_hmm_model(labeled_names_punct, True)
-            break
-
-        elif input_string == 'n':
-            if os.path.exists(TRAINED_HMM_MODEL):
-                with open(TRAINED_HMM_MODEL, 'rb') as file_output:
-                    hmm = dill.load(file_output)
-                print('Loaded existing file /data/trained_hmm.dill.')
-
-            else:
-                print('File /data/trained_hmm.dill does not exist!')
-                print('Training new model and creating new file.')
-                hmm = train_hmm_model(labeled_names, False)
-
-            if os.path.exists(TRAINED_HMM_MODEL_PUNCT):
-                with open(TRAINED_HMM_MODEL_PUNCT, 'rb') as file_output:
-                    hmm_punct = dill.load(file_output)
-                print('Loaded existing file /data/trained_hmm_punct.dill.')
-
-            else:
-                print('File /data/trained_hmm_punct.dill does not exist!')
-                print('Training new model and creating new file.')
-                hmm_punct = train_hmm_model(labeled_names_punct, True)
-            break
-
-        else:
-            print('Incorrect input - please enter y, n or q.')
-            continue
-
-    print('\n')
-    print('Do you want to train new CRF taggers? y/n')
-    print('(do this if the training data has changed)')
-    print('If you want to exit, enter q.')
-    while True:
-        input_string = input('--> ')
-        if input_string == 'q':
-            quit()
-
-        if input_string == 'y':
-            crf = train_crf_model(labeled_names, False)
-            crf_punct = train_crf_model(labeled_names_punct, True)
-            break
-
-        elif input_string == 'n':
-            if os.path.exists(TRAINED_CRF_MODEL):
-                crf = nltk.CRFTagger()
-                crf.set_model_file(TRAINED_CRF_MODEL)
-                print('Loaded existing file /data/trained_crf.model.')
-            else:
-                print('File /data/trained_crf.model does not exist!')
-                print('Training new model and creating new file.')
-                crf = train_crf_model(labeled_names, False)
-
-            if os.path.exists(TRAINED_CRF_MODEL_PUNCT):
-                crf_punct = nltk.CRFTagger()
-                crf.set_model_file(TRAINED_CRF_MODEL_PUNCT)
-                print('Loaded existing file /data/trained_crf_punct.model.')
-            else:
-                print('File /data/trained_crf_punct.model does not exist!')
-                print('Training new model and creating new file.')
-                crf_punct = train_crf_model(labeled_names_punct, True)
+            crf, crf_punct, hmm, hmm_punct = load_existing_models()
             break
 
         else:
@@ -259,7 +232,7 @@ def main():
 
     while True:
         print('\n')
-        print('Enter file name in /data/test-data to tag, e.g. "1" for file "1.txt".')
+        print('Enter file name without extension in /data/test-data to tag, e.g. "1" for file "1.txt".')
         print('If you want to exit, enter q.')
         input_string = input('--> ')
         if input_string == 'q':
