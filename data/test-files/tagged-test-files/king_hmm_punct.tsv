@@ -1,14 +1,14 @@
-O	('The', 'C')
-O	('king', 'C')
-O	('took', 'O')
-O	('his', 'O')
-O	('queen', 'C')
-O	('to', 'O')
-O	('the', 'O')
-O	('feast', 'O')
-O	('and', 'O')
-O	('they', 'O')
-O	('ate', 'O')
-O	('many', 'O')
-O	('potatoes', 'O')
-O	('.', 'O')
+C	The
+C	king
+O	took
+O	his
+C	queen
+O	to
+O	the
+O	feast
+O	and
+O	they
+O	ate
+O	many
+O	potatoes
+O	.

@@ -5,19 +5,22 @@ from nltk.corpus import names
 
 LABELED_TOKENS = '../data/trained-models/labeled_tokens.txt'
 LABELED_TOKENS_PUNCT = '../data/trained-models/labeled_tokens_punct.txt'
+LABELED_TOKENS_LOWERCASE = '../data/trained-models/labeled_tokens_lowercase.txt'
+LABELED_TOKENS_LOWERCASE_PUNCT = '../data/trained-models/labeled_tokens_lowercase_punct.txt'
 TAGGED_FILES_PATH = '../data/correctly-tagged-tsv-files'
 
 
-def populate_labeled_tokens(punctuation):
-    if punctuation:
-        print("Populating labeled tokens with punctuation...")
-        path = LABELED_TOKENS
-    else:
-        print("Populating labeled tokens without punctuation...")
-        path = LABELED_TOKENS_PUNCT
+def populate_labeled_tokens(punctuation, lowercase):
+    show_message(lowercase, punctuation)
+    path = get_path(punctuation, lowercase)
 
-    male_names = [(name, 'C') for name in names.words('male.txt')]
-    female_names = [(name, 'C') for name in names.words('female.txt')]
+    if lowercase:
+        male_names = [(name.lower(), 'C') for name in names.words('male.txt')]
+        female_names = [(name.lower(), 'C') for name in names.words('female.txt')]
+    else:
+        male_names = [(name, 'C') for name in names.words('male.txt')]
+        female_names = [(name, 'C') for name in names.words('female.txt')]
+
     labeled_tokens = male_names + female_names
 
     for filename in os.listdir(TAGGED_FILES_PATH):
@@ -31,24 +34,41 @@ def populate_labeled_tokens(punctuation):
                     y = line[0]
                     x = line[1]
                     if punctuation:
-                        story_tokens += [(x, y)]
+                        if lowercase:
+                            story_tokens += [(x, y.lower())]
+                        else:
+                            story_tokens += [(x, y)]
                     else:
                         if line[1].isalnum():
-                            story_tokens += [(x, y)]
+                            if lowercase:
+                                story_tokens += [(x, y.lower())]
+                            else:
+                                story_tokens += [(x, y)]
+
             labeled_tokens += story_tokens
 
     with open(path, 'w') as file_output:
         file_output.write(repr(labeled_tokens))
 
-    print('Labeled tokens populated!')
+    print('Labeled tokens populated!\n')
     return labeled_tokens
 
 
-def load_labeled_tokens(punctuation):
+def show_message(lowercase, punctuation):
     if punctuation:
-        path = LABELED_TOKENS_PUNCT
+        if lowercase:
+            print("Populating labeled lowercase tokens with punctuation...")
+        else:
+            print("Populating labeled tokens with punctuation...")
     else:
-        path = LABELED_TOKENS
+        if lowercase:
+            print("Populating labeled lowercase tokens without punctuation...")
+        else:
+            print("Populating labeled tokens without punctuation...")
+
+
+def load_labeled_tokens(punctuation, lowercase):
+    path = get_path(lowercase, punctuation)
 
     if os.path.exists(path):
         with open(path, 'r') as file_input:
@@ -57,6 +77,20 @@ def load_labeled_tokens(punctuation):
     else:
         print('File ' + path + ' does not exist!')
         print('Generating new training data and new file.')
-        labeled_tokens = populate_labeled_tokens(punctuation)
+        labeled_tokens = populate_labeled_tokens(punctuation, lowercase)
 
     return labeled_tokens
+
+
+def get_path(lowercase, punctuation):
+    if punctuation:
+        if lowercase:
+            path = LABELED_TOKENS_LOWERCASE
+        else:
+            path = LABELED_TOKENS
+    else:
+        if lowercase:
+            path = LABELED_TOKENS_LOWERCASE_PUNCT
+        else:
+            path = LABELED_TOKENS_PUNCT
+    return path

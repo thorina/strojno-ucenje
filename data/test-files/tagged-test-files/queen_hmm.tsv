@@ -1,68 +1,68 @@
-O	('Queen', 'C')
-O	('is', 'O')
-O	('a', 'O')
-O	('character', 'O')
-O	('.', 'O')
-O	('In', 'O')
-O	('a', 'O')
-O	('land', 'O')
-O	('far', 'O')
-O	('far', 'O')
-O	('away', 'O')
-O	('lived', 'O')
-O	('the', 'O')
-O	('queen', 'C')
-O	('of', 'O')
-O	('bananas', 'O')
-O	('.', 'O')
-O	('She', 'O')
-O	('was', 'O')
-O	('very', 'O')
-O	('ugly', 'O')
-O	('and', 'O')
-O	('evil', 'O')
-O	('.', 'O')
-O	('The', 'O')
-O	('evil', 'O')
-O	('ugly', 'O')
-O	('queen', 'O')
-O	('had', 'O')
-O	('a', 'O')
-O	('lovely', 'O')
-O	('king', 'O')
-O	('for', 'O')
-O	('husband', 'O')
-O	(',', 'O')
-O	('yes', 'O')
-O	('.', 'O')
-O	('This', 'O')
-O	('queen', 'O')
-O	('was', 'O')
-O	('supposed', 'O')
-O	('to', 'O')
-O	('be', 'O')
-O	('a', 'O')
-O	('character', 'O')
-O	('in', 'O')
-O	('this', 'O')
-O	('story', 'O')
-O	('.', 'O')
-O	('So', 'O')
-O	(',', 'O')
-O	('the', 'O')
-O	('queen', 'O')
-O	('should', 'O')
-O	('be', 'O')
-O	('a', 'O')
-O	('character', 'O')
-O	('.', 'O')
-O	('The', 'O')
-O	('queen', 'O')
-O	('said', 'O')
-O	('she', 'O')
-O	('was', 'O')
-O	('character', 'O')
-O	('in', 'O')
-O	('this', 'O')
-O	('story', 'O')
-O	('.', 'O')
+C	Queen
+O	is
+O	a
+O	character
+O	.
+O	In
+O	a
+O	land
+O	far
+O	far
+O	away
+O	lived
+O	the
+O	queen
+O	of
+O	bananas
+O	.
+O	She
+O	was
+O	very
+O	ugly
+O	and
+O	evil
+O	.
+O	The
+O	evil
+O	ugly
+O	queen
+O	had
+O	a
+O	lovely
+O	king
+O	for
+O	husband
+O	,
+O	yes
+O	.
+O	This
+O	queen
+O	was
+O	supposed
+O	to
+O	be
+O	a
+O	character
+O	in
+O	this
+O	story
+O	.
+O	So
+O	,
+O	the
+O	queen
+O	should
+O	be
+O	a
+O	character
+O	.
+O	The
+O	queen
+O	said
+O	she
+O	was
+O	character
+O	in
+O	this
+O	story
+O	.
