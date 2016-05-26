@@ -26,6 +26,7 @@ Skripta `generate_test_data.py` uzima svaki od dokumenata iz gorneg direktorija 
 privremeni dokument. Sadržaj tog dokumenta se potom čisti od većine nepotrebnih dijelova (opisi
 ilustracija, fusnote i sl.), te se dodaju razmaci između interpunkcijskih znakova. Potom se svaka
 od priča iz privremenog dokumenta odvaja i sprema u zaseban dokument u direktorij `\data\stories`.
+Te priče (ili bilo koji drugi tekst) se može koristiti za testiranje modela.
 
 U istoj skripti se provodi i generiranje tsv dokumenata za svaku od priča. Dokumenti se sastoje od
 dva stupca. U prvom stupcu je oznaka 'O', u drugom stupcu je token (riječ ili interpunkcijski znak(ovi)).

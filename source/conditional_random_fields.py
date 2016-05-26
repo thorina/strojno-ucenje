@@ -2,8 +2,8 @@ import os
 
 import nltk
 
-TRAINED_CRF_MODEL = '../data/trained_crf.model'
-TRAINED_CRF_MODEL_PUNCT = '../data/trained_crf_punct.model'
+TRAINED_CRF_MODEL = '../data/trained-models/trained_crf.model'
+TRAINED_CRF_MODEL_PUNCT = '../data/trained-models/trained_crf_punct.model'
 
 
 def load_trained_crf_model(labeled_names, punctuation):

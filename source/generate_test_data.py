@@ -5,18 +5,11 @@ import tempfile
 import csv
 import nltk.tag.crf
 
-# from nltk.tag import StanfordNERTagger
-
-# current working directory = source
 from nltk import word_tokenize
 
+# current working directory = source
 NLTK_DATA_PATH = '../lib/nltk_data'
 nltk.data.path.append(NLTK_DATA_PATH)
-
-#
-# st = StanfordNERTagger('../lib/stanford-ner/classifiers/english.all.3class.distsim.crf.ser.gz',
-#                        '../lib/stanford-ner/stanford-ner.jar',
-#                        encoding='utf-8')
 
 # location for gutenberg files from which headers, table of contents, intro etc. have been removed
 GUTENBERG_FILES_PATH = '../data/gutenberg-files'

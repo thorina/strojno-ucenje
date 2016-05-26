@@ -1,10 +1,11 @@
 import os
+
 import dill
 from nltk.tag.hmm import HiddenMarkovModelTrainer
 
 
-TRAINED_HMM_MODEL = '../data/trained_hmm.dill'
-TRAINED_HMM_MODEL_PUNCT = '../data/trained_hmm_punct.dill'
+TRAINED_HMM_MODEL = '../data/trained-models/trained_hmm.dill'
+TRAINED_HMM_MODEL_PUNCT = '../data/trained-models/trained_hmm_punct.dill'
 
 
 def load_trained_hmm_model(labeled_names, punctuation):
@@ -44,4 +45,3 @@ def train_hmm_model(labeled_names, punctuation):
 
     print("HMM trained!")
     return hmm
-

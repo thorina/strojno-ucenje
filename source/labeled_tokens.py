@@ -3,8 +3,8 @@ import os
 
 from nltk.corpus import names
 
-LABELED_TOKENS = '../data/labeled_tokens.txt'
-LABELED_TOKENS_PUNCT = '../data/labeled_tokens_punct.txt'
+LABELED_TOKENS = '../data/trained-models/labeled_tokens.txt'
+LABELED_TOKENS_PUNCT = '../data/trained-models/labeled_tokens_punct.txt'
 TAGGED_FILES_PATH = '../data/correctly-tagged-tsv-files'
 
 
@@ -39,6 +39,8 @@ def populate_labeled_tokens(punctuation):
 
     with open(path, 'w') as file_output:
         file_output.write(repr(labeled_tokens))
+
+    print('Labeled tokens populated!')
     return labeled_tokens
 
 
@@ -51,7 +53,7 @@ def load_labeled_tokens(punctuation):
     if os.path.exists(path):
         with open(path, 'r') as file_input:
             labeled_tokens = eval(file_input.read())
-        print('Read existing file ' + path)
+        print('Loaded existing file ' + path)
     else:
         print('File ' + path + ' does not exist!')
         print('Generating new training data and new file.')
