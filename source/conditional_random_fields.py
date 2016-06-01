@@ -4,8 +4,8 @@ import nltk
 
 TRAINED_CRF_MODEL = '../data/trained-models/trained_crf.model'
 TRAINED_CRF_PUNCT_MODEL = '../data/trained-models/trained_crf_punct.model'
-TRAINED_CRF_LOWERCASE_MODEL = '../data/trained-models/trained_crf_lowercase.model'
-TRAINED_CRF_LOWERCASE_PUNCT_MODEL = '../data/trained-models/trained_crf_lowercase_punct.model'
+TRAINED_CRF_LOWER_MODEL = '../data/trained-models/trained_crf_lower.model'
+TRAINED_CRF_LOWER_PUNCT_MODEL = '../data/trained-models/trained_crf_lower_punct.model'
 
 
 def load_trained_crf_model(labeled_names, punctuation, lowercase):
@@ -34,12 +34,12 @@ def train_crf_model(labeled_names, punctuation, lowercase):
 def get_path(lowercase, punctuation):
     if punctuation:
         if lowercase:
-            path = TRAINED_CRF_LOWERCASE_PUNCT_MODEL
+            path = TRAINED_CRF_LOWER_PUNCT_MODEL
         else:
             path = TRAINED_CRF_PUNCT_MODEL
     else:
         if lowercase:
-            path = TRAINED_CRF_LOWERCASE_MODEL
+            path = TRAINED_CRF_LOWER_MODEL
         else:
             path = TRAINED_CRF_MODEL
     return path

@@ -1273,7 +1273,6 @@ Dede
 Dedie
 Dedra
 Dee
-Dee Dee
 Deeann
 Deeanne
 Deedee
@@ -1877,7 +1876,7 @@ Gae
 Gael
 Gail
 Gale
-Gale 
+Gale
 Galina
 Garland
 Garnet
@@ -2445,7 +2444,6 @@ Jillie
 Jilly
 Jinny
 Jo
-Jo Ann
 Jo-Ann
 JoAnn
 Jo-Anne
@@ -4995,7 +4993,7 @@ Zorah
 Zorana
 Zorina
 Zorine
-Zsa Zsa
+Zsa
 Zsazsa
 Zulema
 Zuzana

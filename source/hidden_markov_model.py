@@ -5,8 +5,8 @@ from nltk.tag.hmm import HiddenMarkovModelTrainer
 
 TRAINED_HMM_MODEL = '../data/trained-models/trained_hmm.dill'
 TRAINED_HMM_PUNCT_MODEL = '../data/trained-models/trained_hmm_punct.dill'
-TRAINED_HMM_LOWERCASE_MODEL = '../data/trained-models/trained_hmm_lowercase.dill'
-TRAINED_HMM_LOWERCASE_PUNCT_MODEL = '../data/trained-models/trained_hmm_lowercase_punct.dill'
+TRAINED_HMM_LOWER_MODEL = '../data/trained-models/trained_hmm_lower.dill'
+TRAINED_HMM_LOWER_PUNCT_MODEL = '../data/trained-models/trained_hmm_lower_punct.dill'
 
 
 def load_trained_hmm_model(labeled_names, punctuation, lowercase):
@@ -27,12 +27,12 @@ def load_trained_hmm_model(labeled_names, punctuation, lowercase):
 def get_path(lowercase, punctuation):
     if punctuation:
         if lowercase:
-            path = TRAINED_HMM_LOWERCASE_PUNCT_MODEL
+            path = TRAINED_HMM_LOWER_PUNCT_MODEL
         else:
             path = TRAINED_HMM_PUNCT_MODEL
     else:
         if lowercase:
-            path = TRAINED_HMM_LOWERCASE_MODEL
+            path = TRAINED_HMM_LOWER_MODEL
         else:
             path = TRAINED_HMM_MODEL
     return path

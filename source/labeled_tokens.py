@@ -5,8 +5,8 @@ from nltk.corpus import names
 
 LABELED_TOKENS = '../data/trained-models/labeled_tokens.txt'
 LABELED_TOKENS_PUNCT = '../data/trained-models/labeled_tokens_punct.txt'
-LABELED_TOKENS_LOWERCASE = '../data/trained-models/labeled_tokens_lowercase.txt'
-LABELED_TOKENS_LOWERCASE_PUNCT = '../data/trained-models/labeled_tokens_lowercase_punct.txt'
+LABELED_TOKENS_LOWER = '../data/trained-models/labeled_tokens_lower.txt'
+LABELED_TOKENS_LOWER_PUNCT = '../data/trained-models/labeled_tokens_lower_punct.txt'
 TAGGED_FILES_PATH = '../data/correctly-tagged-tsv-files'
 
 
@@ -31,26 +31,26 @@ def populate_labeled_tokens(punctuation, lowercase):
                 if len(line) < 2:
                     print("tsv error in " + filename + " at line " + str(reader.line_num) + ': ' + str(line))
                 else:
-                    y = line[0]
-                    x = line[1]
+                    label = line[0]
+                    token = line[1]
                     if punctuation:
                         if lowercase:
-                            story_tokens += [(x, y.lower())]
+                            story_tokens += [(token.lower(), label)]
                         else:
-                            story_tokens += [(x, y)]
+                            story_tokens += [(token, label)]
                     else:
                         if line[1].isalnum():
                             if lowercase:
-                                story_tokens += [(x, y.lower())]
+                                story_tokens += [(token.lower(), label)]
                             else:
-                                story_tokens += [(x, y)]
+                                story_tokens += [(token, label)]
 
             labeled_tokens += story_tokens
 
     with open(path, 'w') as file_output:
         file_output.write(repr(labeled_tokens))
 
-    print('Labeled tokens populated!\n')
+    print('Labeled tokens populated!')
     return labeled_tokens
 
 
@@ -85,12 +85,12 @@ def load_labeled_tokens(punctuation, lowercase):
 def get_path(lowercase, punctuation):
     if punctuation:
         if lowercase:
-            path = LABELED_TOKENS_LOWERCASE
-        else:
-            path = LABELED_TOKENS
-    else:
-        if lowercase:
-            path = LABELED_TOKENS_LOWERCASE_PUNCT
+            path = LABELED_TOKENS_LOWER_PUNCT
         else:
             path = LABELED_TOKENS_PUNCT
+    else:
+        if lowercase:
+            path = LABELED_TOKENS_LOWER
+        else:
+            path = LABELED_TOKENS
     return path

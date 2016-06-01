@@ -38,7 +38,29 @@ su ručno promijenjene oznake u 'C' za svaku riječ (ili skup riječi) koja pred
 Ti dokumenti se kasnije koriste za treniranje modela.
 
 U skripti `models.py` se treniraju modeli HMM (hidden Markov model, skriveni Markovljev mode) i CRF
-(conditional random fields, uvjetna slučajna polja). Oba modela se treniraju na dva načina - da uzimaju
-interpunkcijske znakove u obzir, te da ih ne uzimaju.
+(conditional random fields, uvjetna slučajna polja). Oba modela se treniraju na četiri načina:
+1. da uzimaju interpunkcijske znakove u obzir, te da treniraju nad izvornim oblicima riječi
+2. da ne uzimaju interpunkcijske znakove u obzir, te da treniraju nad izvornim oblicima riječi
+3. da uzimaju interpunkcijske znakove u obzir, te da treniraju nad lowercase oblicima riječi
+4. da ne uzimaju interpunkcijske znakove u obzir, te da treniraju nad lowercase oblicima riječi
+
 Prilikom pokretanja skripte se može odabrati hoće li se koristiti već istrenirani modeli ili će se
 trenirati novi modeli.
+
+Stanford NER se trenira posebno, s obzirom da NLTK ima samo podršku za označavanje korištenjem već
+postojećih modela. U `/lib/stanford-ner` se nalazi `properties` datoteka u kojoj su navedene
+postavke za treniranje novog modela. Novi model se trenira pokretanjem sljedećih naredbi iz tog
+direktorija:
+```
+java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier -prop ner.properties -trainFile training-sets/tokenized_content.tsv -serializeTo classifiers/trained_stanford_ner.ser.gz
+
+java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier -prop ner.properties -trainFile training-sets/tokenized_content_lower.tsv -serializeTo classifiers/trained_stanford_ner_lower.ser.gz
+
+java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier -prop ner.properties -trainFile training-sets/tokenized_content_punct.tsv -serializeTo classifiers/trained_stanford_ner_punct.ser.gz
+
+java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier -prop ner.properties -trainFile training-sets/tokenized_content_lower_punct.tsv -serializeTo classifiers/trained_stanford_ner_lower_punct.ser.gz
+
+```
+
+`mx4g` parametar zadaje 4gb radne memorije za ovaj proces. Ako se Java pobuni, moguće je trenirati i
+s manje memorije. Detaljnije piše [ovdje](http://nlp.stanford.edu/software/crf-faq.shtml#d).

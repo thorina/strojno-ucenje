@@ -6,6 +6,7 @@ from collections import Counter
 from nltk.tokenize import word_tokenize, wordpunct_tokenize
 
 from source.models import Models
+from source.utils import write_tagged_content_to_file
 
 TEST_FILES_PATH = '../data/test-files'
 TAGGED_TEST_FILES_PATH = '../data/test-files/tagged-test-files'
@@ -19,11 +20,11 @@ def tag_file_with_all_models(file_name, models):
         return
 
     content = get_content(path)
-    content_lowercase = content.lower()
+    content_lower = content.lower()
     tokenized_content = wordpunct_tokenize(content)
     tokenized_content_punct = word_tokenize(content)
-    tokenized_content_lowercase = wordpunct_tokenize(content_lowercase)
-    tokenized_content_lowercase_punct = word_tokenize(content_lowercase)
+    tokenized_content_lower = wordpunct_tokenize(content_lower)
+    tokenized_content_lower_punct = word_tokenize(content_lower)
 
     print('\nTagging content with HMM without punctuation...')
     tagged_content = tag_tokens_with_model(tokenized_content, models.hmm, False)
@@ -36,12 +37,12 @@ def tag_file_with_all_models(file_name, models):
     write_tagged_content_to_file(tagged_content, tagged_file_path)
 
     print('\nTagging content with HMM with lowercase tokens without punctuation...')
-    tagged_content = tag_tokens_with_model(tokenized_content_lowercase, models.hmm_lowercase, True)
+    tagged_content = tag_tokens_with_model(tokenized_content_lower, models.hmm_lower, True)
     tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_hmm_lower' + '.tsv'
     write_tagged_content_to_file(tagged_content, tagged_file_path)
 
     print('\nTagging content with HMM with lowercase tokens with punctuation...')
-    tagged_content = tag_tokens_with_model(tokenized_content_lowercase_punct, models.hmm_lowercase_punct, True)
+    tagged_content = tag_tokens_with_model(tokenized_content_lower_punct, models.hmm_lower_punct, True)
     tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_hmm_lower_punct' + '.tsv'
     write_tagged_content_to_file(tagged_content, tagged_file_path)
 
@@ -56,12 +57,12 @@ def tag_file_with_all_models(file_name, models):
     write_tagged_content_to_file(tagged_content, tagged_file_path)
 
     print('\nTagging content with CRF with lowercase tokens without punctuation...')
-    tagged_content = tag_tokens_with_model(tokenized_content_lowercase, models.crf_lowercase, True)
+    tagged_content = tag_tokens_with_model(tokenized_content_lower, models.crf_lower, True)
     tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_crf_lower' + '.tsv'
     write_tagged_content_to_file(tagged_content, tagged_file_path)
 
     print('\nTagging content with CRF with lowercase tokens with punctuation...')
-    tagged_content = tag_tokens_with_model(tokenized_content_lowercase_punct, models.crf_lowercase_punct, True)
+    tagged_content = tag_tokens_with_model(tokenized_content_lower_punct, models.crf_lower_punct, True)
     tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_crf_lower_punct' + '.tsv'
     write_tagged_content_to_file(tagged_content, tagged_file_path)
 
@@ -89,14 +90,6 @@ def tag_tokens_with_model(tokens, model, lowercase):
         print(character + ' ' + str(occurrences))
 
     return tagged_content
-
-
-def write_tagged_content_to_file(tagged_content, tagged_file_path):
-    with open(tagged_file_path, 'w') as csv_file:
-        csv_writer = csv.writer(csv_file, delimiter='\t')
-        for token, label in tagged_content:
-            csv_writer.writerow([label] + [token])
-        print('File ' + tagged_file_path + ' created!')
 
 
 def get_content(path):
