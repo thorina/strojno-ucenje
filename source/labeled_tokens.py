@@ -7,7 +7,7 @@ LABELED_TOKENS = '../data/trained-models/labeled_tokens.txt'
 LABELED_TOKENS_PUNCT = '../data/trained-models/labeled_tokens_punct.txt'
 LABELED_TOKENS_LOWER = '../data/trained-models/labeled_tokens_lower.txt'
 LABELED_TOKENS_LOWER_PUNCT = '../data/trained-models/labeled_tokens_lower_punct.txt'
-TAGGED_FILES_PATH = '../data/correctly-tagged-tsv-files'
+TAGGED_FILES_PATH = '../data/training-data'
 
 
 def populate_labeled_tokens(punctuation, lowercase):

@@ -15,7 +15,7 @@ TRAINED_STANFORD_NER_LOWER = 'trained_stanford_ner_lower.ser.gz'
 TRAINED_STANFORD_NER_PUNCT = 'trained_stanford_ner_punct.ser.gz'
 TRAINED_STANFORD_NER = 'trained_stanford_ner.ser.gz'
 
-TEST_FILES_PATH = '../data/test-files'
+TEST_FILES_PATH = '../data/test-files/stories'
 TAGGED_TEST_FILES_PATH = '../data/test-files/tagged-test-files'
 
 PATH_TOKENIZED_CONTENT = '../lib/stanford-ner/training-sets/tokenized_content.tsv'

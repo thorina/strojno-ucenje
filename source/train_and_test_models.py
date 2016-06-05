@@ -8,7 +8,7 @@ from nltk.tokenize import word_tokenize, wordpunct_tokenize
 from source.models import Models
 from source.utils import write_tagged_content_to_file
 
-TEST_FILES_PATH = '../data/test-files'
+TEST_FILES_PATH = '../data/test-files/stories'
 TAGGED_TEST_FILES_PATH = '../data/test-files/tagged-test-files'
 
 
