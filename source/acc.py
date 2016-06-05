@@ -44,13 +44,18 @@ for j in file_for_train:
     if i > 5 :
         models.retrain_part_models(list_dir)
         y_crf_data = y_crf_data + [models.crf.evaluate([labeled_test])]
-        y_hmm_data = y_hmm_data + [models.hmm.test([labeled_test])]
+        y_hmm_data = y_hmm_data + [models.hmm.evaluate([labeled_test])]
         x_data = x_data + [j]
         i = 0
-        list_dir = []
+        #list_dir = []
 
     list_dir = list_dir + [j]
     i = i + 1
+
+models.retrain_models()
+y_crf_data =y_crf_data + [models.crf.evaluate([labeled_test])]
+y_hmm_data = y_hmm_data + [models.hmm.test([labeled_test])]
+
 
 print (y_crf_data)
 print (y_hmm_data)
