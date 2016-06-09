@@ -2,7 +2,7 @@ O	In
 O	the
 O	city
 O	of
-O	Famagosta
+C	Famagosta
 O	,
 O	in
 O	the
@@ -15,12 +15,12 @@ O	lived
 O	a
 O	very
 O	rich
-O	gentleman
+C	gentleman
 O	.
 O	His
 O	name
 O	was
-C	Theodorus
+O	Theodorus
 O	:
 O	he
 O	married
@@ -82,7 +82,7 @@ O	,
 O	who
 O	was
 O	named
-C	Fortunatus
+O	Fortunatus
 O	;
 O	so
 O	one
@@ -92,7 +92,7 @@ O	nothing
 O	could
 O	have
 O	kept
-C	Theodorus
+O	Theodorus
 O	from
 O	being
 O	the
@@ -229,7 +229,7 @@ O	saying
 O	,
 O	""""
 O	Dear
-C	Theodorus
+O	Theodorus
 O	,
 O	to
 O	be
@@ -266,7 +266,7 @@ O	it
 O	.
 O	""""
 O	So
-C	Theodorus
+O	Theodorus
 O	set
 O	to
 O	work
@@ -312,7 +312,7 @@ O	in
 O	this
 O	manner
 O	till
-C	Fortunatus
+O	Fortunatus
 O	was
 O	sixteen
 O	years
@@ -335,7 +335,7 @@ O	sitting
 O	at
 O	dinner
 O	,
-C	Theodorus
+O	Theodorus
 O	fixed
 O	his
 O	eyes
@@ -359,7 +359,7 @@ O	father
 O	?
 O	""""
 O	said
-C	Fortunatus
+O	Fortunatus
 O	.
 O	""""
 O	Ah
@@ -369,7 +369,7 @@ O	child
 O	,
 O	""""
 O	said
-C	Theodorus
+O	Theodorus
 O	,
 O	""""
 O	I
@@ -407,11 +407,11 @@ O	living
 O	.
 O	""""
 O	""""
-O	Father
+C	Father
 O	,
 O	""""
 O	replied
-C	Fortunatus
+O	Fortunatus
 O	,
 O	""""
 O	do
@@ -460,7 +460,7 @@ O	somehow
 O	.
 O	""""
 O	When
-C	Fortunatus
+O	Fortunatus
 O	had
 O	done
 O	his
@@ -507,9 +507,9 @@ O	-
 O	shore
 O	,
 O	the
-C	Earl
+O	Earl
 O	of
-O	Flanders
+C	Flanders
 O	,
 O	who
 O	had
@@ -532,9 +532,9 @@ O	to
 O	set
 O	sail
 O	for
-O	Flanders
+C	Flanders
 O	.
-C	Fortunatus
+O	Fortunatus
 O	now
 O	thought
 O	he
@@ -544,14 +544,14 @@ O	himself
 O	to
 O	be
 O	the
-C	Earl
+O	Earl
 O	'
 O	s
 O	page
 O	.
 O	When
 O	the
-C	Earl
+O	Earl
 O	saw
 O	that
 O	he
@@ -603,10 +603,10 @@ O	at
 O	the
 O	port
 O	of
-O	Venice
+C	Venice
 O	,
 O	where
-C	Fortunatus
+O	Fortunatus
 O	saw
 O	many
 O	strange
@@ -638,7 +638,7 @@ O	this
 O	they
 O	came
 O	to
-O	Flanders
+C	Flanders
 O	;
 O	and
 O	they
@@ -651,7 +651,7 @@ O	shore
 O	,
 O	before
 O	the
-C	Earl
+O	Earl
 O	,
 O	his
 O	master
@@ -698,7 +698,7 @@ O	the
 O	rest
 O	,
 O	the
-C	Earl
+O	Earl
 O	'
 O	s
 O	lady
@@ -728,7 +728,7 @@ O	them
 O	was
 O	won
 O	by
-C	Fortunatus
+O	Fortunatus
 O	,
 O	and
 O	the
@@ -750,7 +750,7 @@ O	ran
 O	another
 O	tilt
 O	with
-C	Fortunatus
+O	Fortunatus
 O	,
 O	so
 O	that
@@ -774,7 +774,7 @@ O	the
 O	fourth
 O	course
 O	,
-C	Fortunatus
+O	Fortunatus
 O	hoisted
 O	Timothy
 O	a
@@ -797,7 +797,7 @@ O	,
 O	which
 O	pleased
 O	the
-C	Earl
+O	Earl
 O	and
 O	Countess
 O	so
@@ -805,7 +805,7 @@ O	much
 O	that
 O	they
 O	praised
-C	Fortunatus
+O	Fortunatus
 O	,
 O	and
 O	thought
@@ -821,7 +821,7 @@ O	time
 O	,
 O	also
 O	,
-C	Fortunatus
+O	Fortunatus
 O	had
 O	many
 O	rich
@@ -854,7 +854,7 @@ O	and
 O	one
 O	,
 O	named
-C	Robert
+O	Robert
 O	,
 O	who
 O	had
@@ -864,7 +864,7 @@ O	a
 O	great
 O	friendship
 O	for
-C	Fortunatus
+O	Fortunatus
 O	,
 O	made
 O	him
@@ -877,7 +877,7 @@ O	seeming
 O	kindness
 O	,
 O	the
-C	Earl
+O	Earl
 O	,
 O	in
 O	secret
@@ -890,7 +890,7 @@ O	skill
 O	in
 O	tilting
 O	.
-C	Robert
+O	Robert
 O	said
 O	,
 O	too
@@ -900,7 +900,7 @@ O	he
 O	had
 O	heard
 O	the
-C	Earl
+O	Earl
 O	give
 O	private
 O	orders
@@ -927,11 +927,11 @@ O	be
 O	out
 O	hunting
 O	.
-C	Fortunatus
+O	Fortunatus
 O	thanked
 O	the
 O	wicked
-C	Robert
+O	Robert
 O	for
 O	what
 O	he
@@ -955,7 +955,7 @@ O	swiftest
 O	horse
 O	in
 O	the
-C	Earl
+O	Earl
 O	'
 O	s
 O	stables
@@ -967,10 +967,10 @@ O	country
 O	.
 O	When
 O	the
-C	Earl
+O	Earl
 O	heard
 O	that
-C	Fortunatus
+O	Fortunatus
 O	had
 O	gone
 O	away
@@ -1012,12 +1012,12 @@ O	left
 O	them
 O	.
 O	The
-C	Earl
+O	Earl
 O	then
 O	said
 O	,
 O	""""
-C	Fortunatus
+O	Fortunatus
 O	was
 O	a
 O	lad
@@ -1062,7 +1062,7 @@ O	In
 O	the
 O	meantime
 O	,
-C	Fortunatus
+O	Fortunatus
 O	,
 O	when
 O	he
@@ -1071,7 +1071,7 @@ O	himself
 O	out
 O	of
 O	the
-C	Earl
+O	Earl
 O	'
 O	s
 O	country
@@ -1161,7 +1161,7 @@ O	and
 O	ladies
 O	of
 O	the
-C	Earl
+O	Earl
 O	'
 O	s
 O	court
@@ -1197,7 +1197,7 @@ O	had
 O	taken
 O	from
 O	the
-C	Earl
+O	Earl
 O	'
 O	s
 O	stable
@@ -1277,7 +1277,7 @@ O	of
 O	money
 O	.
 O	When
-C	Fortunatus
+O	Fortunatus
 O	found
 O	that
 O	he
@@ -1496,7 +1496,7 @@ O	up
 O	,
 O	and
 O	saw
-C	Fortunatus
+O	Fortunatus
 O	,
 O	and
 O	straightway
@@ -1511,7 +1511,7 @@ O	get
 O	at
 O	him
 O	.
-C	Fortunatus
+O	Fortunatus
 O	drew
 O	his
 O	sword
@@ -1577,7 +1577,7 @@ O	on
 O	the
 O	ground
 O	.
-C	Fortunatus
+O	Fortunatus
 O	now
 O	looked
 O	around
@@ -1760,7 +1760,7 @@ O	shall
 O	be
 O	.
 O	""""
-C	Fortunatus
+O	Fortunatus
 O	was
 O	not
 O	a
@@ -1895,7 +1895,7 @@ O	lose
 O	its
 O	power
 O	.
-C	Fortunatus
+O	Fortunatus
 O	now
 O	did
 O	not
@@ -2029,7 +2029,7 @@ O	nothing
 O	to
 O	fear
 O	,
-C	Fortunatus
+O	Fortunatus
 O	walked
 O	boldly
 O	up
@@ -2085,7 +2085,7 @@ O	will
 O	do
 O	.
 O	""""
-C	Fortunatus
+O	Fortunatus
 O	very
 O	soon
 O	ate
@@ -2233,7 +2233,7 @@ O	be
 O	passing
 O	out
 O	.
-C	Fortunatus
+O	Fortunatus
 O	asked
 O	the
 O	landlord
@@ -2413,7 +2413,7 @@ O	think
 O	of
 O	going
 O	to
-O	Famagosta
+C	Famagosta
 O	to
 O	visit
 O	his
@@ -2431,7 +2431,7 @@ O	But
 O	,
 O	""""
 O	thought
-C	Fortunatus
+O	Fortunatus
 O	,
 O	""""
 O	as
@@ -2482,8 +2482,8 @@ O	he
 O	met
 O	with
 O	an
-O	old
-O	gentleman
+C	old
+C	gentleman
 O	,
 O	called
 O	Loch
@@ -2551,7 +2551,7 @@ O	Fitty
 O	found
 O	how
 O	much
-C	Fortunatus
+O	Fortunatus
 O	wished
 O	to
 O	obtain
@@ -2599,7 +2599,7 @@ O	of
 O	the
 O	people
 O	.
-C	Fortunatus
+O	Fortunatus
 O	thought
 O	to
 O	himself
@@ -2629,8 +2629,8 @@ O	offer
 O	,
 O	which
 O	the
-O	old
-O	gentleman
+C	old
+C	gentleman
 O	agreed
 O	to
 O	,
@@ -2648,7 +2648,7 @@ O	visit
 O	his
 O	family
 O	.
-C	Fortunatus
+O	Fortunatus
 O	told
 O	him
 O	that
@@ -2731,7 +2731,7 @@ O	all
 O	the
 O	journey
 O	,
-C	Fortunatus
+O	Fortunatus
 O	did
 O	not
 O	once
@@ -2861,7 +2861,7 @@ O	noble
 O	title
 O	.
 O	""""
-C	Fortunatus
+O	Fortunatus
 O	heard
 O	this
 O	with
@@ -2930,7 +2930,7 @@ O	your
 O	youngest
 O	daughter
 O	,
-C	Cassandra
+O	Cassandra
 O	,
 O	for
 O	a
@@ -2942,7 +2942,7 @@ O	us
 O	as
 O	far
 O	as
-O	Famagosta
+C	Famagosta
 O	,
 O	and
 O	take
@@ -3012,7 +3012,7 @@ O	to
 O	the
 O	marriage
 O	of
-C	Fortunatus
+O	Fortunatus
 O	with
 O	his
 C	daughter
@@ -3066,7 +3066,7 @@ O	accept
 O	the
 O	hand
 O	of
-C	Fortunatus
+O	Fortunatus
 O	;
 O	and
 O	that
@@ -3085,7 +3085,7 @@ O	a
 O	few
 O	days
 O	for
-O	Famagosta
+C	Famagosta
 O	.
 O	The
 O	next
@@ -3104,7 +3104,7 @@ O	agreed
 O	on
 O	,
 O	and
-C	Fortunatus
+O	Fortunatus
 O	had
 O	the
 O	pleasure
@@ -3116,7 +3116,7 @@ O	lips
 O	of
 O	the
 O	beautiful
-C	Cassandra
+O	Cassandra
 O	,
 O	that
 O	the
@@ -3135,7 +3135,7 @@ O	him
 O	the
 O	most
 O	handsome
-O	gentleman
+C	gentleman
 O	in
 O	the
 O	world
@@ -3153,7 +3153,7 @@ O	on
 O	the
 O	journey
 O	.
-C	Fortunatus
+O	Fortunatus
 O	,
 O	Lord
 O	Loch
@@ -3189,13 +3189,13 @@ O	at
 O	the
 O	port
 O	of
-O	Famagosta
+C	Famagosta
 O	.
 O	There
 O	,
 O	however
 O	,
-C	Fortunatus
+O	Fortunatus
 O	found
 O	,
 O	with
@@ -3224,13 +3224,13 @@ O	an
 O	easy
 O	-
 O	tempered
-O	gentleman
+C	gentleman
 O	,
 O	and
 O	had
 O	his
 O	betrothed
-C	Cassandra
+O	Cassandra
 O	and
 O	her
 O	whole
@@ -3262,7 +3262,7 @@ O	lived
 O	all
 O	together
 O	in
-O	Famagosta
+C	Famagosta
 O	,
 O	and
 O	in
@@ -3305,7 +3305,7 @@ O	.
 O	For
 O	twelve
 O	years
-C	Fortunatus
+O	Fortunatus
 O	lived
 O	a
 O	very
@@ -3339,7 +3339,7 @@ O	from
 O	the
 O	purse
 O	of
-C	Fortunatus
+O	Fortunatus
 O	,
 O	they
 O	soon
@@ -3521,7 +3521,7 @@ O	for
 O	Alexandria
 O	.
 O	When
-C	Fortunatus
+O	Fortunatus
 O	came
 O	to
 O	this
@@ -3541,7 +3541,7 @@ O	handsome
 O	present
 O	to
 O	the
-C	sultan
+O	sultan
 O	;
 O	so
 O	he
@@ -3558,7 +3558,7 @@ O	thousand
 O	pounds
 O	.
 O	The
-C	sultan
+O	sultan
 O	was
 O	so
 O	much
@@ -3578,11 +3578,11 @@ O	to
 O	be
 O	given
 O	to
-C	Fortunatus
+O	Fortunatus
 O	in
 O	return
 O	.
-C	Fortunatus
+O	Fortunatus
 O	sent
 O	these
 O	straight
@@ -3611,7 +3611,7 @@ O	then
 O	going
 O	back
 O	to
-O	Famagosta
+C	Famagosta
 O	.
 O	Having
 O	stated
@@ -3630,7 +3630,7 @@ O	he
 O	obtained
 O	from
 O	the
-C	sultan
+O	sultan
 O	such
 O	passports
 O	and
@@ -3706,7 +3706,7 @@ O	wait
 O	on
 O	him
 O	.
-C	Fortunatus
+O	Fortunatus
 O	made
 O	him
 O	some
@@ -3717,7 +3717,7 @@ O	and
 O	went
 O	on
 O	to
-O	Calcutta
+C	Calcutta
 O	;
 O	and
 O	,
@@ -3787,7 +3787,7 @@ O	his
 O	old
 O	friend
 O	the
-C	sultan
+O	sultan
 O	,
 O	to
 O	whom
@@ -3811,7 +3811,7 @@ O	After
 O	dinner
 O	,
 O	the
-C	sultan
+O	sultan
 O	said
 O	:
 O	""""
@@ -3821,7 +3821,7 @@ O	be
 O	vastly
 O	amusing
 O	,
-C	Fortunatus
+O	Fortunatus
 O	,
 O	to
 O	hear
@@ -3846,7 +3846,7 @@ O	your
 O	travels
 O	.
 O	""""
-C	Fortunatus
+O	Fortunatus
 O	did
 O	as
 O	he
@@ -3856,7 +3856,7 @@ O	,
 O	and
 O	pleased
 O	the
-C	sultan
+O	sultan
 O	very
 O	much
 O	by
@@ -3910,7 +3910,7 @@ O	had
 O	ended
 O	,
 O	the
-C	sultan
+O	sultan
 O	said
 O	he
 O	was
@@ -3932,7 +3932,7 @@ O	curious
 O	thing
 O	than
 O	any
-C	Fortunatus
+O	Fortunatus
 O	had
 O	told
 O	him
@@ -3973,10 +3973,10 @@ O	all
 O	the
 O	rest
 O	.
-C	Fortunatus
+O	Fortunatus
 O	thought
 O	the
-C	sultan
+O	sultan
 O	was
 O	joking
 O	,
@@ -3999,7 +3999,7 @@ O	!
 O	""""
 O	said
 O	the
-C	sultan
+O	sultan
 O	,
 O	""""
 O	that
@@ -4045,7 +4045,7 @@ O	Indeed
 O	!
 O	""""
 O	said
-C	Fortunatus
+O	Fortunatus
 O	;
 O	""""
 O	and
@@ -4070,7 +4070,7 @@ O	,
 O	""""
 O	said
 O	the
-C	sultan
+O	sultan
 O	.
 O	""""
 O	One
@@ -4081,7 +4081,7 @@ O	it
 O	,
 O	""""
 O	said
-C	Fortunatus
+O	Fortunatus
 O	.
 O	""""
 O	Pray
@@ -4102,7 +4102,7 @@ O	,
 O	""""
 O	replied
 O	the
-C	sultan
+O	sultan
 O	;
 O	""""
 O	you
@@ -4111,7 +4111,7 @@ O	feel
 O	it
 O	.
 O	""""
-C	Fortunatus
+O	Fortunatus
 O	took
 O	up
 O	the
@@ -4138,7 +4138,7 @@ O	was
 O	going
 O	back
 O	to
-O	Famagosta
+C	Famagosta
 O	.
 O	In
 O	less
@@ -4180,7 +4180,7 @@ O	hour
 O	,
 O	before
 O	the
-C	sultan
+O	sultan
 O	had
 O	even
 O	time
@@ -4191,7 +4191,7 @@ O	his
 O	folly
 O	for
 O	letting
-C	Fortunatus
+O	Fortunatus
 O	try
 O	the
 O	cap
@@ -4204,7 +4204,7 @@ O	ship
 O	came
 O	safe
 O	to
-O	Famagosta
+C	Famagosta
 O	,
 O	after
 O	a
@@ -4212,7 +4212,7 @@ O	happy
 O	passage
 O	,
 O	and
-C	Fortunatus
+O	Fortunatus
 O	found
 O	his
 O	wife
@@ -4242,7 +4242,7 @@ O	the
 O	same
 O	grave
 O	.
-C	Fortunatus
+O	Fortunatus
 O	now
 O	began
 O	to
@@ -4346,7 +4346,7 @@ O	.
 O	At
 O	last
 O	,
-C	Fortunatus
+O	Fortunatus
 O	began
 O	to
 O	grow
@@ -4487,7 +4487,7 @@ O	died
 O	soon
 O	after
 O	.
-C	Fortunatus
+O	Fortunatus
 O	was
 O	buried
 O	with
@@ -4516,5 +4516,5 @@ O	by
 O	the
 O	people
 O	of
-O	Famagosta
+C	Famagosta
 O	.

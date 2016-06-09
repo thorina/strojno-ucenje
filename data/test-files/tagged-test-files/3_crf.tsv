@@ -1329,7 +1329,7 @@ O	complete
 O	;
 O	even
 O	the
-O	old
+C	old
 C	king
 O	said
 O	to
@@ -1579,7 +1579,7 @@ O	,
 O	and
 O	the
 C	fairy
-C	godmother
+O	godmother
 O	vanished
 O	,
 O	leaving
@@ -2728,7 +2728,7 @@ O	to
 O	have
 O	a
 C	fairy
-C	godmother
+O	godmother
 O	.
 O	For
 O	the

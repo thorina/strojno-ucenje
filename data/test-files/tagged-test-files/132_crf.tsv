@@ -191,7 +191,7 @@ O	the
 O	Christian
 O	converts
 O	of
-O	Scandinavia
+C	Scandinavia
 O	,
 O	like
 O	those
@@ -202,8 +202,8 @@ O	,
 O	transferred
 O	to
 O	the
-O	Virgin
-O	Mary
+C	Virgin
+C	Mary
 O	the
 O	attributes
 O	that
@@ -304,7 +304,7 @@ O	,
 C	Freya
 O	(
 O	or
-O	Frigga
+C	Frigga
 O	)
 O	,
 O	wife
@@ -312,7 +312,7 @@ O	of
 C	Odin
 O	the
 O	All
-O	Father
+C	Father
 O	,
 O	sat
 O	with
@@ -331,7 +331,7 @@ O	was
 O	known
 O	as
 O	""""
-O	Frigga
+C	Frigga
 O	'
 O	s
 O	spindle
@@ -430,7 +430,7 @@ O	was
 O	also
 O	hers
 O	.
-O	Hers
+C	Hers
 O	,
 O	too
 O	,
@@ -1190,8 +1190,8 @@ O	in
 O	that
 O	time
 O	the
-O	Ice
-O	Giants
+C	Ice
+C	Giants
 O	invaded
 O	his
 O	realm
@@ -1248,8 +1248,8 @@ O	sunshine
 O	,
 O	and
 O	the
-O	Ice
-O	Giants
+C	Ice
+C	Giants
 O	in
 O	terror
 O	fled
@@ -1283,12 +1283,12 @@ C	Odin
 O	,
 O	the
 O	All
-O	Father
+C	Father
 O	,
 O	himself
 O	.
 O	The
-O	Winilers
+C	Winilers
 O	who
 O	were
 O	warring
@@ -1365,7 +1365,7 @@ O	the
 O	Vandals
 O	and
 O	the
-O	Winilers
+C	Winilers
 O	making
 O	ready
 O	for
@@ -1563,7 +1563,7 @@ O	hers
 O	.
 O	To
 O	the
-O	Winilers
+C	Winilers
 O	,
 O	she
 O	gave
@@ -1662,8 +1662,8 @@ O	greet
 O	him
 O	.
 O	""""
-O	Charles
-O	Kingsley
+C	Charles
+C	Kingsley
 O	.
 O	When
 O	the
@@ -1718,7 +1718,7 @@ O	.
 O	""""
 O	They
 O	are
-O	Winilers
+C	Winilers
 O	!
 O	""""
 O	said
@@ -2172,10 +2172,10 @@ O	it
 O	very
 O	dear
 O	.
-O	THE
-O	DEATH
-O	OF
-O	BALDUR
+C	THE
+C	DEATH
+C	OF
+C	BALDUR
 O	""""
 O	I
 O	heard
@@ -4380,7 +4380,7 @@ O	gilt
 O	and
 O	splendid
 O	,
-C	Rose
+O	Rose
 O	the
 O	figure
 O	-
