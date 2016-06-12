@@ -94,10 +94,10 @@ class Models:
         labeled_tokens_lower = part_populate_labeled_tokens(list_dir,False, True)
         labeled_tokens_lower_punct = part_populate_labeled_tokens(list_dir,True, True)
 
-        self.hmm = train_hmm_model(labeled_tokens, False, False)
-        self.hmm_punct = train_hmm_model(labeled_tokens_punct, True, False)
-        self.hmm_lower = train_hmm_model(labeled_tokens_lower, False, True)
-        self.hmm_lower_punct = train_hmm_model(labeled_tokens_lower_punct, True, True)
+        #self.hmm = train_hmm_model(labeled_tokens, False, False)
+        #self.hmm_punct = train_hmm_model(labeled_tokens_punct, True, False)
+        #self.hmm_lower = train_hmm_model(labeled_tokens_lower, False, True)
+        #self.hmm_lower_punct = train_hmm_model(labeled_tokens_lower_punct, True, True)
 
         self.crf = train_crf_model(labeled_tokens, False, False)
         self.crf_punct = train_crf_model(labeled_tokens_punct, True, False)

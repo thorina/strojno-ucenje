@@ -1,0 +1,423 @@
+26:
+comp tag: king fairy prince cherry one queen zelia convey wolf certain beast little dog charming white pigeon fair
+our tag: good king fairy candide prince cherry dog bibi queen zelia suliman
+[[  7   4]
+ [ 10 899]]
+
+
+107:
+comp tag: canada sisters cardin sol
+our tag: lem lawson will borson ike frazier cried mrs sol cardin
+[[  2   8]
+ [  2 489]]
+
+
+326:
+comp tag: jemima mamma man servant china cat doctor ribbon dragon mother mountain won blue
+our tag: mrs skratdj mr children papa polly harry master snap gentleman dragon
+[[   1   10]
+ [  12 1489]]
+
+
+105:
+comp tag: aurora
+our tag: had boys the keeper wife woman neils petersen lars handed father
+[[  0  11]
+ [  1 815]]
+
+
+111:
+comp tag: orpheus apollo man nor beast prince princess butterfly zeus queen proserpine ruthless king goddess mother
+our tag: orpheus eurydice apollo calliope hymen pluto proserpine charon jason
+[[  3   6]
+ [ 12 871]]
+
+
+13:
+comp tag: dwarfs dwarf king prince old mother
+our tag: mother bear dwarf
+[[  2   1]
+ [  4 679]]
+
+
+31:
+comp tag: king princess magician fairy cat little prince queen mother beast old your father hungry court etiquette
+our tag: king princess fairy cat minon prince wish darling flatterers
+[[  5   4]
+ [ 11 711]]
+
+
+41:
+comp tag: captain king prince sindbad kela hindbad
+our tag: captain king prince sindbad wife hindbad
+[[  5   1]
+ [  1 666]]
+
+
+40:
+comp tag: captain dwarfs genie giant cat sindbad hindbad
+our tag: merchants captain giant giants serpent sindbad hindbad
+[[  4   3]
+ [  3 642]]
+
+
+109:
+comp tag: phoebus apollo zeus aurora giant libya three sisters king
+our tag: apollo clymene phaeton epaphos phoebus zeus heliades cycnus
+[[  3   5]
+ [  6 825]]
+
+
+104:
+comp tag: knight king
+our tag: johnny appleseed old man farmer wife children villagers young men maidens fathers mothers
+[[  0  13]
+ [  2 438]]
+
+
+44:
+comp tag: sindbad king servant merchant slaves hindbad
+our tag: sindbad king of serendib man pirates slave patron slaves hindbad
+[[  4   6]
+ [  2 609]]
+
+
+32:
+comp tag: queen king princess little fairy sisters prince one warrior suffers adieus knight your father dumb beast old
+our tag: queen king old woman désirée princess fairy prince warrior black becafico tulip longthorn gilliflower of the fountain knight
+[[   8   10]
+ [   9 1392]]
+
+
+43:
+comp tag: captain king prince sindbad female slave appears sultan hindbad
+our tag: arabic prince sindbad commander of the faithful hindbad
+[[  3   5]
+ [  6 757]]
+
+
+38:
+comp tag: merchant captain king sindbad hindbad
+our tag: father captain king sindbad hindbad
+[[  4   1]
+ [  1 520]]
+
+
+10:
+comp tag: beast robbers captain
+our tag: man donkey master dog cat cock robbers captain
+[[  2   6]
+ [  1 416]]
+
+
+253:
+comp tag: bokwewa woman rose frog
+our tag: bokwewa brother kwasynd brothers
+[[  1   3]
+ [  3 681]]
+
+
+16:
+comp tag: king prince princess old frog little dog servant
+our tag: king son iron stove daughter prince father old princess miller swineherd hutzelbein princesses
+[[  4   9]
+ [  4 496]]
+
+
+342:
+comp tag: alice butterfly father william
+our tag: caterpillar alice father william pigeon
+[[  3   2]
+ [  1 574]]
+
+
+28:
+comp tag: king queen little flora fairy soussio princess prince beauty win knight florina magician won troutina sent back cat mirror takes opium iron stove
+our tag: king queen florina fairy soussio troutina charming blue bird
+[[   6    3]
+ [  17 1276]]
+
+
+362:
+comp tag: sir bors king galahad became
+our tag: sir percivale galahad bors king pelles joseph estorause bishop
+[[  4   5]
+ [  1 274]]
+
+
+150:
+comp tag: white bird goat beast king lycia iobates convert chimæra mirror
+our tag: bellerophon maiden country fellow old man aged child king iobates
+[[   2    8]
+ [   8 1590]]
+
+
+24:
+comp tag: king whose daughters giant little princess prince servant
+our tag: king daughter frog faithful henry
+[[  1   4]
+ [  7 393]]
+
+
+19:
+comp tag: beast wolf king queen
+our tag: brother sister witch roe king huntsmen queen baby
+[[  2   6]
+ [  2 571]]
+
+
+533:
+comp tag: prometheus pandora giant titan brothers apollo woman beast
+our tag: prometheus pandora chaos goddess of night erebus light day eros love epimethus pallas athené zeus hurled vulcan aphrodite apollo hermes
+[[  3  17]
+ [  5 807]]
+
+
+167:
+comp tag: acadia john beast climb cat babette
+our tag: ray churchill jacques pourbiere
+[[  0   4]
+ [  6 691]]
+
+
+4:
+comp tag: dwarfs slave fairy rambin old giant cock elizabeth krabbin dog sister trine sisters gentlemen
+our tag: james dietrich john uncle klas starkwolt servant father elizabeth krabbin frederick krabbe mother speed andrew trine
+[[   3   13]
+ [  11 1373]]
+
+
+380:
+comp tag: king earl queen
+our tag: grim havelok king son earl godrich lord
+[[  2   5]
+ [  1 389]]
+
+
+30:
+comp tag: king queen sister
+our tag: king old woman witch queen stepmother mother brothers swans
+[[  2   7]
+ [  1 495]]
+
+
+20:
+comp tag: wolf
+our tag: mother grandmother little wolf
+[[  1   3]
+ [  0 235]]
+
+
+33:
+comp tag: iron lock sister
+our tag: daughter son mother brother margery father bird goldsmith millers
+[[  0   9]
+ [  3 546]]
+
+
+35:
+comp tag: ali baba captain sister prince slave mustapha rose abdalla means morgiana master murder dug merchants as cogia houssain
+our tag: cassim ali baba robbers captain sesame wife morgiana mustapha abdalla son cogia houssain
+[[   8    5]
+ [  10 1488]]
+
+
+5:
+comp tag: sister earl fairy princess prince knight
+our tag: merchant beauty sisters sister fairy beast little one eye two eyes three goat knight
+[[   3   11]
+ [   3 1193]]
+
+
+22:
+comp tag: king queen princess little dog fairy prince giant galifron
+our tag: fair one with golden locks king princess avenant owl dog cabriole galifron giant
+[[  5   8]
+ [  4 967]]
+
+
+160:
+comp tag: dwarf lora loki brock giant king queen father odin brother frey dwarfs sisters frigg maid tin appetite servant red
+our tag: thor sif thrude lora loki brock thrym freia odin frey heimdal queen frigg waiting maid
+[[   8    7]
+ [  11 1062]]
+
+
+11:
+comp tag: queen fairy sisters prince princess stood dumb king
+our tag: queen fairy riquet princesses sister prince princess
+[[  4   3]
+ [  4 559]]
+
+
+39:
+comp tag: sindbad hindbad
+our tag: merchants roc eagles merchant sindbad hindbad
+[[  2   4]
+ [  0 612]]
+
+
+17:
+comp tag: king queen prince furibon dwarf princess fairy gentilla abricotina charming little bird cat meant dwarfs bid apollo tom thumb notice old
+our tag: king queen furibon prince leander snake princess fairy gentilla stranger abricotina parrot
+[[   8    4]
+ [  13 1807]]
+
+
+6:
+comp tag: king arthur jack giant mr killer cormoran welsh magician prince knight cousin valiant hero brother rose named galligantus
+our tag: king arthur jack giant cornishman cormoran old blunderbore giants ladies welsh monster lady prince knight man galligantus
+[[   9    8]
+ [   9 1134]]
+
+
+29:
+comp tag: queen princess desert fairy stubborn daughter dwarf king prince cat
+our tag: queen mother princess desert fairy yellow dwarf king of the golden mines spanish cat mermaid nymphs
+[[  7   9]
+ [  3 661]]
+
+
+23:
+comp tag: king fairy one queen fountain rose little princess prince favourite wolf daughter with patipata blue eyes bear adieus papillette fair
+our tag: merinous king fairy of the fountain queen princess butterfly papillette prince favourite daughter queséca barber malabar patipata salmoé
+[[  10    8]
+ [  10 1549]]
+
+
+106:
+comp tag: slaves
+our tag: june madame joilet old woman hungry creline massa linkum missus jolly
+[[  0  11]
+ [  1 938]]
+
+
+3:
+comp tag: sisters two cinderella king elder fairy princess old queen godmother prince altogether
+our tag: mother stepmother sisters father cinderella son sister godmother king queen javotte
+[[  5   6]
+ [  7 712]]
+
+
+155:
+comp tag: epimetheus father or mother pandora little child like playfellow likewise fairy sisters
+our tag: epimetheus pandora quicksilver hope hopes
+[[   2    3]
+ [  10 1158]]
+
+
+42:
+comp tag: captain sindbad hindbad
+our tag: captain merchants sindbad hindbad
+[[  3   1]
+ [  0 537]]
+
+
+14:
+comp tag: king jack minutes fairy giant little dog three years mother
+our tag: jack mother butcher father fairy wife giant
+[[  4   3]
+ [  6 955]]
+
+
+25:
+comp tag: king little dog prince your father princess queen fairy old dragon parrot gentleman sisters
+our tag: king dog prince white cat brothers queen fairy violent
+[[   5    4]
+ [   9 1203]]
+
+
+355:
+comp tag: gareth king arthur sir launcelot gawain knight one attack blue lady sister tristram made dwarf smote harder
+our tag: gareth lot bellicent gawain mordred king arthur court sir kay launcelot sister knight red lady blue linet liones tristram dwarf gaheris
+[[ 12   9]
+ [  5 651]]
+
+
+337:
+comp tag: king queen prince daughter brownberry augustus princess doctor fairy
+our tag: king queen hammerheel fleecefold rough ruddy blackthorn brownberry seventh son fairyfoot boy robin goodfellow father mother princess maybloom shepherd
+[[  4  15]
+ [  5 897]]
+
+
+21:
+comp tag: king princess gentleman ogre beast big merchant
+our tag: cat puss king marquis of carabas princess ogre wolf goslings goose miller gosling
+[[  3  10]
+ [  4 771]]
+
+
+346:
+comp tag: alice queen king gryphon
+our tag: duchess alice queen king mock turtle gryphon lady
+[[  4   4]
+ [  0 586]]
+
+
+34:
+comp tag: alice servant
+our tag: clever alice father mother hans maid servant boy
+[[  2   6]
+ [  0 370]]
+
+
+18:
+comp tag: robbers fairy coquette ogre madam king queen adieus gentleman prince my mother dowager princess old tender giant
+our tag: thomas mother fairy coquette madam enchanter barabapatapouf daughter rose king queen prince terrible
+[[   7    6]
+ [  10 1634]]
+
+
+36:
+comp tag: china african magician brother mustapha merchant drew aladdin princess buddir al rose my daughter mother one of six women slaves your prince wants woman fatima
+our tag: mustapha aladdin african magician mother sultan genie slaves slave princess buddir al buddoor women fatima
+[[  11    4]
+ [  14 2335]]
+
+
+135:
+comp tag: fairy tale usna fiona gala king starry eyes should mirror queen conor rose three ravens wolf essa lora tu mein na of alba rossa brothers
+our tag: deirdrê conor felim cathbad lavarcam naoise ardan ainle cuchulainn fergus illann
+[[   1   10]
+ [  24 1466]]
+
+
+132:
+comp tag: freya scandinavia madonna odin valhalla hungry sea dwarfs beauty twice queen dwarf king one baldur loki wife nanna giant prophetess angrbotha daughter of father brother hodur mother
+our tag: freya odin
+[[  2   0]
+ [ 25 654]]
+
+
+363:
+comp tag: king arthur when sir launcelot bors queen knight lavaine daughter elaine fair maid son morn forthwith led lucan stranger du lac gawain brother child peerless bade fetch lord
+our tag: king arthur sir launcelot bors queen knight lavaine elaine fair maid of northgalis bedivere lucan lionel ector gawain tirre guenevere
+[[ 13   7]
+ [ 15 601]]
+
+
+15:
+comp tag: king queen princess duchess grognon graciosa prince fairy percinet fair knight sisters forlorn power giant
+our tag: king queen graciosa duchess grognon percinet prince
+[[   7    0]
+ [   8 1034]]
+
+
+2:
+comp tag: gentleman ogre king duchess
+our tag: wife boys ogre daughters king ogress
+[[  2   4]
+ [  2 763]]
+
+
+9:
+comp tag: gentleman graciana lady servant beast old daughter cassandra sisters prester john captain
+our tag: theodorus graciana fortunatus earl servants timothy countess robert fortune lady lord cassandra ampedo
+[[  3  10]
+ [  9 806]]
+
+
+Sve:
+[[  241   372]
+ [  374 51712]]

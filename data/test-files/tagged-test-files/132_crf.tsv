@@ -799,7 +799,7 @@ O	wondrous
 O	skill
 O	of
 O	the
-O	dwarfs
+C	dwarfs
 O	in
 O	fashioning
 O	exquisite
@@ -896,7 +896,7 @@ O	furiously
 O	he
 O	summoned
 O	the
-O	dwarfs
+C	dwarfs
 O	--
 O	they
 O	who
@@ -922,7 +922,7 @@ O	wrong
 O	.
 O	But
 O	the
-O	dwarfs
+C	dwarfs
 O	loved
 C	Freya
 O	,
@@ -999,7 +999,7 @@ O	,
 O	and
 O	begged
 O	the
-O	dwarfs
+C	dwarfs
 O	to
 O	help
 O	her
@@ -1345,7 +1345,7 @@ O	gods
 O	and
 O	men
 O	,
-O	dwarfs
+C	dwarfs
 O	,
 O	elves
 O	,
@@ -2172,10 +2172,10 @@ O	it
 O	very
 O	dear
 O	.
-C	THE
-C	DEATH
-C	OF
-C	BALDUR
+O	THE
+O	DEATH
+O	OF
+O	BALDUR
 O	""""
 O	I
 O	heard
@@ -4380,7 +4380,7 @@ O	gilt
 O	and
 O	splendid
 O	,
-O	Rose
+C	Rose
 O	the
 O	figure
 O	-

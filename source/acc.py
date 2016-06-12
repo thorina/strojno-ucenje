@@ -2,13 +2,11 @@ import csv
 import os
 import numpy as np
 import re
-from collections import Counter
 
 from nltk.tokenize import word_tokenize, wordpunct_tokenize
 
 from source.models import Models
 from source.utils import write_tagged_content_to_file
-from source.labeled_tokens import part_populate_labeled_tokens
 TRANING_DATA = '../data/training-data'
 TEST_FILES_PATH = '../data/test-files/stories'
 TAGGED_TEST_FILES_PATH = '../data/test-files/tagged-test-files'
@@ -59,11 +57,30 @@ def tag_file_with_crf_model(file_name, model):
         return
 
     content = get_content(path)
+    content_lower = content.lower()
     tokenized_content = wordpunct_tokenize(content)
+    tokenized_content_punct = word_tokenize(content)
+    tokenized_content_lower = wordpunct_tokenize(content_lower)
+    tokenized_content_lower_punct = word_tokenize(content_lower)
 
     print('\nTagging content with CRF without punctuation...')
     tagged_content = tag_tokens_with_model(tokenized_content, model.crf, False)
     tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_crf' + '.tsv'
+    write_tagged_content_to_file(tagged_content, tagged_file_path)
+
+    print('\nTagging content with CRF with punctuation...')
+    tagged_content = tag_tokens_with_model(tokenized_content_punct, models.crf_punct, False)
+    tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_crf_punct' + '.tsv'
+    write_tagged_content_to_file(tagged_content, tagged_file_path)
+
+    print('\nTagging content with CRF with lowercase tokens without punctuation...')
+    tagged_content = tag_tokens_with_model(tokenized_content_lower, models.crf_lower, True)
+    tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_crf_lower' + '.tsv'
+    write_tagged_content_to_file(tagged_content, tagged_file_path)
+
+    print('\nTagging content with CRF with lowercase tokens with punctuation...')
+    tagged_content = tag_tokens_with_model(tokenized_content_lower_punct, models.crf_lower_punct, True)
+    tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_crf_lower_punct' + '.tsv'
     write_tagged_content_to_file(tagged_content, tagged_file_path)
 
 
@@ -95,6 +112,39 @@ def get_all_tags(tagged_list, letter):
     return return_list
 
 
+# zapisuje u file file_name koja je prica , tagove stroja, nase tagove, i matricu
+def write_to_file(file_name, story_num, machine_tag, our_tag, conf_mtr):
+    f = open(file_name, 'a')
+    f.write(story_num + ':\n')
+    f.write('comp tag: ' + ' '.join(machine_tag))
+    f.write('\n')
+    f.write('our tag: ' + ' '.join(our_tag))
+    f.write('\n')
+    f.write(np.array_str(conf_mtr))
+    f.write('\n\n\n')
+    f.close()
+
+
+# racuna matricu te poziva zapisivanje
+def calc(conf_mtr, machine_tag, our_tag, file_name, model_type):
+    machine_tag_c_set = get_all_tags(machine_tag, 'C')
+    our_tag_c_set = get_all_tags(our_tag, 'C')
+    our_tag_c_set_copy = our_tag_c_set[:]
+    our_tag_o_set = get_all_tags(our_tag, 'O')
+
+    for word in machine_tag_c_set:
+        if word in our_tag_c_set_copy:
+            conf_mtr[0][0] += 1
+            our_tag_c_set_copy.remove(word)
+        else:
+            conf_mtr[1][0] += 1
+
+    conf_mtr[0][1] = len(our_tag_c_set_copy)
+    # other su oznaceni kao other - oni koji nisu trebali biti other
+    conf_mtr[1][1] = len(our_tag_o_set) - conf_mtr[1][0]
+    write_to_file(model_type + '.txt', file_name, machine_tag_c_set, our_tag_c_set, conf_mtr)
+
+
 # funkcija za izradu matrice conf
 def make_conf_matrix(conf_matrix, txt_file_for_test, model):
     for q in range(0, len(txt_file_for_test)):
@@ -104,106 +154,70 @@ def make_conf_matrix(conf_matrix, txt_file_for_test, model):
 
         tag_file_with_crf_model(txt_file_for_test[q], model)
         crf_tag = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_crf.tsv')
+        crf_tag_punct = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_crf_punct.tsv')
+        crf_tag_lower = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_crf_lower.tsv')
+        crf_tag_lower_punct = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_crf_lower_punct.tsv')
         our_tag = parse_tsv(TRANING_DATA + '/'+str(int(txt_file_for_test[q])) + '.tsv')
 
-        # print(file_for_test_txt[i])
-        crf_tag_c_set = get_all_tags(crf_tag, 'C')
-        our_tag_c_set = get_all_tags(our_tag, 'C')
-        our_tag_c_set_copy = our_tag_c_set[:]
-        our_tag_o_set = get_all_tags(our_tag, 'O')
-
-        for word in crf_tag_c_set:
-            if word in our_tag_c_set_copy:
-                conf_matrix[0][0] += 1
-                our_tag_c_set_copy.remove(word)
-            else:
-                conf_matrix[1][0] += 1
-        print(crf_tag_c_set)
-        print(our_tag_c_set)
-        conf_matrix[0][1] = len(our_tag_c_set_copy)
-        # other su oznaceni kao other - oni koji nisu trebali biti other
-        conf_matrix[1][1] = len(our_tag_o_set) - conf_matrix[1][0]
-        print(conf_matrix)
+        calc(conf_matrix, crf_tag, our_tag, txt_file_for_test[q], 'crf')
+        global mtr_crf
+        mtr_crf += conf_matrix
         conf_matrix = np.array([[0, 0], [0, 0]])
 
-        '''
-        minimum = min(len(crf_tag),len(our_tag))
-        for j in range(0,minimum):
-            if( compare(crf_tag[j], our_tag[j]) == 0 ):
-                if ( crf_tag[j][0] == 'C' ):
-                    conf_matrix[0][0]= conf_matrix[0][0] + 1
-                else:
-                    conf_matrix[1][1] = conf_matrix[1][1] + 1
-            else:
-                if (crf_tag[j][0] == 'C'):
-                    conf_matrix[1][0] = conf_matrix[1][0] + 1
-                else:
-                    conf_matrix[0][1] = conf_matrix[0][1] + 1
-        '''
+        calc(conf_matrix, crf_tag_punct, our_tag, txt_file_for_test[q], 'crf_punct')
+        global mtr_crf_punct
+        mtr_crf_punct += conf_matrix
+        conf_matrix = np.array([[0, 0], [0, 0]])
+
+        calc(conf_matrix, crf_tag_lower, our_tag, txt_file_for_test[q], 'crf_lower')
+        global mtr_crf_lower
+        mtr_crf_lower += conf_matrix
+        conf_matrix = np.array([[0, 0], [0, 0]])
+
+        calc(conf_matrix, crf_tag_lower_punct, our_tag, txt_file_for_test[q], 'crf_lower_punct')
+        global mtr_crf_lower_punct
+        mtr_crf_lower_punct += conf_matrix
+        conf_matrix = np.array([[0, 0], [0, 0]])
 
 
 # dohvacanje sve iz direktorija
 file_list = os.listdir(TRANING_DATA)
-
+models = Models()
 file_for_train = []
 file_for_test = []
-i = 0
-# raspodjela na train and test omjer 0,7:0,3
-for file in file_list:
-    if 0.7 * len(file_list) > i:
-        file_for_train = file_for_train + [file]
-        i += 1
+start = 0
+# matrice da vidimo koliko je koji model dobar
+mtr_crf = np.array([[0, 0], [0, 0]])
+mtr_crf_punct = np.array([[0, 0], [0, 0]])
+mtr_crf_lower = np.array([[0, 0], [0, 0]])
+mtr_crf_lower_punct = np.array([[0, 0], [0, 0]])
+while start < len(file_list):
+    # ako je zadnji dio, pokupi sve ostale , inace uzmi ih 7
+    if start + 9 >= len(file_list):
+        file_for_test = file_list[start:]
     else:
-        file_for_test = file_for_test + [file]
+        file_for_test = file_list[start:start + 8]
+    file_for_test_txt = []
+    file_for_train = []
+    # fileovi za treniranje
+    for story in file_list:
+        if story not in file_for_test:
+            file_for_train = file_for_train + [story]
+    # filovi za testiranje samo ime bez .tsv
+    for i in range(0, len(file_for_test)):
+        file_for_test_txt = file_for_test_txt + [file_for_test[i].replace(".tsv", "")]
 
-print(file_for_test)
-# dohvacanje svih imena tsvova
-file_for_test_txt = []
-for i in range(0, len(file_for_test)):
-    file_for_test_txt = file_for_test_txt + [file_for_test[i].replace(".tsv", "")]
+    models.retrain_part_models(file_for_train)
+    crf_conf_matrix = np.array([[0, 0], [0, 0]])
+    make_conf_matrix(crf_conf_matrix, file_for_test_txt, models)
+    start += 8
 
-print(file_for_test_txt)
 
-# kreiranje testa za treniranje
-# trenutno bespotrebno
-labeled_test = []
-for j in file_for_test:
-    labeled_test = labeled_test + part_populate_labeled_tokens([str(j)], False, False)
-
-crf_conf_matrix = np.array([[0, 0], [0, 0]])
-models = Models()
-# models.retrain_part_models([])
-# y_crf_data = [models.crf.evaluate([labeled_test])]
-# make_conf_matrix(crf_conf_matrix,file_for_test_txt,models)
-# y_hmm_data = [models.hmm.test([labeled_test])]
-x_data = []  # trenutno bespotrebno
-
-# print(crf_conf_matrix)
-# crf_conf_matrix = np.array([[0,0],[0,0]])
-i = 0
-list_dir = []
-# ovo je trebalo biti da se iterativno uci tj , prvo uci na 5 pa na 10 itd.
-for j in file_for_train:
-    if i > -1:
-        models.retrain_part_models(file_for_train)
-        # y_crf_data = y_crf_data + [models.crf.evaluate([labeled_test])]
-        # y_hmm_data = y_hmm_data + [models.hmm.evaluate([labeled_test])]
-        make_conf_matrix(crf_conf_matrix, file_for_test_txt, models)
-        # print(crf_conf_matrix)
-        # crf_conf_matrix = np.array([[0, 0], [0, 0]])
-        # x_data = x_data + [j]
-        i = 0
-        break
-        # list_dir = []
-
-    list_dir = list_dir + [j]
-    i += 1
-
-# models.retrain_models()
-# y_crf_data =y_crf_data + [models.crf.evaluate([labeled_test])]
-# y_hmm_data = y_hmm_data + [models.hmm.test([labeled_test])]
-# make_conf_matrix(crf_conf_matrix, file_for_test_txt, models)
-# print(crf_conf_matrix)
-
-# print (y_crf_data)
-# print (y_hmm_data)
+print('obicni crf:\n')
+print(mtr_crf)
+print('\n\n punct crf:\n')
+print(mtr_crf_punct)
+print('\n\n lower crf:\n')
+print(mtr_crf_lower)
+print('\n\n lower punct crf:\n')
+print(mtr_crf_lower_punct)
