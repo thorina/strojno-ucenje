@@ -1,5 +1,5 @@
 26:
-comp tag: king fairy prince cherry one queen zelia convey wolf certain beast little dog charming white pigeon fair
+comp tag: king fairy prince cherry dog one queen zelia convey wolf certain beast little charming white pigeon fair
 our tag: good king fairy candide prince cherry dog bibi queen zelia suliman
 [[  7   4]
  [ 10 899]]
@@ -13,10 +13,10 @@ our tag: lem lawson will borson ike frazier cried mrs sol cardin
 
 
 326:
-comp tag: jemima mamma man servant china cat doctor ribbon dragon mother mountain won blue
+comp tag: jemima mamma dog man servant china cat doctor ribbon dragon mother mountain won blue
 our tag: mrs skratdj mr children papa polly harry master snap gentleman dragon
 [[   1   10]
- [  12 1489]]
+ [  13 1488]]
 
 
 105:
@@ -27,17 +27,24 @@ our tag: had boys the keeper wife woman neils petersen lars handed father
 
 
 111:
-comp tag: orpheus apollo man nor beast prince princess butterfly zeus queen proserpine ruthless king goddess mother
+comp tag: orpheus apollo man nor beast prince princess butterfly zeus dog queen proserpine ruthless king goddess mother
 our tag: orpheus eurydice apollo calliope hymen pluto proserpine charon jason
 [[  3   6]
- [ 12 871]]
+ [ 13 870]]
 
 
 13:
-comp tag: dwarfs dwarf king prince old mother
+comp tag: dwarfs dwarf dog king prince old mother
 our tag: mother bear dwarf
 [[  2   1]
- [  4 679]]
+ [  5 678]]
+
+
+8:
+comp tag: king queen dwarf
+our tag: miller daughter king little man child rumpelstilzchen
+[[  1   6]
+ [  2 304]]
 
 
 31:
@@ -83,10 +90,17 @@ our tag: sindbad king of serendib man pirates slave patron slaves hindbad
 
 
 32:
-comp tag: queen king princess little fairy sisters prince one warrior suffers adieus knight your father dumb beast old
+comp tag: queen king princess little fairy sisters prince one warrior suffers adieus knight bear letters your father dumb beast old
 our tag: queen king old woman désirée princess fairy prince warrior black becafico tulip longthorn gilliflower of the fountain knight
 [[   8   10]
- [   9 1392]]
+ [  11 1390]]
+
+
+145:
+comp tag: king queen prince rolandor fairy june titania little malvolia rose madam mrs dog giant aurora polar bear princess adatha alicia marianna nobleman baby daughter dwarfs dwarf girl brother garabin desire magician weaker captain set eyes on cat peasant whom cauldron three bobo zenza mother dragon tilda simpleton old whose lord marquis with by
+our tag: king queen prince rolandor court astrologer titania lord archbishop chancellor malvolia doctor pill mrs poodle poldo giant of the north pole wife princess adatha alicia dr
+[[ 12  14]
+ [ 41 887]]
 
 
 43:
@@ -104,9 +118,9 @@ our tag: father captain king sindbad hindbad
 
 
 10:
-comp tag: beast robbers captain
+comp tag: beast cat robbers captain
 our tag: man donkey master dog cat cock robbers captain
-[[  2   6]
+[[  3   5]
  [  1 416]]
 
 
@@ -129,6 +143,13 @@ comp tag: alice butterfly father william
 our tag: caterpillar alice father william pigeon
 [[  3   2]
  [  1 574]]
+
+
+7:
+comp tag: king arthur queen giant dwarf cat sir thomas thumb fine butterfly settle knight
+our tag: king arthur merlin queen mother tom thumb giant grumbo doctor thunstone
+[[  5   6]
+ [  8 713]]
 
 
 28:
@@ -180,6 +201,13 @@ our tag: ray churchill jacques pourbiere
  [  6 691]]
 
 
+37:
+comp tag: hindbad sindbad servant
+our tag: hindbad servants sindbad
+[[  2   1]
+ [  1 311]]
+
+
 4:
 comp tag: dwarfs slave fairy rambin old giant cock elizabeth krabbin dog sister trine sisters gentlemen
 our tag: james dietrich john uncle klas starkwolt servant father elizabeth krabbin frederick krabbe mother speed andrew trine
@@ -216,7 +244,7 @@ our tag: daughter son mother brother margery father bird goldsmith millers
 
 
 35:
-comp tag: ali baba captain sister prince slave mustapha rose abdalla means morgiana master murder dug merchants as cogia houssain
+comp tag: ali baba captain sister prince slave mustapha rose abdalla means morgiana master murder dug cogia houssain merchants as
 our tag: cassim ali baba robbers captain sesame wife morgiana mustapha abdalla son cogia houssain
 [[   8    5]
  [  10 1488]]
@@ -229,25 +257,32 @@ our tag: merchant beauty sisters sister fairy beast little one eye two eyes thre
  [   3 1193]]
 
 
+1:
+comp tag: queen princess old fairy king sister her mother meant prince dog
+our tag: queen godmothers princess fairy godmother king old woman prince puffy grandmother
+[[  6   5]
+ [  5 726]]
+
+
 22:
-comp tag: king queen princess little dog fairy prince giant galifron
+comp tag: king queen princess gentleman little dog fairy prince giant galifron
 our tag: fair one with golden locks king princess avenant owl dog cabriole galifron giant
 [[  5   8]
- [  4 967]]
+ [  5 966]]
 
 
 160:
-comp tag: dwarf lora loki brock giant king queen father odin brother frey dwarfs sisters frigg maid tin appetite servant red
+comp tag: dwarf lora loki brock giant king queen father odin brother frey dwarfs sisters maid tin appetite servant red
 our tag: thor sif thrude lora loki brock thrym freia odin frey heimdal queen frigg waiting maid
-[[   8    7]
+[[   7    8]
  [  11 1062]]
 
 
 11:
-comp tag: queen fairy sisters prince princess stood dumb king
+comp tag: queen fairy sisters prince princess stood dumb king gentleman
 our tag: queen fairy riquet princesses sister prince princess
 [[  4   3]
- [  4 559]]
+ [  5 558]]
 
 
 39:
@@ -258,10 +293,10 @@ our tag: merchants roc eagles merchant sindbad hindbad
 
 
 17:
-comp tag: king queen prince furibon dwarf princess fairy gentilla abricotina charming little bird cat meant dwarfs bid apollo tom thumb notice old
+comp tag: king queen prince furibon dwarf princess fairy gentilla certain gentleman abricotina charming little bird cat meant dwarfs bid apollo tom thumb notice old
 our tag: king queen furibon prince leander snake princess fairy gentilla stranger abricotina parrot
 [[   8    4]
- [  13 1807]]
+ [  15 1805]]
 
 
 6:
@@ -278,10 +313,17 @@ our tag: queen mother princess desert fairy yellow dwarf king of the golden mine
  [  3 661]]
 
 
+12:
+comp tag: gentleman dwarf giant dwarfs odin sisters
+our tag: aslog father orm guru giant dwarfs andfind oluf
+[[  2   6]
+ [  4 997]]
+
+
 23:
-comp tag: king fairy one queen fountain rose little princess prince favourite wolf daughter with patipata blue eyes bear adieus papillette fair
+comp tag: king fairy one queen fountain rose little princess prince favourite malabar wolf daughter with patipata blue eyes bear adieus papillette fair
 our tag: merinous king fairy of the fountain queen princess butterfly papillette prince favourite daughter queséca barber malabar patipata salmoé
-[[  10    8]
+[[  11    7]
  [  10 1549]]
 
 
@@ -320,6 +362,13 @@ our tag: jack mother butcher father fairy wife giant
  [  6 955]]
 
 
+108:
+comp tag: king apollo servant
+our tag: pygmalion galatea
+[[  0   2]
+ [  3 455]]
+
+
 25:
 comp tag: king little dog prince your father princess queen fairy old dragon parrot gentleman sisters
 our tag: king dog prince white cat brothers queen fairy violent
@@ -328,10 +377,10 @@ our tag: king dog prince white cat brothers queen fairy violent
 
 
 355:
-comp tag: gareth king arthur sir launcelot gawain knight one attack blue lady sister tristram made dwarf smote harder
+comp tag: gareth king arthur sir launcelot gawain knight in one attack blue lady sister tristram made dwarf smote harder
 our tag: gareth lot bellicent gawain mordred king arthur court sir kay launcelot sister knight red lady blue linet liones tristram dwarf gaheris
 [[ 12   9]
- [  5 651]]
+ [  6 650]]
 
 
 337:
@@ -367,6 +416,13 @@ comp tag: robbers fairy coquette ogre madam king queen adieus gentleman prince m
 our tag: thomas mother fairy coquette madam enchanter barabapatapouf daughter rose king queen prince terrible
 [[   7    6]
  [  10 1634]]
+
+
+27:
+comp tag: queen king lady dwarf prince
+our tag: queen king mirror snowdrop huntsman dwarfs dwarf stepmother prince
+[[  4   5]
+ [  1 685]]
 
 
 36:
@@ -419,5 +475,5 @@ our tag: theodorus graciana fortunatus earl servants timothy countess robert for
 
 
 Sve:
-[[  241   372]
- [  374 51712]]
+[[  274   416]
+ [  449 56780]]

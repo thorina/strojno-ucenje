@@ -2181,8 +2181,8 @@ O	lies
 O	coiled
 O	round
 O	the
-C	North
-C	Pole
+O	North
+O	Pole
 O	,
 O	felt
 O	a
@@ -3167,7 +3167,7 @@ O	:
 O	``
 O	Driver
 O	of
-O	Phoebus
+C	Phoebus
 O	'
 O	chariot
 O	,

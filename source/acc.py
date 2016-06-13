@@ -69,18 +69,53 @@ def tag_file_with_crf_model(file_name, model):
     write_tagged_content_to_file(tagged_content, tagged_file_path)
 
     print('\nTagging content with CRF with punctuation...')
-    tagged_content = tag_tokens_with_model(tokenized_content_punct, models.crf_punct, False)
+    tagged_content = tag_tokens_with_model(tokenized_content_punct, model.crf_punct, False)
     tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_crf_punct' + '.tsv'
     write_tagged_content_to_file(tagged_content, tagged_file_path)
 
     print('\nTagging content with CRF with lowercase tokens without punctuation...')
-    tagged_content = tag_tokens_with_model(tokenized_content_lower, models.crf_lower, True)
+    tagged_content = tag_tokens_with_model(tokenized_content_lower, model.crf_lower, True)
     tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_crf_lower' + '.tsv'
     write_tagged_content_to_file(tagged_content, tagged_file_path)
 
     print('\nTagging content with CRF with lowercase tokens with punctuation...')
-    tagged_content = tag_tokens_with_model(tokenized_content_lower_punct, models.crf_lower_punct, True)
+    tagged_content = tag_tokens_with_model(tokenized_content_lower_punct, model.crf_lower_punct, True)
     tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_crf_lower_punct' + '.tsv'
+    write_tagged_content_to_file(tagged_content, tagged_file_path)
+
+
+def tag_file_with_hmm_model(file_name, model):
+    path = ORGINAL_STORIES + '/' + file_name + '.txt'
+
+    if not os.path.isfile(path):
+        print('File ' + path + ' does not exist!')
+        return
+
+    content = get_content(path)
+    content_lower = content.lower()
+    tokenized_content = wordpunct_tokenize(content)
+    tokenized_content_punct = word_tokenize(content)
+    tokenized_content_lower = wordpunct_tokenize(content_lower)
+    tokenized_content_lower_punct = word_tokenize(content_lower)
+
+    print('\nTagging content with HMM without punctuation...')
+    tagged_content = tag_tokens_with_model(tokenized_content, model.hmm, False)
+    tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_hmm' + '.tsv'
+    write_tagged_content_to_file(tagged_content, tagged_file_path)
+
+    print('\nTagging content with HMM with punctuation...')
+    tagged_content = tag_tokens_with_model(tokenized_content_punct, model.hmm_punct, False)
+    tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_hmm_punct' + '.tsv'
+    write_tagged_content_to_file(tagged_content, tagged_file_path)
+
+    print('\nTagging content with HMM with lowercase tokens without punctuation...')
+    tagged_content = tag_tokens_with_model(tokenized_content_lower, model.hmm_lower, True)
+    tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_hmm_lower' + '.tsv'
+    write_tagged_content_to_file(tagged_content, tagged_file_path)
+
+    print('\nTagging content with HMM with lowercase tokens with punctuation...')
+    tagged_content = tag_tokens_with_model(tokenized_content_lower_punct, model.hmm_lower_punct, True)
+    tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_hmm_lower_punct' + '.tsv'
     write_tagged_content_to_file(tagged_content, tagged_file_path)
 
 
@@ -146,78 +181,88 @@ def calc(conf_mtr, machine_tag, our_tag, file_name, model_type):
 
 
 # funkcija za izradu matrice conf
-def make_conf_matrix(conf_matrix, txt_file_for_test, model):
+def make_conf_matrix(conf_matrix, txt_file_for_test, model, tag_model):
     for q in range(0, len(txt_file_for_test)):
         # ne postoje .txt filovi iznad 533 pa sam ovaj uvijet stavio
         if int(txt_file_for_test[q]) > 533:
             continue
-
-        tag_file_with_crf_model(txt_file_for_test[q], model)
-        crf_tag = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_crf.tsv')
-        crf_tag_punct = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_crf_punct.tsv')
-        crf_tag_lower = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_crf_lower.tsv')
-        crf_tag_lower_punct = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_crf_lower_punct.tsv')
+        if tag_model == 'crf':
+            tag_file_with_crf_model(txt_file_for_test[q], model)
+        elif tag_model == 'hmm':
+            tag_file_with_hmm_model(txt_file_for_test[q], model)
+        nor_tag = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_' + tag_model + '.tsv')
+        tag_punct = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_' + tag_model + '_punct.tsv')
+        tag_lower = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_' + tag_model + '_lower.tsv')
+        tag_lower_punct = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_' + tag_model + '_lower_punct.tsv')
         our_tag = parse_tsv(TRANING_DATA + '/'+str(int(txt_file_for_test[q])) + '.tsv')
 
-        calc(conf_matrix, crf_tag, our_tag, txt_file_for_test[q], 'crf')
-        global mtr_crf
-        mtr_crf += conf_matrix
+        calc(conf_matrix, nor_tag, our_tag, txt_file_for_test[q], tag_model)
+        global mtr_nor
+        mtr_nor += conf_matrix
         conf_matrix = np.array([[0, 0], [0, 0]])
 
-        calc(conf_matrix, crf_tag_punct, our_tag, txt_file_for_test[q], 'crf_punct')
-        global mtr_crf_punct
-        mtr_crf_punct += conf_matrix
+        calc(conf_matrix, tag_punct, our_tag, txt_file_for_test[q],  tag_model + '_punct')
+        global mtr_punct
+        mtr_punct += conf_matrix
         conf_matrix = np.array([[0, 0], [0, 0]])
 
-        calc(conf_matrix, crf_tag_lower, our_tag, txt_file_for_test[q], 'crf_lower')
-        global mtr_crf_lower
-        mtr_crf_lower += conf_matrix
+        calc(conf_matrix, tag_lower, our_tag, txt_file_for_test[q], tag_model + '_lower')
+        global mtr_lower
+        mtr_lower += conf_matrix
         conf_matrix = np.array([[0, 0], [0, 0]])
 
-        calc(conf_matrix, crf_tag_lower_punct, our_tag, txt_file_for_test[q], 'crf_lower_punct')
-        global mtr_crf_lower_punct
-        mtr_crf_lower_punct += conf_matrix
+        calc(conf_matrix, tag_lower_punct, our_tag, txt_file_for_test[q], tag_model + '_lower_punct')
+        global mtr_lower_punct
+        mtr_lower_punct += conf_matrix
         conf_matrix = np.array([[0, 0], [0, 0]])
 
 
-# dohvacanje sve iz direktorija
-file_list = os.listdir(TRANING_DATA)
-models = Models()
-file_for_train = []
-file_for_test = []
-start = 0
-# matrice da vidimo koliko je koji model dobar
-mtr_crf = np.array([[0, 0], [0, 0]])
-mtr_crf_punct = np.array([[0, 0], [0, 0]])
-mtr_crf_lower = np.array([[0, 0], [0, 0]])
-mtr_crf_lower_punct = np.array([[0, 0], [0, 0]])
-while start < len(file_list):
-    # ako je zadnji dio, pokupi sve ostale , inace uzmi ih 7
-    if start + 9 >= len(file_list):
-        file_for_test = file_list[start:]
-    else:
-        file_for_test = file_list[start:start + 8]
-    file_for_test_txt = []
-    file_for_train = []
-    # fileovi za treniranje
-    for story in file_list:
-        if story not in file_for_test:
-            file_for_train = file_for_train + [story]
-    # filovi za testiranje samo ime bez .tsv
-    for i in range(0, len(file_for_test)):
-        file_for_test_txt = file_for_test_txt + [file_for_test[i].replace(".tsv", "")]
+def cv(tag_model):
+    # dohvacanje sve iz direktorija
+    file_list = os.listdir(TRANING_DATA)
+    models = Models()
+    # file_for_train = []
+    # file_for_test = []
+    start = 0
+    # matrice da vidimo koliko je koji model dobar
 
-    models.retrain_part_models(file_for_train)
-    crf_conf_matrix = np.array([[0, 0], [0, 0]])
-    make_conf_matrix(crf_conf_matrix, file_for_test_txt, models)
-    start += 8
+    while start < len(file_list):
+        # ako je zadnji dio, pokupi sve ostale , inace uzmi ih 7
+        if start + 9 >= len(file_list):
+            file_for_test = file_list[start:]
+        else:
+            file_for_test = file_list[start:start + 8]
+        file_for_test_txt = []
+        file_for_train = []
+        # fileovi za treniranje
+        for story in file_list:
+            if story not in file_for_test:
+                file_for_train = file_for_train + [story]
+        # filovi za testiranje samo ime bez .tsv
+        for i in range(0, len(file_for_test)):
+            file_for_test_txt = file_for_test_txt + [file_for_test[i].replace(".tsv", "")]
+
+        if tag_model == 'crf':
+            models.retrain_crf_models(file_for_train)
+        elif tag_model == 'hmm':
+            models.retrain_hmm_models(file_for_train)
+        crf_conf_matrix = np.array([[0, 0], [0, 0]])
+        make_conf_matrix(crf_conf_matrix, file_for_test_txt, models,tag_model)
+        start += 8
 
 
-print('obicni crf:\n')
-print(mtr_crf)
-print('\n\n punct crf:\n')
-print(mtr_crf_punct)
-print('\n\n lower crf:\n')
-print(mtr_crf_lower)
-print('\n\n lower punct crf:\n')
-print(mtr_crf_lower_punct)
+mtr_nor = np.array([[0, 0], [0, 0]])
+mtr_punct = np.array([[0, 0], [0, 0]])
+mtr_lower = np.array([[0, 0], [0, 0]])
+mtr_lower_punct = np.array([[0, 0], [0, 0]])
+
+cv('crf')
+
+print('obicni :\n')
+print(mtr_nor)
+print('\n\n punct :\n')
+print(mtr_punct)
+print('\n\n lower :\n')
+print(mtr_lower)
+print('\n\n lower punct :\n')
+print(mtr_lower_punct)

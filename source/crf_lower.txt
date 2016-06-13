@@ -34,14 +34,21 @@ our tag: orpheus eurydice apollo calliope hymen pluto proserpine charon jason
 
 
 13:
-comp tag: two little rose red dwarfs dwarf dog king prince
+comp tag: rose red dwarfs dwarf dog king prince
 our tag: mother bear dwarf
 [[  1   2]
- [  8 675]]
+ [  6 677]]
+
+
+8:
+comp tag: king queen dwarf
+our tag: miller daughter king little man child rumpelstilzchen
+[[  1   6]
+ [  2 304]]
 
 
 31:
-comp tag: king princess magician fairy cat little prince queen cleopatra minon eyes beast father court etiquette
+comp tag: king princess magician fairy cat little prince queen cleopatra mother minon eyes beast father etiquette
 our tag: king princess fairy cat minon prince wish darling flatterers
 [[  6   3]
  [  9 713]]
@@ -89,6 +96,13 @@ our tag: queen king old woman désirée princess fairy prince warrior black beca
  [   5 1396]]
 
 
+145:
+comp tag: king queen son prince rolandor fairy june titania little malvolia rose sorry madam tri bi cat dog giant aurora polar bear princess adatha alicia marianna nobleman baby daughter dwarfs dwarf girl brother garabin desire magician captain set eyes on bird peasant whom cauldron three bobo zenza mother dragon tilda simpleton bye clock whose lord marquis sir with by
+our tag: king queen prince rolandor court astrologer titania lord archbishop chancellor malvolia doctor pill mrs poodle poldo giant of the north pole wife princess adatha alicia dr
+[[ 11  15]
+ [ 47 881]]
+
+
 43:
 comp tag: captain king prince sindbad female slave appears sultan hindbad
 our tag: arabic prince sindbad commander of the faithful hindbad
@@ -104,9 +118,9 @@ our tag: father captain king sindbad hindbad
 
 
 10:
-comp tag: beast robbers captain
+comp tag: beast cat robbers captain
 our tag: man donkey master dog cat cock robbers captain
-[[  2   6]
+[[  3   5]
  [  1 416]]
 
 
@@ -129,6 +143,13 @@ comp tag: alice butterfly
 our tag: caterpillar alice father william pigeon
 [[  1   4]
  [  1 574]]
+
+
+7:
+comp tag: king arthur merlin queen cherry mother giant dwarf cat sir thomas butterfly settle knight
+our tag: king arthur merlin queen mother tom thumb giant grumbo doctor thunstone
+[[  6   5]
+ [  8 713]]
 
 
 28:
@@ -180,6 +201,13 @@ our tag: ray churchill jacques pourbiere
  [  4 693]]
 
 
+37:
+comp tag: hindbad sindbad servant
+our tag: hindbad servants sindbad
+[[  2   1]
+ [  1 311]]
+
+
 4:
 comp tag: rambin dwarfs slave fairy old giant cock king elizabeth krabbin of dog sister trine
 our tag: james dietrich john uncle klas starkwolt servant father elizabeth krabbin frederick krabbe mother speed andrew trine
@@ -229,25 +257,32 @@ our tag: merchant beauty sisters sister fairy beast little one eye two eyes thre
  [   6 1190]]
 
 
+1:
+comp tag: queen princess fairy godmother old king sister meant prince dog
+our tag: queen godmothers princess fairy godmother king old woman prince puffy grandmother
+[[  7   4]
+ [  3 728]]
+
+
 22:
-comp tag: king queen princess fairy prince giant galifron
+comp tag: king queen princess gentleman fairy prince giant galifron
 our tag: fair one with golden locks king princess avenant owl dog cabriole galifron giant
 [[  4   9]
- [  3 968]]
+ [  4 967]]
 
 
 160:
-comp tag: dwarf lora loki brock giant king queen father odin little freia good brother frey dwarfs sisters nine valkyrie daughters of maid tin servant red
+comp tag: dwarf lora loki brock giant king queen father odin little freia good brother frey sisters nine valkyrie daughters of maid tin servant red
 our tag: thor sif thrude lora loki brock thrym freia odin frey heimdal queen frigg waiting maid
 [[   8    7]
- [  16 1057]]
+ [  15 1058]]
 
 
 11:
-comp tag: queen fairy sisters prince princess king
+comp tag: queen fairy sisters prince princess king gentleman
 our tag: queen fairy riquet princesses sister prince princess
 [[  4   3]
- [  2 561]]
+ [  3 560]]
 
 
 39:
@@ -258,7 +293,7 @@ our tag: merchants roc eagles merchant sindbad hindbad
 
 
 17:
-comp tag: king queen prince furibon dwarf princess fairy gentilla ha abricotina eyes charming tabby cat meant dwarfs bid apollo tom thumb notice old mother
+comp tag: king queen prince furibon dwarf princess fairy gentilla gentleman ha abricotina eyes charming tabby cat meant bid apollo tom thumb notice old mother
 our tag: king queen furibon prince leander snake princess fairy gentilla stranger abricotina parrot
 [[   8    4]
  [  15 1805]]
@@ -272,10 +307,17 @@ our tag: king arthur jack giant cornishman cormoran old blunderbore giants ladie
 
 
 29:
-comp tag: queen princess desert fairy dwarf king prince cat
+comp tag: queen princess desert fairy stubborn daughter dwarf king prince cat
 our tag: queen mother princess desert fairy yellow dwarf king of the golden mines spanish cat mermaid nymphs
 [[  7   9]
- [  1 663]]
+ [  3 661]]
+
+
+12:
+comp tag: gentleman dwarf giant fairy tune odin sisters
+our tag: aslog father orm guru giant dwarfs andfind oluf
+[[  1   7]
+ [  6 995]]
 
 
 23:
@@ -318,6 +360,13 @@ comp tag: king jack minutes paltry beans fairy father giant little dog
 our tag: jack mother butcher father fairy wife giant
 [[  4   3]
  [  6 955]]
+
+
+108:
+comp tag: sculptor king apollo servant
+our tag: pygmalion galatea
+[[  0   2]
+ [  4 454]]
 
 
 25:
@@ -369,6 +418,13 @@ our tag: thomas mother fairy coquette madam enchanter barabapatapouf daughter ro
  [   8 1636]]
 
 
+27:
+comp tag: queen king lady dwarf prince
+our tag: queen king mirror snowdrop huntsman dwarfs dwarf stepmother prince
+[[  4   5]
+ [  1 685]]
+
+
 36:
 comp tag: china african magician brother mustapha persia arabia syria merchant drew aladdin princess rose prince africa woman fatima
 our tag: mustapha aladdin african magician mother sultan genie slaves slave princess buddir al buddoor women fatima
@@ -417,7 +473,6 @@ our tag: theodorus graciana fortunatus earl servants timothy countess robert for
 [[  3  10]
  [ 12 803]]
 
-
 Sve:
-[[  237   376]
- [  367 51719]]
+[[  270   420]
+ [  440 56789]]
