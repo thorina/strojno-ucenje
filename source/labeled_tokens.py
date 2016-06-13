@@ -53,7 +53,8 @@ def populate_labeled_tokens(punctuation, lowercase):
     print('Labeled tokens populated!')
     return labeled_tokens
 
-def part_populate_labeled_tokens(list_dir,punctuation, lowercase):
+
+def part_populate_labeled_tokens(list_dir, punctuation, lowercase):
     show_message(lowercase, punctuation)
     path = get_path(punctuation, lowercase)
 
@@ -95,6 +96,7 @@ def part_populate_labeled_tokens(list_dir,punctuation, lowercase):
 
     print('Labeled tokens populated!')
     return labeled_tokens
+
 
 def show_message(lowercase, punctuation):
     if punctuation:

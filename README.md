@@ -14,7 +14,7 @@ gcc-c++
 ```
 
 Potrebne Python biblioteke su navedene u requirements.txt i instaliraju se s:
-``` sudo pip3.5 install -r requirements.txt ```
+``` sudo pip3 install -r requirements.txt ```
 
 ### Upute
 

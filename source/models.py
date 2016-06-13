@@ -27,6 +27,25 @@ NLTK_DATA_PATH = '../lib/nltk_data'
 nltk.data.path.append(NLTK_DATA_PATH)
 
 
+def retrain_ner_models(list_dir):
+    labeled_tokens = part_populate_labeled_tokens(list_dir, False, False)
+    labeled_tokens_punct = part_populate_labeled_tokens(list_dir, True, False)
+    labeled_tokens_lower = part_populate_labeled_tokens(list_dir, False, True)
+    labeled_tokens_lower_punct = part_populate_labeled_tokens(list_dir, True, True)
+
+    # Stanford NER needs all training data as single tsv file
+    write_tagged_content_to_file(labeled_tokens, PATH_TOKENIZED_CONTENT)
+    write_tagged_content_to_file(labeled_tokens_punct, PATH_TOKENIZED_CONTENT_PUNCT)
+    write_tagged_content_to_file(labeled_tokens_lower, PATH_TOKENIZED_CONTENT_LOWER)
+    write_tagged_content_to_file(labeled_tokens_lower_punct, PATH_TOKENIZED_CONTENT_LOWER_PUNCT)
+
+    show_retraining_instruction()
+    show_bash_instruction(TRAINED_STANFORD_NER)
+    show_bash_instruction(TRAINED_STANFORD_NER_PUNCT)
+    show_bash_instruction(TRAINED_STANFORD_NER_LOWER)
+    show_bash_instruction(TRAINED_STANFORD_NER_LOWER_PUNCT)
+
+
 class Models:
     hmm = None
     hmm_lower = None
@@ -110,24 +129,6 @@ class Models:
         self.crf_lower = train_crf_model(labeled_tokens_lower, False, True)
         self.crf_lower_punct = train_crf_model(labeled_tokens_lower_punct, True, True)
 
-    def retrain_ner_models(self, list_dir):
-        labeled_tokens = part_populate_labeled_tokens(list_dir, False, False)
-        labeled_tokens_punct = part_populate_labeled_tokens(list_dir, True, False)
-        labeled_tokens_lower = part_populate_labeled_tokens(list_dir, False, True)
-        labeled_tokens_lower_punct = part_populate_labeled_tokens(list_dir, True, True)
-
-        # Stanford NER needs all training data as single tsv file
-        write_tagged_content_to_file(labeled_tokens, PATH_TOKENIZED_CONTENT)
-        write_tagged_content_to_file(labeled_tokens_punct, PATH_TOKENIZED_CONTENT_PUNCT)
-        write_tagged_content_to_file(labeled_tokens_lower, PATH_TOKENIZED_CONTENT_LOWER)
-        write_tagged_content_to_file(labeled_tokens_lower_punct, PATH_TOKENIZED_CONTENT_LOWER_PUNCT)
-
-        show_retraining_instruction()
-        show_bash_instruction(TRAINED_STANFORD_NER)
-        show_bash_instruction(TRAINED_STANFORD_NER_PUNCT)
-        show_bash_instruction(TRAINED_STANFORD_NER_LOWER)
-        show_bash_instruction(TRAINED_STANFORD_NER_LOWER_PUNCT)
-
     def load_existing_stanford_ner_models(self):
         needs_training = check_if_all_models_exist()
         if needs_training:
@@ -155,6 +156,8 @@ class Models:
             STANFORD_NER_MODELS_PATH + TRAINED_STANFORD_NER_LOWER_PUNCT,
             STANFORD_NER_JAR,
             encoding='utf-8')
+
+        print('Stanford NER models loaded!')
 
     def wait_until_models_are_trained(self):
         print('Please enter ok when training finishes.')

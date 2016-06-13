@@ -66,6 +66,26 @@ def tag_file_with_all_models(file_name, models):
     tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_crf_lower_punct' + '.tsv'
     write_tagged_content_to_file(tagged_content, tagged_file_path)
 
+    print('\nTagging content with Stanford NER without punctuation...')
+    tagged_content = tag_tokens_with_model(tokenized_content, models.stanford_ner, False)
+    tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + 'stanford_ner' + '.tsv'
+    write_tagged_content_to_file(tagged_content, tagged_file_path)
+
+    print('\nTagging content with Stanford NER with punctuation...')
+    tagged_content = tag_tokens_with_model(tokenized_content_punct, models.stanford_ner_punct, False)
+    tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_stanford_ner_punct' + '.tsv'
+    write_tagged_content_to_file(tagged_content, tagged_file_path)
+
+    print('\nTagging content with Stanford NER with lowercase tokens without punctuation...')
+    tagged_content = tag_tokens_with_model(tokenized_content_lower, models.stanford_ner_lower, True)
+    tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_stanford_ner_lower' + '.tsv'
+    write_tagged_content_to_file(tagged_content, tagged_file_path)
+
+    print('\nTagging content with Stanford NER with lowercase tokens with punctuation...')
+    tagged_content = tag_tokens_with_model(tokenized_content_lower_punct, models.stanford_ner_lower_punct, True)
+    tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_stanford_ner_lower_punct' + '.tsv'
+    write_tagged_content_to_file(tagged_content, tagged_file_path)
+
 
 def tag_tokens_with_model(tokens, model, lowercase):
     tagged_content = model.tag(tokens)
@@ -85,7 +105,9 @@ def tag_tokens_with_model(tokens, model, lowercase):
                     characters.append(word.lower())
 
     counter = Counter(characters)
-    print('Found characters and number of their occurrences:')
+    print('Found characters and number of their occurrences: ')
+    if len(characters) == 0:
+        print('none')
     for character, occurrences in counter.items():
         print(character + ' ' + str(occurrences))
 

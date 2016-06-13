@@ -72,7 +72,7 @@ O	stand
 O	godmothers
 O	to
 O	the
-O	little
+C	little
 C	princess
 O	;
 O	hoping
@@ -339,7 +339,7 @@ O	true
 O	.
 O	the
 O	fortunate
-O	little
+C	little
 C	princess
 O	was
 O	to
@@ -513,7 +513,7 @@ O	her
 O	by
 O	my
 O	ancient
-C	sister
+O	sister
 O	--
 O	her
 O	finger
@@ -2079,9 +2079,9 @@ O	only
 O	interruption
 O	was
 O	the
-O	little
+C	little
 C	dog
-O	puffy
+C	puffy
 O	,
 O	who
 O	had
@@ -2218,7 +2218,7 @@ O	exactly
 O	like
 O	her
 O	royal
-O	grandmother
+C	grandmother
 O	,
 O	whose
 O	portrait
