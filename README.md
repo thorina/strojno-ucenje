@@ -45,7 +45,7 @@ U skripti `models.py` se treniraju modeli HMM (hidden Markov model, skriveni Mar
 4. da ne uzimaju interpunkcijske znakove u obzir, te da treniraju nad lowercase oblicima riječi
 
 Nad HMM i CRF modelima se provodi unakrsna validacija. Skup za validaciju je veličine 3, odnosno imamo
-preko 20 segmenata. Modeli se evaluiraju pomoću F<sup>2</sup>-mjere. Parametar beta je veličine 2 jer
+preko 20 segmenata. Modeli se evaluiraju pomoću F<sub>2</sub>-mjere. Parametar _beta_ je veličine 2 jer
 želimo dati veću važnost osjetljivosti testa, odnosno važnije nam je da otkrijemo više likova nego
 koliko tih likova je točno.
 
@@ -59,7 +59,6 @@ java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier
 java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier -prop ner.properties -trainFile training-sets/tokenized_content_lower.tsv -serializeTo classifiers/trained_stanford_ner_lower.ser.gz
 java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier -prop ner.properties -trainFile training-sets/tokenized_content_punct.tsv -serializeTo classifiers/trained_stanford_ner_punct.ser.gz
 java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier -prop ner.properties -trainFile training-sets/tokenized_content_lower_punct.tsv -serializeTo classifiers/trained_stanford_ner_lower_punct.ser.gz
-
 ```
 
 `mx4g` parametar zadaje 4gb radne memorije za ovaj proces. Ako se Java pobuni, moguće je trenirati i
