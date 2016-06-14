@@ -33,9 +33,9 @@ def write_all_stories_to_tmp_file(temp):
     for filename in os.listdir(GUTENBERG_FILES_PATH):
         file_path = GUTENBERG_FILES_PATH + '/' + filename
         with open(file_path, 'r') as file_input:
+            print(file_path)
             content = purify_content(file_input)
             temp.write(content)
-            break
 
 
 def separate_stories(temp):
@@ -122,6 +122,14 @@ def generate_tsv_data():
                     csv_writer.writerow(['O'] + [word])
 
 
+def create_folders():
+    if not os.path.exists(SEPARATED_STORIES_PATH):
+        os.makedirs(SEPARATED_STORIES_PATH)
+    if not os.path.exists(NER_LABELED_DATA_PATH):
+        os.makedirs(NER_LABELED_DATA_PATH)
+
+
 if __name__ == "__main__":
+    create_folders()
     create_stories_files()
     generate_tsv_data()

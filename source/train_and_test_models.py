@@ -3,6 +3,7 @@ import os
 import re
 from collections import Counter
 
+import numpy as np
 from nltk.tokenize import word_tokenize, wordpunct_tokenize
 
 from source.models import Models
