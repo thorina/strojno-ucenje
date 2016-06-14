@@ -44,20 +44,20 @@ U skripti `models.py` se treniraju modeli HMM (hidden Markov model, skriveni Mar
 3. da uzimaju interpunkcijske znakove u obzir, te da treniraju nad lowercase oblicima riječi
 4. da ne uzimaju interpunkcijske znakove u obzir, te da treniraju nad lowercase oblicima riječi
 
-Prilikom pokretanja skripte se može odabrati hoće li se koristiti već istrenirani modeli ili će se
-trenirati novi modeli.
+Nad HMM i CRF modelima se provodi unakrsna validacija. Skup za validaciju je veličine 3, odnosno imamo
+preko 20 segmenata. Modeli se evaluiraju pomoću F<sup>2</sup>-mjere. Parametar beta je veličine 2 jer
+želimo dati veću važnost osjetljivosti testa, odnosno važnije nam je da otkrijemo više likova nego
+koliko tih likova je točno.
 
 Stanford NER se trenira posebno, s obzirom da NLTK ima samo podršku za označavanje korištenjem već
-postojećih modela. U `/lib/stanford-ner` se nalazi `properties` datoteka u kojoj su navedene
+postojećih modela. Iz tog razloga se ne provodi unakrsna validacija.
+U `/lib/stanford-ner` se nalazi `properties` datoteka u kojoj su navedene
 postavke za treniranje novog modela. Novi model se trenira pokretanjem sljedećih naredbi iz tog
 direktorija:
 ```
 java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier -prop ner.properties -trainFile training-sets/tokenized_content.tsv -serializeTo classifiers/trained_stanford_ner.ser.gz
-
 java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier -prop ner.properties -trainFile training-sets/tokenized_content_lower.tsv -serializeTo classifiers/trained_stanford_ner_lower.ser.gz
-
 java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier -prop ner.properties -trainFile training-sets/tokenized_content_punct.tsv -serializeTo classifiers/trained_stanford_ner_punct.ser.gz
-
 java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier -prop ner.properties -trainFile training-sets/tokenized_content_lower_punct.tsv -serializeTo classifiers/trained_stanford_ner_lower_punct.ser.gz
 
 ```
@@ -65,3 +65,6 @@ java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier
 `mx4g` parametar zadaje 4gb radne memorije za ovaj proces. Ako se Java pobuni, moguće je trenirati i
 s manje memorije. Detaljnije piše [ovdje](http://nlp.stanford.edu/software/crf-faq.shtml#d).
 
+Prilikom pokretanja skripte se može odabrati hoće li se koristiti već istrenirani modeli ili će se
+trenirati novi modeli. Ukoliko želimo koristiti već istrenirane modele, a oni ne postoje, pokrenut će se novo
+treniranje modela.

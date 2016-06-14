@@ -1,0 +1,28 @@
+106.tsv:
+comp tag: 
+our tag: queen king old woman désirée princess fairy prince warrior black becafico tulip longthorn gilliflower of the fountain knight
+[[   0   18]
+ [   0 1402]]
+
+
+93.tsv:
+comp tag: 
+our tag: brother sister witch roe king huntsmen queen baby
+[[  0   8]
+ [  0 574]]
+
+
+87.tsv:
+comp tag: 
+our tag: mother bear dwarf
+[[  0   3]
+ [  0 684]]
+
+
+CV:
+comp tag: 
+our tag: 
+[[   334   1149]
+ [   446 111352]]
+
+

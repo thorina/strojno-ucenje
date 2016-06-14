@@ -1,0 +1,28 @@
+97.tsv:
+comp tag: king fairy queen merinous princess masters papillette prince favourite malabar our daughter patipata
+our tag: merinous king fairy of the fountain queen princess butterfly papillette prince favourite daughter queséca barber malabar patipata salmoé
+[[  11    7]
+ [   2 1558]]
+
+
+523.tsv:
+comp tag: once princess zenza courtiers king old iron clock farther marquis prince golden apples black cat
+our tag: old widow woman bobo princess zenza dragon tilda man fellow king father time seven clock twelve prince
+[[  6  11]
+ [  9 881]]
+
+
+163.tsv:
+comp tag: after sir percivale galahad thither bors king pelles thus became arthur
+our tag: sir percivale galahad bors king pelles joseph estorause bishop
+[[  6   3]
+ [  5 271]]
+
+
+CV:
+comp tag: 
+our tag: 
+[[   42   120]
+ [   45 11667]]
+
+
