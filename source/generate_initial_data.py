@@ -8,6 +8,8 @@ import nltk.tag.crf
 from nltk import word_tokenize
 
 # current working directory = source
+from source.utils import add_spaces_around_interpunctions
+
 NLTK_DATA_PATH = '../lib/nltk_data'
 nltk.data.path.append(NLTK_DATA_PATH)
 
@@ -98,7 +100,7 @@ def purify_content(file_output):
     content = regex_footnotes.sub('', content)
     content = regex_footnote.sub('', content)
     content = regex_illustration.sub('', content)
-    content = re.sub('(?<! \"\':;\-{2})(?=[.,!?()\"\';:])|(?<=[.,!?()\"\';:])(?! )', r' ', content)
+    content = add_spaces_around_interpunctions(content)
 
     return content
 

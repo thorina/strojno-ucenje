@@ -1,4 +1,5 @@
 import csv
+import re
 
 
 def write_tagged_content_to_file(tagged_content, tagged_file_path):
@@ -7,3 +8,8 @@ def write_tagged_content_to_file(tagged_content, tagged_file_path):
         for token, label in tagged_content:
             csv_writer.writerow([label] + [token])
         print('File ' + tagged_file_path + ' created!')
+
+
+def add_spaces_around_interpunctions(content):
+    content = re.sub('(?<! \"\':\-{2})(?=[.,!?()\"\':])|(?<=[.,!?()\"\':])(?! )', r' ', content)
+    return content

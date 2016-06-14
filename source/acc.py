@@ -1,23 +1,23 @@
 import csv
 import os
-import numpy as np
-import re
 
+import numpy as np
 from nltk.tokenize import word_tokenize, wordpunct_tokenize
 
 from source.models import Models
-from source.utils import write_tagged_content_to_file
-TRANING_DATA = '../data/training-data'
+from source.utils import write_tagged_content_to_file, add_spaces_around_interpunctions
+
+TRAINING_DATA = '../data/training-data'
 TEST_FILES_PATH = '../data/test-files/stories'
 TAGGED_TEST_FILES_PATH = '../data/test-files/tagged-test-files'
-ORGINAL_STORIES = '../data/stories/'
+ORIGINAL_STORIES = '../data/stories/'
 
 
 # neka od tvojih funkcija iz train_and_test_models.py
 def get_content(path):
     with open(path, 'r') as file_output:
         content = file_output.read()
-    content = re.sub('(?<! \"\':\-{2})(?=[.,!?()\"\':])|(?<=[.,!?()\"\':])(?! )', r' ', content)
+    content = add_spaces_around_interpunctions(content)
     return content
 
 
@@ -50,7 +50,7 @@ def tag_tokens_with_model(tokens, model, lowercase):
 # preradjena funkcija tag_file_with_all_models
 # koja radi sam na crf jer sam htio smanjiti vrijeme izvrsavanja
 def tag_file_with_crf_model(file_name, model):
-    path = ORGINAL_STORIES + '/' + file_name + '.txt'
+    path = ORIGINAL_STORIES + '/' + file_name + '.txt'
 
     if not os.path.isfile(path):
         print('File ' + path + ' does not exist!')
@@ -85,7 +85,7 @@ def tag_file_with_crf_model(file_name, model):
 
 
 def tag_file_with_hmm_model(file_name, model):
-    path = ORGINAL_STORIES + '/' + file_name + '.txt'
+    path = ORIGINAL_STORIES + '/' + file_name + '.txt'
 
     if not os.path.isfile(path):
         print('File ' + path + ' does not exist!')
@@ -194,7 +194,7 @@ def make_conf_matrix(conf_matrix, txt_file_for_test, model, tag_model):
         tag_punct = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_' + tag_model + '_punct.tsv')
         tag_lower = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_' + tag_model + '_lower.tsv')
         tag_lower_punct = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + txt_file_for_test[q] + '_' + tag_model + '_lower_punct.tsv')
-        our_tag = parse_tsv(TRANING_DATA + '/'+str(int(txt_file_for_test[q])) + '.tsv')
+        our_tag = parse_tsv(TRAINING_DATA + '/' + str(int(txt_file_for_test[q])) + '.tsv')
 
         calc(conf_matrix, nor_tag, our_tag, txt_file_for_test[q], tag_model)
         global mtr_nor
@@ -219,7 +219,7 @@ def make_conf_matrix(conf_matrix, txt_file_for_test, model, tag_model):
 
 def cv(tag_model):
     # dohvacanje sve iz direktorija
-    file_list = os.listdir(TRANING_DATA)
+    file_list = os.listdir(TRAINING_DATA)
     models = Models()
     # file_for_train = []
     # file_for_test = []

@@ -1,12 +1,10 @@
-import csv
 import os
-import re
 from collections import Counter
 
 from nltk.tokenize import word_tokenize, wordpunct_tokenize
 
 from source.models import Models
-from source.utils import write_tagged_content_to_file
+from source.utils import write_tagged_content_to_file, add_spaces_around_interpunctions
 
 TEST_FILES_PATH = '../data/test-files/stories'
 TAGGED_TEST_FILES_PATH = '../data/test-files/tagged-test-files'
@@ -68,7 +66,7 @@ def tag_file_with_all_models(file_name, models):
 
     print('\nTagging content with Stanford NER without punctuation...')
     tagged_content = tag_tokens_with_model(tokenized_content, models.stanford_ner, False)
-    tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + 'stanford_ner' + '.tsv'
+    tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_stanford_ner' + '.tsv'
     write_tagged_content_to_file(tagged_content, tagged_file_path)
 
     print('\nTagging content with Stanford NER with punctuation...')
@@ -117,7 +115,7 @@ def tag_tokens_with_model(tokens, model, lowercase):
 def get_content(path):
     with open(path, 'r') as file_output:
         content = file_output.read()
-    content = re.sub('(?<! \"\':\-{2})(?=[.,!?()\"\':])|(?<=[.,!?()\"\':])(?! )', r' ', content)
+    content = add_spaces_around_interpunctions(content)
     return content
 
 
