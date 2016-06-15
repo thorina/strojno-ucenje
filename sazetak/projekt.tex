@@ -1,0 +1,53 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[croatian]{babel}
+\usepackage{url}
+\hyphenation{op-tical net-works semi-conduc-tor}
+\begin{document}
+\title{Ekstrakcija likova iz kratkih pri\v{c}a}
+\author{\IEEEauthorblockN{Gorana Leva\v{c}i\'c}
+\and
+\IEEEauthorblockN{Tomislav Horina}}
+\maketitle
+
+\begin{abstract}
+U ovom radu smo radili klasifikator za likove u kratkim pri\v{c}ama. Koristili smo kratke pri\v{c}e s Gutenberg projecta.Pri\v{c}e smostalno ozna\v{c}avali jer postoje\'ca rije\v{s}enja ne prepoznaju na primjer kralja kao lika.Promatrali smo pona\v{s}anje klasifikanirao na 4 na\v{c}ina zadavanja tesnog skupa.Vrste su :
+\begin{enumerate}
+\item bez ikakve promjene
+\item pri\v{c}e bez interpukcijski znakova
+\item sve rije\v{c}i u lowercaseu
+\item sve rije\v{c}i u lowercaseu i bez interpukcijski znakova
+\end{enumerate} 
+Isprobali smo algoritme klasifikacije koji su preporu\v{c}eni za izradu tog modela -- skriveni markovljev model(eng. Hidden Markov Model, HMM) i uvjetno slu\v{c}ajno polje(eng. Conditional Random Fields, CRF) te smo  stanford Ner u\v{c}ili na na\v{s}e ozanke.
+(sada tu treba ici nesto  rezzultatima to treba nadopisati.)     
+\end{abstract}
+\section{Uvod}
+U ovom projektu bavit \'cemo se ekstrahiranjem likova iz kratkih pri\v{c}a, konkretno pri\v{c}a za djecu. Taj problem pripada problemu ekstrakcije, odnosno identifikacije entiteta u tekstu, poznatiji pod engleskim nazivom named-entity recognition (NER). NER je podvrsta zada\'ce crpljenja obavijesti (information
+extraction), u kojoj se svakom elementu teksta pridjeljuje neki atribut. U op\'cem
+slučaju imamo vi\v{s}e atributa, na primjer osoba, lokacija, vrijeme, iznos novca i
+drugi, te vi\v{s}e rije\v{c}i mo\v{z}e \v{c}initi entitet kojem se pridjeljuje jedan atribut. Jasnije
+je iz sljede\'ceg primjera:\\
+Jim bought 300 shares of Acme Corp. in 2006.\\
+$|Jim|_{person}$ bought 300 shares of $|Acme Corp.|_{organization}$ in $|2006|_{time}$.\\
+U na\v{s}em slu\v{c}aju imamo samo jedan atributa, lik, koji odre\dj{}uje tko su sve likovi u pri\v{c}i.
+\section{Podaci}
+Tekstove pri\v{c}a smo skidali s stranice Project Gutenberg. Potom smo samostalno ozna\v{c}avali likove. To smo radili po\v{s}to postoje\'ca rije\v{s}enja ne prepoznaju, na primjer kralj, kraljica, princ i tako dalje, kao likove. Svakoj rije\v{c}i smo dodljeljivali klasu O ,\v{s}to ozna\v{c}ava $"Other"$, i klasu C ,\v{s}to ozna\v{c}ava $"Charachter"$.
+
+\section{Opis kori\v{s}tenih meotda}
+The conclusion goes here.
+
+\section{Rezultati}
+hmm nevalja 
+
+\begin{thebibliography}{1}
+\bibitem{IEEEhowto:kopka}
+H.~Kopka and P.~W. Daly, \emph{A Guide to \LaTeX}, 3rd~ed.\hskip 1em plus
+  0.5em minus 0.4em\relax Harlow, England: Addison-Wesley, 1999.
+\end{thebibliography}
+
+
+
+
+% that's all folks
+\end{document}
+
+
