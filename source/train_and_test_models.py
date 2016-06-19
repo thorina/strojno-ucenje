@@ -2,12 +2,14 @@ import os
 
 from nltk.tokenize import word_tokenize, wordpunct_tokenize
 
-from source.models import Models
-from source.utils import write_tagged_content_to_file, get_content, tag_tokens_with_model
+from source.models import Models, calculate_confidence_matrix_for_file
+from source.utils import write_tagged_content_to_file, get_content, tag_tokens_with_model, get_all_tags, parse_tsv
 
 TRAINED_MODELS = '../data/trained-models'
 TEST_FILES_PATH = '../data/test/stories'
+TEST_RESULTS = '../data/test/results'
 TAGGED_TEST_FILES_PATH = '../data/test/tagged'
+OUR_TAGGED_TEST_FILES_PATH = '../data/test/our_tag'
 TRAINING_DATA = '../data/training-data'
 ORIGINAL_STORIES = '../data/stories/'
 
@@ -97,6 +99,24 @@ def tag_file_with_all_models(file_name, models):
                                            lowercase=True, message=True)
     tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_stanford_ner_lower_punct' + '.tsv'
     write_tagged_content_to_file(tagged_content, tagged_file_path, message=True)
+
+
+def test(model):
+    if not os.path.exists(TEST_RESULTS):
+        os.makedirs(TEST_RESULTS)
+
+    file_list = os.listdir(TEST_FILES_PATH)
+    for file in file_list:
+        tag_file_with_all_models(file.replace(".txt",""), model)
+
+    tagged_file_list = os.listdir(TAGGED_TEST_FILES_PATH)
+    for file in tagged_file_list:
+        tagged_model = file[file.find("_") + 1: file.find(".")]
+        tagged_name = file[: file.find("_")]
+        machine_tags = parse_tsv(TAGGED_TEST_FILES_PATH + file)
+        our_tags = parse_tsv(OUR_TAGGED_TEST_FILES_PATH + tagged_name + '.tsv')
+        calculate_confidence_matrix_for_file(machine_tags, our_tags,
+                                             tagged_name, TEST_RESULTS + tagged_model + '.txt')
 
 
 def main():
