@@ -65,6 +65,7 @@ java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier
 
 `mx4g` parametar zadaje 4gb radne memorije za ovaj proces. Ako Java javi grešku pri treniranju modela, potrebno je 
 pokrenuti ponovno proces s s manje memorije. Detaljnije piše [ovdje](http://nlp.stanford.edu/software/crf-faq.shtml#d).
+
 __Napomena__: Ukoliko se dogodi da treniranje prestane, a Python proces je također prekinut, moguće je do kraja dovršiti 
 treniranje ova 4 modela preko konzole, bez ponovnog treniranja HMM i CRF modela. Pri ponovnom pokretanju Python procesa 
 potrebno je odabrati `n`, odnosno učitavanje već istreniranih modela.
