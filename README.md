@@ -39,10 +39,11 @@ Ti dokumenti se kasnije koriste za treniranje modela.
 
 U skripti `models.py` se treniraju modeli HMM (hidden Markov model, skriveni Markovljev mode) i CRF
 (conditional random fields, uvjetna slučajna polja). Oba modela se treniraju na četiri načina:
-1. da uzimaju interpunkcijske znakove u obzir, te da treniraju nad izvornim oblicima riječi
-2. da ne uzimaju interpunkcijske znakove u obzir, te da treniraju nad izvornim oblicima riječi
-3. da uzimaju interpunkcijske znakove u obzir, te da treniraju nad lowercase oblicima riječi
-4. da ne uzimaju interpunkcijske znakove u obzir, te da treniraju nad lowercase oblicima riječi
+
+1. da uzimaju interpunkcijske znakove u obzir, te da treniraju nad izvornim oblicima riječi  
+2. da ne uzimaju interpunkcijske znakove u obzir, te da treniraju nad izvornim oblicima riječi  
+3. da uzimaju interpunkcijske znakove u obzir, te da treniraju nad lowercase oblicima riječi  
+4. da ne uzimaju interpunkcijske znakove u obzir, te da treniraju nad lowercase oblicima riječi  
 
 Nad HMM i CRF modelima se provodi unakrsna validacija. Skup za validaciju je veličine 3.
 Modeli se evaluiraju pomoću F<sub>2</sub>-mjere. Parametar _beta_ je veličine 2 jer
