@@ -1,0 +1,54 @@
+34:
+comp tag: quack mother duck sisters wild ducks ganders will dog chickie
+our tag: clever alice father mother hans maid servant boy
+[[  1   7]
+ [  9 362]]
+
+
+5:
+comp tag: orpheus others apollo beast prince princess zeus dog queen proserpine fates aegean sea king acheron charon milton golden fleece bacchantes lyra libetlera
+our tag: orpheus eurydice apollo calliope hymen pluto proserpine charon jason
+[[  4   5]
+ [ 18 866]]
+
+
+87:
+comp tag: little dwarfs dwarf dog rose mr rather king prince
+our tag: mother bear dwarf
+[[  1   2]
+ [  8 676]]
+
+
+104:
+comp tag: once king queen robbers
+our tag: king old woman witch queen stepmother mother brothers swans
+[[  2   7]
+ [  2 495]]
+
+
+232:
+comp tag: once king queen prince rolandor fairy court astrologer titania black malvolia madam doctor pill golden mountain mrs roman dog polar princess adatha adamant alicia
+our tag: king queen prince rolandor court astrologer titania lord archbishop chancellor malvolia doctor pill mrs poodle poldo giant of the north pole wife princess adatha alicia dr
+[[ 14  12]
+ [ 10 919]]
+
+
+97:
+comp tag: king fairy queen merinous princess masters papillette prince favourite malabar our daughter patipata
+our tag: merinous king fairy of the fountain queen princess butterfly papillette prince favourite daughter queséca barber malabar patipata salmoé
+[[  11    7]
+ [   2 1558]]
+
+
+404:
+comp tag: many one father brothers king
+our tag: johnny appleseed old man farmer wife children villagers young men maidens fathers mothers
+[[  0  13]
+ [  5 436]]
+
+
+Final results:
+[[  33   53]
+ [  54 5312]]
+F_2 score:
+0.38283062645

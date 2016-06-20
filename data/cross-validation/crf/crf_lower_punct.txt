@@ -1,28 +1,28 @@
 26.tsv:
-comp tag: freya scandinavia madonna odin valhalla dwarfs beauty twice queen dwarf king one baldur
+comp tag: freya madonna odin valhalla dwarfs beauty twice queen dwarf king one baldur
 our tag: freya odin
 [[  2   0]
- [ 11 669]]
-
-
-97.tsv:
-comp tag: king fairy one queen fountain rose little princess prince favourite malabar wolf daughter with patipata blue eyes bear adieus papillette fair
-our tag: merinous king fairy of the fountain queen princess butterfly papillette prince favourite daughter queséca barber malabar patipata salmoé
-[[  11    7]
- [  10 1550]]
+ [ 10 670]]
 
 
 523.tsv:
-comp tag: princess zenza dragon king old whose daughter marquis prince peasant woman with tilda cat
+comp tag: princess zenza dragon king whose daughter marquis prince peasant woman with tilda black cat
 our tag: old widow woman bobo princess zenza dragon tilda man fellow king father time seven clock twelve prince
-[[  8   9]
- [  6 884]]
+[[  7  10]
+ [  7 883]]
+
+
+163.tsv:
+comp tag: sir bors king pelles galahad became
+our tag: sir percivale galahad bors king pelles joseph estorause bishop
+[[  5   4]
+ [  1 275]]
 
 
 CV:
 comp tag: 
 our tag: 
-[[  21   53]
- [  27 6233]]
+[[  14   42]
+ [  18 3674]]
 
 

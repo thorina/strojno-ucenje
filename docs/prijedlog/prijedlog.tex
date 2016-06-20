@@ -1,0 +1,151 @@
+\documentclass[]{article}
+
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc} 
+\usepackage[croatian]{babel}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{biblatex}
+\setlength{\parskip}{0.25em}
+
+\setlist[itemize]{parsep=0em}
+\setlength{\textfloatsep}{2em}
+
+\title{Ekstrakcija likova iz kratkih priča \\ (Projektni prijedlog)}
+
+\author{Tomislav Horina \\ Gorana Levačić}
+
+\date{Zagreb, 2016.}
+
+\begin{document}
+	
+	\maketitle
+	\thispagestyle{empty}
+	
+	\newpage
+	
+	\tableofcontents
+	
+	\newpage
+	
+	\section{Uvod}
+	U ovom projektu bavit ćemo se ekstrahiranjem likova iz kratkih priča, konkretno priča za djecu. Taj problem pripada problemu ekstrakcije, odnosno identifikacije entiteta u tekstu, poznatiji pod engleskim nazivom \textbf{named-entity recognition (NER)}. NER je podvrsta zadaće crpljenja obavijesti (information extraction), u kojoj se svakom elementu teksta pridjeljuje neki atribut. U općem slučaju imamo više atributa, na primjer osoba, lokacija, vrijeme, iznos novca i drugi, te više riječi može činiti entitet kojem se pridjeljuje jedan atribut. Jasnije je iz sljedećeg primjera: \\
+	
+	\hspace{1em}Jim bought 300 shares of Acme Corp. in 2006.
+	
+	\hspace{1em}[Jim]$_{\mbox{person}}$ bought 300 shares of [Acme Corp.]$_{\mbox{organization}}$ in [2006]$_{\mbox{time}}$.
+	
+	\vspace{1em}
+	
+	U našem slučaju imamo samo jedan atribut, \textit{lik}, koji određuje tko su sve likovi u priči.
+	
+	Skup podataka čine kratke priče prikupljene s Project Gutenberga, kao što su bajke Hansa Christiana Andersena.
+	
+	\section{Cilj istraživanja problema}
+	
+	Cilj našega istraživanja je odrediti uspješnost nekoliko metoda za rješavanje opisanog problema. Usporedit ćemo te metode međusobno, kao i s već postojećim sustavima za named-entity recognition. Većina postojećih sustava je generalizirana za više atributa, od kojih će nama samo jedan biti bitan (\textit{osoba}). S obzirom da su neki od tih sustava godinama razvijani na sveučilištima ili u većim tvrtkama, očekujemo lošiji rezultat u odnosu njih.
+	
+	\section{Pregled dosadašnjih istraživanja}
+	
+	Istraživanje named-entity recognition problema je započelo u 90im godinama prošloga stoljeća. Prvotno su izvori podataka bili novinski članci, dok su danas to često podaci vezani uz bioinformatiku, molekularnu biologiju i medicinu.
+	
+	Većina dosadašnjih istraživanja se temelji na nadziranom učenju. S obzirom na veći broj atributa u općenitom slučaju, potrebno je prikupiti velike količine označenog teksta iz kojeg će klasifikator učiti. Zbog toga se u novije vrijeme prelazi na učenje podrškom.
+	
+	Metode koje se koriste za rješavanje NER problema su:
+	\begin{itemize}
+		\item \textbf{uvjetna slučajna polja} (eng. \textit{conditional random fields, CRF})
+		\item \textbf{skriveni Markovljevi modeli} (eng. \textit{hidden Markov models, HMM})
+		\item \textbf{potporni vektorski strojevi} (eng. \textit{support vector machines, SVM})
+		\item \textbf{stabla odlučivanja} (eng. \textit{decision trees})
+		\item \textbf{model maksimalne entropije} (eng. \textit{maximum entropy, ME})
+		\item \textbf{konvolucijske neuralne mreže} (eng. \textit{convolutional neural networks, CNN})
+	\end{itemize}
+	
+	Uvjetna slučajna polja i skriveni Markovljevi modeli su ipak najčešće metode. Na uvjetnim slučajnim poljima se temelji i \textbf{Stanford NER}, koji prepoznaje tri klase: \textit{PERSON, ORGANIZATION, LOCATION}. Sveučilište u Sheffieldu je razvilo GATE, General Architecture for Text Engineering, u sklopu kojeg se nalazi \textbf{ANNIE} (A Nearly-New Information Extraction System). Također se koriste i hibridni pristupi poput uvjetnih neuralnih polja (conditional neural fields). Neuralne mreže ipak još uvijek postižu lošije rezultate u odnosu na npr. uvjetna slučajna polja. Konvolucijske neuralne mreže su najbolji izbor za NER.
+	
+	Napomenimo još da neke od dosadašnjih metoda postižu i do 94\% uspješnosti za određene tekstove, što je veoma blizu ljudskoj uspješnosti od 97\%. Za neke druge tekstove, odnosno područja, je uspješnost dosta niža.
+	
+	\section{Materijali, metodologija i plan istraživanja}
+	
+	Kao što smo već rekli, izvor podataka će biti kratke priče na engleskom jeziku prikupljene s web stranice Project Gutenberg. Na stranici se mogu pronaći bajke Hansa Christiana Andersena, različite narodne pripovijesti (slavenske, germanske itd.), kratke priče za djecu i odrasle različitih autora, te mnoge druge knjige i pripovijesti.
+	
+	S obzirom da nam je temeljni pristup nadzirano učenje, dio prikupljenih priča će činiti skup za učenje, te ćemo u tim pričama označiti likove.
+	
+	Koristit ćemo dvije metode: \textbf{skrivene Markovljeve modele} i \textbf{konvolucijske neuralne mreže}. Obje metode ćemo implementirati u Pythonu pomoću biblioteka \textbf{NLTK} (\textit{Natural Language Toolkit}) i \textbf{PyBrain} (\textit{Python-Based Reinforcement Learning, Artificial Intelligence and Neural Network Library}).
+	
+	\subsection{Skriveni Markovljevi modeli}
+	
+	Skriveni Markovljev model (HMM) je statistički model sa sljedećim svojstvima:
+	\begin{itemize}
+		\item \textbf{Markovljevo svojstvo} sustava znači da buduća stanja sustava ovise samo o trenutnom stanju, ne o prethodnim stanjima
+		\item \textbf{skrivenost} znači da stanje sustava nije izravno vidljivo, već je vidljiv konačni rezultat
+	\end{itemize} 
+	
+	HMM možemo interpretirati kao nedeterministički konačni automat s vjerojatnostima pridruženim svakom prijelazu. Vjerojatnost nekog niza stanja $Y = y(0) y(1) \ldots y(L-1)$ duljine $L$ se može izračunati pomoću
+	
+	\begin{equation*}
+		P(Y) = \sum_{X} P(Y|X) P(X
+	\end{equation*}
+	
+	pri čemu je $X = x(0) x(1) \ldots x(L-1)$ neki niz duljine $L$ koji uključuje skrivene čvorove.
+	
+	Cilj je maksimizirati $P(Y)$, što se učinkovito radi pomoću \textbf{Viterbijevog algoritma}. Taj algoritam za cilj ima naći najvjerojatniji niz skrivenih stanja, odnosno \textbf{Viterbijev put}.
+	
+	\subsection{Konvolucijske neuralne mreže}
+	
+	Konvolucijske neuralne mreže (CNN) su vrsta neuralnih mreža koje daju izlaz ovisno o kontekstu. Ulaz takve mreže čine takozvani prozori, odnosno riječ s okolinom. Na primjer za rečenicu \textit{Jim bought 300 shares of Acme Corp. in 2006.} imamo:
+	
+	\begin{enumerate}
+		\item neuron: \textit{Jim bought 300}
+		\item neuron: \textit{bought 300 shares}
+		\item neuron: \textit{300 shares of}
+		\item neuron: \textit{shares of Acme}
+		\item neuron: \textit{of Acme Corp.}
+		\item neuron: \textit{Acme Corp. in}
+		\item neuron: \textit{Corp. in 2006.}
+	\end{enumerate}
+	
+	Za rješavanje problema NER pomoću neuralnih mreža je potrebno transformirati ulazne podatke (riječi) u oblik koji će biti prikladni za rad neuronske mreže. Konkretno, riječi će biti prezentirane vektorima, što se može postići na više načina. Jedna od češće korištenih metoda je Googleov \textbf{Word2Vec}, neuralna mreža koja uči značenja riječi te za svaku riječ kao izlaz daje vektor jednake duljine.
+	
+	\subsection{Ocjena uspješnosti}
+	
+	Kao ocjenu uspješnosti metoda koristit ćemo \textbf{F-mjeru}. Ta mjera se definira na sljedeći način:
+	
+	\begin{equation*}
+		F = 2 * \frac{P \cdot R}{P + R}
+	\end{equation*}
+	
+	pri čemu su $P$ i $R$ oznake za redom \textbf{preciznost} (eng. \textit{precision}) i \textbf{odziv} (eng. \textit{recall}):
+	
+	\begin{equation*}
+		P = \frac{\text{točno označeni likovi}}{\text{svi označeni likovi}}
+	\end{equation*}
+	
+	\begin{equation*}
+		R = \frac{\text{točno označeni likovi}}{\text{svi likovi u tekstu}}
+	\end{equation*}
+	
+	Drugim riječima, preciznost govori koliko pojmova je sustav ispravno označio (npr. sustav može označiti neku lokaciju kao lika), a odziv govori koliko likova je sustav uopće uočio (npr. sustav može preskočiti neke sporedne likove).
+	
+	\section{Očekivani rezultati}
+	
+	Očekujemo da će naš softver relativno uspješno prepoznavati likove u kratkim pričama. Pritom očekujemo da će skriveni Markovljevi modeli dati bolje rezultate u odnosu na neuralnu mrežu. U oba slučaja očekujemo lošije rezultate u odnosu na već postojeće sustave poput Stanford NER-a.
+	
+	\section*{Literatura}
+	\begin{enumerate}
+		\item Deep Learning for Natural Language Processing (nastavni materijali), Stanford University, \url{http://cs224d.stanford.edu/syllabus.html}
+		
+		\item Jurafsky D., \textit{Information Extraction and Named Entity Recognition} (nastavni materijal), Stanford University,  \url{https://web.stanford.edu/class/cs124/lec/Information_Extraction_and_Named_Entity_Recognition.pdf}
+		
+		\item  \textit{Named-entity recognition},  Wikipedia: The Free Encyclopedia, Wikimedia Foundation, Inc., \url{https://en.wikipedia.org/wiki/Named-entity_recognition} (zadnja izmjena: 20. siječnja 2016.)
+		
+		\item Collobert et al.: \textit{Natural language processing (almost) from scratch} (2011.).  \url{http://jmlr.org/papers/volume12/collobert11a/collobert11a.pdf}
+		
+		\item Nadeau D., Sekine S.: \textit{A survey of named entity recognition and classification}. \url{http://nlp.cs.nyu.edu/sekine/papers/li07.pdf}
+		
+		\item Yuan, E.:  \textit{Named-Entity Recognition using Deep Learning} (2015.), \url{http://eric-yuan.me/ner_1/} 
+	\end{enumerate}
+	
+\end{document}

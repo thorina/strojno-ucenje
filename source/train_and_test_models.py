@@ -1,5 +1,8 @@
 import os
 
+import shutil
+
+import numpy as np
 from nltk.tokenize import word_tokenize, wordpunct_tokenize
 
 from source.models import Models, calculate_confidence_matrix_for_file
@@ -11,11 +14,11 @@ TEST_RESULTS = '../data/test/results'
 TAGGED_TEST_FILES_PATH = '../data/test/tagged'
 OUR_TAGGED_TEST_FILES_PATH = '../data/test/our_tag'
 TRAINING_DATA = '../data/training-data'
-ORIGINAL_STORIES = '../data/stories/'
+ORIGINAL_STORIES = '../data/stories'
 
 
 def tag_file_with_all_models(file_name, models):
-    path = TEST_FILES_PATH + '/' + file_name + '.txt'
+    path = ORIGINAL_STORIES + '/' + file_name + '.txt'
 
     if not os.path.isfile(path):
         print('File ' + path + ' does not exist!')
@@ -44,7 +47,7 @@ def tag_file_with_all_models(file_name, models):
     tagged_content = tag_tokens_with_model(tokenized_content_lower, models.hmm_lower,
                                            lowercase=True, message=True)
     tagged_file_path = TAGGED_TEST_FILES_PATH + '/' + file_name + '_hmm_lower' + '.tsv'
-    write_tagged_content_to_file(tagged_content, tagged_file_path,message=True)
+    write_tagged_content_to_file(tagged_content, tagged_file_path, message=True)
 
     print('\nTagging content with HMM with lowercase tokens with punctuation...')
     tagged_content = tag_tokens_with_model(tokenized_content_lower_punct, models.hmm_lower_punct,
@@ -101,29 +104,105 @@ def tag_file_with_all_models(file_name, models):
     write_tagged_content_to_file(tagged_content, tagged_file_path, message=True)
 
 
-def test(model):
-    if not os.path.exists(TEST_RESULTS):
-        os.makedirs(TEST_RESULTS)
+def test(models):
+    print('Models will now be tested...')
+    if os.path.exists(TEST_RESULTS):
+        shutil.rmtree(TEST_RESULTS)
+    os.makedirs(TEST_RESULTS)
 
     file_list = os.listdir(TEST_FILES_PATH)
     for file in file_list:
-        tag_file_with_all_models(file.replace(".txt",""), model)
+        tag_file_with_all_models(file.replace(".txt", ""), models)
+
+    conf_matrix_hmm = np.array([[0, 0], [0, 0]])
+    conf_matrix_hmm_punct = np.array([[0, 0], [0, 0]])
+    conf_matrix_hmm_lower = np.array([[0, 0], [0, 0]])
+    conf_matrix_hmm_lower_punct = np.array([[0, 0], [0, 0]])
+    conf_matrix_crf = np.array([[0, 0], [0, 0]])
+    conf_matrix_crf_punct = np.array([[0, 0], [0, 0]])
+    conf_matrix_crf_lower = np.array([[0, 0], [0, 0]])
+    conf_matrix_crf_lower_punct = np.array([[0, 0], [0, 0]])
+    conf_matrix_stanford_ner = np.array([[0, 0], [0, 0]])
+    conf_matrix_stanford_ner_punct = np.array([[0, 0], [0, 0]])
+    conf_matrix_stanford_ner_lower = np.array([[0, 0], [0, 0]])
+    conf_matrix_stanford_ner_lower_punct = np.array([[0, 0], [0, 0]])
 
     tagged_file_list = os.listdir(TAGGED_TEST_FILES_PATH)
     for file in tagged_file_list:
         tagged_model = file[file.find("_") + 1: file.find(".")]
         tagged_name = file[: file.find("_")]
-        machine_tags = parse_tsv(TAGGED_TEST_FILES_PATH + file)
-        our_tags = parse_tsv(OUR_TAGGED_TEST_FILES_PATH + tagged_name + '.tsv')
-        calculate_confidence_matrix_for_file(machine_tags, our_tags,
-                                             tagged_name, TEST_RESULTS + tagged_model + '.txt')
+        machine_tags = parse_tsv(TAGGED_TEST_FILES_PATH + '/' + file)
+        our_tags = parse_tsv(OUR_TAGGED_TEST_FILES_PATH + '/' + tagged_name + '.tsv')
+
+        new_matrix = calculate_confidence_matrix_for_file(machine_tags, our_tags,
+                                                          tagged_name, TEST_RESULTS + '/' + tagged_model + '.txt')
+
+        if tagged_model == 'hmm':
+            conf_matrix_hmm += new_matrix
+        elif tagged_model == 'hmm_punct':
+            conf_matrix_hmm_punct += new_matrix
+        elif tagged_model == 'hmm_lower':
+            conf_matrix_hmm_lower += new_matrix
+        elif tagged_model == 'hmm_lower_punct':
+            conf_matrix_hmm_lower_punct += new_matrix
+        elif tagged_model == 'crf':
+            conf_matrix_crf += new_matrix
+        elif tagged_model == 'crf_punct':
+            conf_matrix_crf_punct += new_matrix
+        elif tagged_model == 'crf_lower':
+            conf_matrix_crf_lower += new_matrix
+        elif tagged_model == 'crf_lower_punct':
+            conf_matrix_crf_lower_punct += new_matrix
+        elif tagged_model == 'stanford_ner':
+            conf_matrix_stanford_ner += new_matrix
+        elif tagged_model == 'stanford_ner_punct':
+            conf_matrix_stanford_ner_punct += new_matrix
+        elif tagged_model == 'stanford_ner_lower':
+            conf_matrix_stanford_ner_lower += new_matrix
+        elif tagged_model == 'stanford_ner_lower_punct':
+            conf_matrix_stanford_ner_lower_punct += new_matrix
+
+    write_confidence_matrix_and_f_score(conf_matrix_hmm, 'hmm')
+    write_confidence_matrix_and_f_score(conf_matrix_hmm_punct, 'hmm_punct')
+    write_confidence_matrix_and_f_score(conf_matrix_hmm_lower, 'hmm_lower')
+    write_confidence_matrix_and_f_score(conf_matrix_hmm_lower_punct, 'hmm_lower_punct')
+
+    write_confidence_matrix_and_f_score(conf_matrix_crf, 'crf')
+    write_confidence_matrix_and_f_score(conf_matrix_crf_punct, 'crf_punct')
+    write_confidence_matrix_and_f_score(conf_matrix_crf_lower, 'crf_lower')
+    write_confidence_matrix_and_f_score(conf_matrix_crf_lower_punct, 'crf_lower_punct')
+
+    write_confidence_matrix_and_f_score(conf_matrix_stanford_ner, 'stanford_ner')
+    write_confidence_matrix_and_f_score(conf_matrix_stanford_ner_punct, 'stanford_ner_punct')
+    write_confidence_matrix_and_f_score(conf_matrix_stanford_ner_lower, 'stanford_ner_lower')
+    write_confidence_matrix_and_f_score(conf_matrix_stanford_ner_lower_punct, 'stanford_ner_lower_punct')
+
+
+def write_confidence_matrix_and_f_score(confidence_matrix, model):
+    with open(TEST_RESULTS + '/' + model + '.txt', 'a') as f:
+        f.write('Final results:\n')
+        f.write(np.array_str(confidence_matrix))
+        f.write('\n')
+        f.write('F_2 score:\n')
+
+        beta = 2  # važnija nam je osjetljivost od preciznosti
+        tp = confidence_matrix[0][0]
+        fn = confidence_matrix[0][1]
+        fp = confidence_matrix[1][0]
+        fscore = ((1 + beta * beta) * tp) / ((1 + beta * beta) * tp + beta * beta * fn + fp)
+        print()
+        print('Model: ' + model)
+        print('Confidence matrix:')
+        print(confidence_matrix)
+        print('F_2 score = ' + str(fscore))
+        print()
+        f.write(str(fscore))
 
 
 def main():
-
-    print('Do you want to retrain the models? y/n')
+    print('Do you want to retrain the models? "y"/"n"')
     print('(do this if you are running this for the first time or if training set has changed)')
-    print('If you want to exit, enter q.')
+    print('If you want to exit, enter "q".')
 
     if not os.path.exists(TRAINED_MODELS):
         os.makedirs(TRAINED_MODELS)
@@ -136,6 +215,7 @@ def main():
         models = Models()
         if input_string.lower() == 'y':
             models.retrain_all_models()
+            test(models)
             break
 
         elif input_string.lower() == 'n':
@@ -143,7 +223,7 @@ def main():
             break
 
         else:
-            print('Incorrect input - please enter y, n or q.')
+            print('Incorrect input - please enter "y", "n" or "q".')
             continue
 
     if not os.path.exists(TAGGED_TEST_FILES_PATH):
@@ -151,7 +231,7 @@ def main():
 
     while True:
         print()
-        print('Enter file name without extension in /data/test-data to tag, e.g. "1" for file "1.txt".')
+        print('Enter file name without extension in /data/stories to tag, e.g. "1" for file "1.txt".')
         print('If you want to exit, enter q.')
         input_string = input('--> ')
         if input_string.lower() == 'q':

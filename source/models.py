@@ -5,6 +5,7 @@ import nltk
 import numpy as np
 from dill import dill
 from nltk.tag import StanfordNERTagger
+import matplotlib.pyplot as plt
 
 from source.conditional_random_fields import load_trained_crf_model, train_crf_model, TRAINED_CRF_MODEL_CV, \
     TRAINED_CRF_PUNCT_MODEL_CV, TRAINED_CRF_LOWER_MODEL_CV, TRAINED_CRF_LOWER_PUNCT_MODEL_CV, TRAINED_CRF_MODEL, \
@@ -35,7 +36,6 @@ TRAINED_STANFORD_NER_LOWER = 'trained_stanford_ner_lower.ser.gz'
 TRAINED_STANFORD_NER_PUNCT = 'trained_stanford_ner_punct.ser.gz'
 TRAINED_STANFORD_NER = 'trained_stanford_ner.ser.gz'
 
-
 PATH_TOKENIZED_CONTENT = '../lib/stanford-ner/training-sets/tokenized_content.tsv'
 PATH_TOKENIZED_CONTENT_PUNCT = '../lib/stanford-ner/training-sets/tokenized_content_punct.tsv'
 PATH_TOKENIZED_CONTENT_LOWER = '../lib/stanford-ner/training-sets/tokenized_content_lower.tsv'
@@ -45,6 +45,32 @@ NLTK_DATA_PATH = '../lib/nltk_data'
 nltk.data.path.append(NLTK_DATA_PATH)
 
 np.set_printoptions(formatter={'float': lambda x: "{0:0.3f}".format(x)})
+
+
+def plot_cv_data(iter, array, model):
+    y_def = []
+    y_lower = []
+    y_punct = []
+    y_lower_punct = []
+    x = [i for i in range(1, iter + 1)]
+    for i in range(len(array)):
+        y_def += [array[i].default]
+        y_punct += [array[i].punct]
+        y_lower += [array[i].lower]
+        y_lower_punct += [array[i].lower_punct]
+
+    print(type(y_def), y_def)
+    fig, ax = plt.subplots()
+    ax.plot(x, y_def, label=r"default")
+    ax.plot(x, y_lower, label=r"lower")
+    ax.plot(x, y_punct, label=r"punct")
+    ax.plot(x, y_lower_punct, label=r"lower_punct")
+    ax.set_xlabel('iteracija')
+    ax.set_ylabel('F score')
+    ax.legend(loc=2)
+    ax.set_title(model)
+
+    fig.savefig(CV_FILES_PATH + '/' + model + '.png')
 
 
 class Models:
@@ -88,14 +114,20 @@ class Models:
         fscores_hmm = FScores()
         fscores_crf = FScores()
 
+        array_crf = []
+        array_hmm = []
+
         for i in range(0, iterations):
             if os.path.exists(CV_RESULTS_FILES_PATH):
                 shutil.rmtree(CV_RESULTS_FILES_PATH)
             os.makedirs(CV_RESULTS_FILES_PATH)
 
             test_files, tmp_models_hmm, tmp_models_crf = train_models(all_files, cv_size, i)
-            self.test_models(fscores_hmm, i, 'hmm', test_files, tmp_models_hmm)
-            self.test_models(fscores_crf, i, 'crf', test_files, tmp_models_crf)
+            array_hmm += [self.test_models(fscores_hmm, i, 'hmm', test_files, tmp_models_hmm)]
+            array_crf += [self.test_models(fscores_crf, i, 'crf', test_files, tmp_models_crf)]
+
+        plot_cv_data(iterations, array_crf, 'crf')
+        plot_cv_data(iterations, array_hmm, 'hmm')
 
         # # remove unnecessary folders after CV
         shutil.rmtree(CV_FILES_PATH_DEFAULT)
@@ -178,7 +210,8 @@ class Models:
 
         if fscores_tmp.lower > fscores_max.lower:
             fscores_max.lower = fscores_tmp.lower
-            print('Found new best ' + model.upper() + ' without punctuation with lowercase tokens in iteration ' + str(i) +
+            print('Found new best ' + model.upper() + ' without punctuation with lowercase tokens in iteration ' + str(
+                i) +
                   ', with F_2 score of ' + str(fscores_max.default))
             if model == 'hmm':
                 self.hmm_lower = tmp_models.lower
@@ -198,7 +231,8 @@ class Models:
 
         if fscores_tmp.lower_punct > fscores_max.lower_punct:
             fscores_max.lower_punct = fscores_tmp.lower_punct
-            print('Found new best ' + model.upper() + ' with punctuation and with lowercase tokens in iteration ' + str(i) +
+            print('Found new best ' + model.upper() + ' with punctuation and with lowercase tokens in iteration ' + str(
+                i) +
                   ', with F_2 score of ' + str(fscores_max.lower_punct))
 
             if model == 'hmm':
@@ -216,6 +250,7 @@ class Models:
 
             shutil.move(CV_RESULTS_FILES_PATH + '/' + model + '_lower_punct.txt',
                         results_path + '/' + model + '_lower_punct.txt')
+        return fscores_tmp
 
     def load_existing_stanford_ner_models(self):
         needs_training = check_if_all_stanford_ner_models_exist()
@@ -319,7 +354,7 @@ def show_retraining_instruction():
 def show_bash_instruction(model):
     print('java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier '
           '-prop ner.properties -trainFile training-sets/tokenized_content.tsv '
-          '-serializeTo ' + model)
+          '-serializeTo classifiers/' + model)
 
 
 def tag_files_for_cross_validation(file_list, tmp_models):

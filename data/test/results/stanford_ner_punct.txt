@@ -1,0 +1,54 @@
+104:
+comp tag: king queen daughter witch sister father mother stepmother
+our tag: king old woman witch queen stepmother mother brothers swans
+[[  5   4]
+ [  3 494]]
+
+
+404:
+comp tag: old man one father wife knight king
+our tag: johnny appleseed old man farmer wife children villagers young men maidens fathers mothers
+[[  3  10]
+ [  4 437]]
+
+
+5:
+comp tag: orpheus eurydice apollo hymen nymphs snake zeus dog tantalus sisyphus furies queen proserpine charon jason mother
+our tag: orpheus eurydice apollo calliope hymen pluto proserpine charon jason
+[[  7   2]
+ [  9 875]]
+
+
+232:
+comp tag: king queen prince rolandor fairy court astrologer titania malvolia madam doctor pill mrs poldo roman dog giant princess adatha alicia prime minister
+our tag: king queen prince rolandor court astrologer titania lord archbishop chancellor malvolia doctor pill mrs poodle poldo giant of the north pole wife princess adatha alicia dr
+[[ 16  10]
+ [  6 923]]
+
+
+34:
+comp tag: ducks duck mother duckling wild geese ganders will old woman
+our tag: clever alice father mother hans maid servant boy
+[[  1   7]
+ [  9 362]]
+
+
+97:
+comp tag: king fairy of the fountain queen merinous princess papillette prince favourite grecian queséca madam malabar patipata
+our tag: merinous king fairy of the fountain queen princess butterfly papillette prince favourite daughter queséca barber malabar patipata salmoé
+[[  14    4]
+ [   2 1558]]
+
+
+87:
+comp tag: mother children little dwarf rose mr king son prince
+our tag: mother bear dwarf
+[[  2   1]
+ [  7 677]]
+
+
+Final results:
+[[  48   38]
+ [  40 5326]]
+F_2 score:
+0.555555555556

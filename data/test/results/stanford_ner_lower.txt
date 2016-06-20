@@ -1,0 +1,54 @@
+232:
+comp tag: king queen prince rolandor hurrah fairy lord malvolia rose madam beauty doctor pill rather mrs dog cat old nymphs roman giant blue poldo princess alicia
+our tag: king queen prince rolandor court astrologer titania lord archbishop chancellor malvolia doctor pill mrs poodle poldo giant of the north pole wife princess adatha alicia dr
+[[ 13  13]
+ [ 12 917]]
+
+
+87:
+comp tag: rose red mother span children dwarfs dwarf little man goose king prince
+our tag: mother bear dwarf
+[[  2   1]
+ [ 10 674]]
+
+
+97:
+comp tag: king fairy of the fountain queen rose mother princess bird beauty good prince daughter papillette grace madam wolf lady patipata flatterers father
+our tag: merinous king fairy of the fountain queen princess butterfly papillette prince favourite daughter queséca barber malabar patipata salmoé
+[[  11    7]
+ [  11 1549]]
+
+
+104:
+comp tag: king old woman queen daughter mother witch sister father stepmother robbers baby wife
+our tag: king old woman witch queen stepmother mother brothers swans
+[[  7   2]
+ [  6 491]]
+
+
+404:
+comp tag: old man johnny brothers wife knight king
+our tag: johnny appleseed old man farmer wife children villagers young men maidens fathers mothers
+[[  4   9]
+ [  3 438]]
+
+
+34:
+comp tag: mother cock cat emperor rose dog old woman tom little son wife
+our tag: clever alice father mother hans maid servant boy
+[[  1   7]
+ [ 11 360]]
+
+
+5:
+comp tag: beauty bird apollo beast orpheus nymphs shepherd princess snake zeus grim dog queen milton jason mother
+our tag: orpheus eurydice apollo calliope hymen pluto proserpine charon jason
+[[  3   6]
+ [ 13 871]]
+
+
+Final results:
+[[  41   45]
+ [  66 5300]]
+F_2 score:
+0.454545454545

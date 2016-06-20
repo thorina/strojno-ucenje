@@ -1,28 +1,28 @@
-97.tsv:
-comp tag: king fairy queen merinous princess masters papillette prince favourite malabar our daughter patipata
-our tag: merinous king fairy of the fountain queen princess butterfly papillette prince favourite daughter queséca barber malabar patipata salmoé
-[[  11    7]
- [   2 1558]]
+524.tsv:
+comp tag: once king queen baby daughter dwarfs fairy little marianna emperor golden mountain adamant again brother garabin prince magician princess dog court chamberlain cat giant cruel three
+our tag: king queen daughter dwarf marianna emperor of the elves old woman peasant girl garabin prince desire magician court chamberlain pillows doctors giant
+[[ 11  11]
+ [ 15 797]]
 
 
-523.tsv:
-comp tag: once princess zenza courtiers king iron clock marquis prince golden apples lord seneschal black cat
-our tag: old widow woman bobo princess zenza dragon tilda man fellow king father time seven clock twelve prince
-[[  5  12]
- [ 10 880]]
+82.tsv:
+comp tag: king queen carl
+our tag: miller daughter king little man child rumpelstilzchen
+[[  1   6]
+ [  2 305]]
 
 
-163.tsv:
-comp tag: sir percivale galahad thither bors king pelles arthur
-our tag: sir percivale galahad bors king pelles joseph estorause bishop
-[[  6   3]
- [  2 274]]
+106.tsv:
+comp tag: queen king fairy princess désirée ungrateful sisters prince warrior black tulip beast
+our tag: queen king old woman désirée princess fairy prince warrior black becafico tulip longthorn gilliflower of the fountain knight
+[[   9    9]
+ [   3 1399]]
 
 
 CV:
 comp tag: 
 our tag: 
-[[   40   122]
- [   43 11669]]
+[[  288   982]
+ [  411 92679]]
 
 

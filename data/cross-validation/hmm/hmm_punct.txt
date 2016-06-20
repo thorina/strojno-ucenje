@@ -1,3 +1,17 @@
+524.tsv:
+comp tag: 
+our tag: king queen daughter dwarf marianna emperor of the elves old woman peasant girl garabin prince desire magician court chamberlain pillows doctors giant
+[[  0  22]
+ [  0 812]]
+
+
+82.tsv:
+comp tag: 
+our tag: miller daughter king little man child rumpelstilzchen
+[[  0   7]
+ [  0 307]]
+
+
 106.tsv:
 comp tag: 
 our tag: queen king old woman désirée princess fairy prince warrior black becafico tulip longthorn gilliflower of the fountain knight
@@ -5,24 +19,10 @@ our tag: queen king old woman désirée princess fairy prince warrior black beca
  [   0 1402]]
 
 
-93.tsv:
-comp tag: 
-our tag: brother sister witch roe king huntsmen queen baby
-[[  0   8]
- [  0 574]]
-
-
-87.tsv:
-comp tag: 
-our tag: mother bear dwarf
-[[  0   3]
- [  0 684]]
-
-
 CV:
 comp tag: 
 our tag: 
-[[   362   1121]
- [   554 111244]]
+[[  278   945]
+ [  462 90107]]
 
 

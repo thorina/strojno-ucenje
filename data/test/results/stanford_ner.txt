@@ -1,0 +1,54 @@
+104:
+comp tag: king old woman queen daughter witch sister father stepmother robbers mother
+our tag: king old woman witch queen stepmother mother brothers swans
+[[  7   2]
+ [  4 493]]
+
+
+404:
+comp tag: old man johnny appleseed father wife lord knight king
+our tag: johnny appleseed old man farmer wife children villagers young men maidens fathers mothers
+[[  5   8]
+ [  4 437]]
+
+
+87:
+comp tag: rose mother children little henceforward dwarf goose mr king prince old
+our tag: mother bear dwarf
+[[  2   1]
+ [  9 675]]
+
+
+97:
+comp tag: king fairy of the fountain queen merinous princess prince favourite papillette grecian queséca malabar daughter grandchildren patipata salmoé
+our tag: merinous king fairy of the fountain queen princess butterfly papillette prince favourite daughter queséca barber malabar patipata salmoé
+[[  16    2]
+ [   2 1558]]
+
+
+232:
+comp tag: king queen prince rolandor fairy titania archbishop malvolia madam pish court astrologer doctor pill mrs poldo dog cat old nymphs roman giant princess adatha alicia
+our tag: king queen prince rolandor court astrologer titania lord archbishop chancellor malvolia doctor pill mrs poodle poldo giant of the north pole wife princess adatha alicia dr
+[[ 17   9]
+ [  8 921]]
+
+
+34:
+comp tag: ducks chick quack duck mother ducklings cock duckling wild geese ganders moor old woman tom cat chickie hen
+our tag: clever alice father mother hans maid servant boy
+[[  1   7]
+ [ 17 354]]
+
+
+5:
+comp tag: orpheus eurydice apollo beast hymen nymphs snake zeus dog sisyphus queen proserpine fates acheron charon jason fleece lyra
+our tag: orpheus eurydice apollo calliope hymen pluto proserpine charon jason
+[[  7   2]
+ [ 11 873]]
+
+
+Final results:
+[[  55   31]
+ [  55 5311]]
+F_2 score:
+0.605726872247

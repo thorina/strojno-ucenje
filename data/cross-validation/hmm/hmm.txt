@@ -1,28 +1,28 @@
-106.tsv:
+236.tsv:
 comp tag: 
-our tag: queen king old woman désirée princess fairy prince warrior black becafico tulip longthorn gilliflower of the fountain knight
-[[   0   18]
- [   0 1402]]
+our tag: cassim ali baba robbers captain sesame wife morgiana mustapha abdalla son cogia houssain
+[[   0   13]
+ [   0 1499]]
 
 
-93.tsv:
+524.tsv:
 comp tag: 
-our tag: brother sister witch roe king huntsmen queen baby
-[[  0   8]
- [  0 574]]
+our tag: king queen daughter dwarf marianna emperor of the elves old woman peasant girl garabin prince desire magician court chamberlain pillows doctors giant
+[[  0  22]
+ [  0 812]]
 
 
-87.tsv:
+82.tsv:
 comp tag: 
-our tag: mother bear dwarf
-[[  0   3]
- [  0 684]]
+our tag: miller daughter king little man child rumpelstilzchen
+[[  0   7]
+ [  0 307]]
 
 
 CV:
 comp tag: 
 our tag: 
-[[   334   1149]
- [   446 111352]]
+[[  248   886]
+ [  371 85059]]
 
 

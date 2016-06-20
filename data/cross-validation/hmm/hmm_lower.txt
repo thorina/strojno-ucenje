@@ -1,28 +1,28 @@
-106.tsv:
+103.tsv:
 comp tag: 
-our tag: queen king old woman désirée princess fairy prince warrior black becafico tulip longthorn gilliflower of the fountain knight
-[[   0   18]
- [   0 1402]]
+our tag: queen mother princess desert fairy yellow dwarf king of the golden mines spanish cat mermaid nymphs
+[[  0  16]
+ [  0 665]]
 
 
-93.tsv:
+40.tsv:
 comp tag: 
-our tag: brother sister witch roe king huntsmen queen baby
-[[  0   8]
- [  0 574]]
+our tag: merchants captain giant giants serpent sindbad hindbad
+[[  0   7]
+ [  0 646]]
 
 
-87.tsv:
+95.tsv:
 comp tag: 
-our tag: mother bear dwarf
-[[  0   3]
- [  0 684]]
+our tag: miller cat puss king marquis of carabas princess ogre wolf goslings goose gosling
+[[  0  13]
+ [  0 776]]
 
 
 CV:
 comp tag: 
 our tag: 
-[[   276   1207]
- [   494 111304]]
+[[  133   593]
+ [  247 53408]]
 
 

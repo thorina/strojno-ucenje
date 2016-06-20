@@ -1,15 +1,8 @@
 26.tsv:
-comp tag: freya madonna lady or frigga wife of odin valhalla dwarfs beauty twice queen dwarf elves king son baldur
+comp tag: freya madonna lady or frigga wife of odin valhalla dwarfs queen dwarf elves king son baldur
 our tag: freya odin
 [[  2   0]
- [ 16 664]]
-
-
-97.tsv:
-comp tag: king fairy queen fountain rose little princess prince wolf daughter with patipata blue eyes bear adieus papillette fair
-our tag: merinous king fairy of the fountain queen princess butterfly papillette prince favourite daughter queséca barber malabar patipata salmoé
-[[   9    9]
- [   9 1551]]
+ [ 14 666]]
 
 
 523.tsv:
@@ -19,10 +12,17 @@ our tag: old widow woman bobo princess zenza dragon tilda man fellow king father
  [  5 885]]
 
 
+163.tsv:
+comp tag: king sir galahad became
+our tag: sir percivale galahad bors king pelles joseph estorause bishop
+[[  3   6]
+ [  1 275]]
+
+
 CV:
 comp tag: 
 our tag: 
-[[  17   57]
- [  30 6230]]
+[[  11   45]
+ [  20 3672]]
 
 
