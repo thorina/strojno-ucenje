@@ -220,6 +220,7 @@ def main():
 
         elif input_string.lower() == 'n':
             models.load_all_trained_models()
+            test(models)
             break
 
         else:

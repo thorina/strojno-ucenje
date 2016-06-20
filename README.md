@@ -44,10 +44,11 @@ U skripti `models.py` se treniraju modeli HMM (hidden Markov model, skriveni Mar
 3. da uzimaju interpunkcijske znakove u obzir, te da treniraju nad lowercase oblicima riječi
 4. da ne uzimaju interpunkcijske znakove u obzir, te da treniraju nad lowercase oblicima riječi
 
-Nad HMM i CRF modelima se provodi unakrsna validacija. Skup za validaciju je veličine 3, odnosno imamo
-preko 20 segmenata. Modeli se evaluiraju pomoću F<sub>2</sub>-mjere. Parametar _beta_ je veličine 2 jer
+Nad HMM i CRF modelima se provodi unakrsna validacija. Skup za validaciju je veličine 3.
+Modeli se evaluiraju pomoću F<sub>2</sub>-mjere. Parametar _beta_ je veličine 2 jer
 želimo dati veću važnost osjetljivosti testa, odnosno važnije nam je da otkrijemo više likova nego
-koliko tih likova je točno.
+koliko tih likova je točno. Nakon unakrsne validacije u `/data/cross-validation` se generiraju grafovi
+koji opisuju F<sub>2</sub>-mjeru u ovisnosti o iteracijama.
 
 Stanford NER se trenira posebno, s obzirom da NLTK ima samo podršku za označavanje korištenjem već
 postojećih modela. Iz tog razloga se ne provodi unakrsna validacija.
@@ -61,13 +62,18 @@ java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier
 java -mx4g -cp ".*:lib/*:stanford-ner.jar" edu.stanford.nlp.ie.crf.CRFClassifier -prop ner.properties -trainFile training-sets/tokenized_content_lower_punct.tsv -serializeTo classifiers/trained_stanford_ner_lower_punct.ser.gz
 ```
 
-`mx4g` parametar zadaje 4gb radne memorije za ovaj proces. Ako Java javi grešku pri treniranju modela, potrebno je pokrenuti ponovno proces s
-s manje memorije. Detaljnije piše [ovdje](http://nlp.stanford.edu/software/crf-faq.shtml#d).
-__Napomena__: Ukoliko se dogodi da treniranje prestane, a Python proces je također prekinut, moguće je do kraja dovršiti treniranje ova 4 modela
-preko konzole, bez ponovnog treniranja HMM i CRF modela. Pri ponovnom pokretanju Python procesa potrebno je odabrati 'n', odnosno učitavanje 
-već istreniranih modela.
+`mx4g` parametar zadaje 4gb radne memorije za ovaj proces. Ako Java javi grešku pri treniranju modela, potrebno je 
+pokrenuti ponovno proces s s manje memorije. Detaljnije piše [ovdje](http://nlp.stanford.edu/software/crf-faq.shtml#d).
+__Napomena__: Ukoliko se dogodi da treniranje prestane, a Python proces je također prekinut, moguće je do kraja dovršiti 
+treniranje ova 4 modela preko konzole, bez ponovnog treniranja HMM i CRF modela. Pri ponovnom pokretanju Python procesa 
+potrebno je odabrati `n`, odnosno učitavanje već istreniranih modela.
 
 Prilikom pokretanja skripte se može odabrati hoće li se koristiti već istrenirani modeli ili će se
 trenirati novi modeli. Ukoliko želimo koristiti već istrenirane modele, a oni ne postoje, pokrenut će se novo
-treniranje modela. Nakon treniranja modela, modeli se testiraju nad podacima iz '/data/test/stories' i uspoređuju s ručno označenim podacima
-iz '/data/our_tag'
+treniranje modela. Nakon treniranja ili učitavanja modela, modeli se testiraju nad podacima iz `/data/test/stories` i 
+uspoređuju s ručno označenim podacima iz `/data/our_tag`. Potom se u `/data/test/results` generiraju dokumenti s 
+detaljnijim izvješćem o svakoj od metoda.
+
+Nakon treniranja novih modela ili učitavanja već postojećih, korisnik može testirati rad svih modela tako da unese naziv
+priče iz direktorija `/data/stories` koju želi označiti. Na izlaz će se ispisati rezultati svake od metoda, te će se u
+`/data/test/tagged` generirati .tsv dokumenti u kojima se vidi koje riječi su označene kojom oznakom.
