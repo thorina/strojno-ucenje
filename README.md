@@ -77,3 +77,5 @@ detaljnijim izvješćem o svakoj od metoda.
 Nakon treniranja novih modela ili učitavanja već postojećih, korisnik može testirati rad svih modela tako da unese naziv
 priče iz direktorija `/data/stories` koju želi označiti. Na izlaz će se ispisati rezultati svake od metoda, te će se u
 `/data/test/tagged` generirati .tsv dokumenti u kojima se vidi koje riječi su označene kojom oznakom.
+
+Konačno, u direktoriju `/docs` se nalazi projektna dokumentacija, odnosno prijedlog i izvještaj.
