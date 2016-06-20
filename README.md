@@ -18,6 +18,8 @@ Potrebne Python biblioteke su navedene u requirements.txt i instaliraju se s:
 
 ### Upute
 
+Pretpostavlja se da je radni direktorij `/source`.
+
 U direktoriju `/data/gutenberg-files` se nalaze dokumenti s Project Gutenberga u kojima su ručno
 uklonjeni početak do prve priče, tj. header, uvod, sadržaj i sl.) i kraj (od kraja posljednje
 priče do kraja čitavog dokumenta).
@@ -26,7 +28,8 @@ Skripta `generate_test_data.py` uzima svaki od dokumenata iz gorneg direktorija 
 privremeni dokument. Sadržaj tog dokumenta se potom čisti od većine nepotrebnih dijelova (opisi
 ilustracija, fusnote i sl.), te se dodaju razmaci između interpunkcijskih znakova. Potom se svaka
 od priča iz privremenog dokumenta odvaja i sprema u zaseban dokument u direktorij `/data/stories`.
-Te priče (ili bilo koji drugi tekst) se može koristiti za testiranje modela.
+Te priče (ili bilo koji drugi tekst) se može koristiti za testiranje modela. Ovu skriptu nije potrebno
+pokretati više puta.
 
 U istoj skripti se provodi i generiranje tsv dokumenata za svaku od priča. Dokumenti se sastoje od
 dva stupca. U prvom stupcu je oznaka 'O', u drugom stupcu je token (riječ ili interpunkcijski znak(ovi)).
@@ -70,7 +73,9 @@ __Napomena__: Ukoliko se dogodi da treniranje prestane, a Python proces je tako�
 treniranje ova 4 modela preko konzole, bez ponovnog treniranja HMM i CRF modela. Pri ponovnom pokretanju Python procesa 
 potrebno je odabrati `n`, odnosno učitavanje već istreniranih modela.
 
-Prilikom pokretanja skripte se može odabrati hoće li se koristiti već istrenirani modeli ili će se
+__Glavna skripta__ za pokretanje je `train_and_test_models`.
+
+Prilikom njenog pokretanja može se odabrati hoće li se koristiti već istrenirani modeli ili će se
 trenirati novi modeli. Ukoliko želimo koristiti već istrenirane modele, a oni ne postoje, pokrenut će se novo
 treniranje modela. Nakon treniranja ili učitavanja modela, modeli se testiraju nad podacima iz `/data/test/stories` i 
 uspoređuju s ručno označenim podacima iz `/data/our_tag`. Potom se u `/data/test/results` generiraju dokumenti s 
