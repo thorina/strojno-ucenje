@@ -1,6 +1,6 @@
 # Prepoznavanje likova u dječjim pričama
 
-Projekt u sklopu kolegija Strojno učenje na diplomskom smjeru Računarstvo i matematika, PMF Zagreb
+Projekt u sklopu kolegija Strojno učenje na diplomskom smjeru Računarstvo i matematika, Prirodoslovno-matematički fakultet Sveučilišta u Zagrebu
 
 ### Autori
 Tomislav Horina  
