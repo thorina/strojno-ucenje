@@ -3,7 +3,7 @@
 Projekt u sklopu kolegija Strojno učenje na diplomskom smjeru Računarstvo i matematika, PMF Zagreb
 
 ### Autori
-Tomislav Horina
+Tomislav Horina  
 Gorana Levačić
 
 ### Zahtjevi
