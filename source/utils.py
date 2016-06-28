@@ -69,7 +69,7 @@ def tag_tokens_with_model(tokens, model, lowercase, message):
         print('Found characters and number of their occurrences: ')
         if len(characters) == 0:
             print('none')
-        for character, occurrences in counter.items():
+        for character, occurrences in sorted(counter.items()):
             print(character + ' ' + str(occurrences))
 
     return tagged_content

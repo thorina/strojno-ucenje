@@ -5,7 +5,7 @@ import nltk
 import numpy as np
 from dill import dill
 from nltk.tag import StanfordNERTagger
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 
 from source.conditional_random_fields import load_trained_crf_model, train_crf_model, TRAINED_CRF_MODEL_CV, \
     TRAINED_CRF_PUNCT_MODEL_CV, TRAINED_CRF_LOWER_MODEL_CV, TRAINED_CRF_LOWER_PUNCT_MODEL_CV, TRAINED_CRF_MODEL, \
@@ -126,8 +126,8 @@ class Models:
             array_hmm += [self.test_models(fscores_hmm, i, 'hmm', test_files, tmp_models_hmm)]
             array_crf += [self.test_models(fscores_crf, i, 'crf', test_files, tmp_models_crf)]
 
-        plot_cv_data(iterations, array_crf, 'crf')
-        plot_cv_data(iterations, array_hmm, 'hmm')
+        # plot_cv_data(iterations, array_crf, 'crf')
+        # plot_cv_data(iterations, array_hmm, 'hmm')
 
         # # remove unnecessary folders after CV
         shutil.rmtree(CV_FILES_PATH_DEFAULT)
